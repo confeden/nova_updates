@@ -1,6 +1,6 @@
 {
-  "version": "1.28",
-  "url": "https://github.com/confeden/Nova/releases/download/v1.28/NovaSetup.exe",
-  "sha256": "af172f91ba09a8e96f6b089ef6fbd8b01526b93251986ca5d680c0a428f07b14",
-  "release_url": "https://github.com/confeden/Nova/releases/tag/v1.28"
+  "version": "1.29",
+  "url": "https://github.com/confeden/Nova/releases/download/v1.29/NovaSetup.exe",
+  "sha256": "b5c92f6c2d360e672ddda89b7550a618f0375780742eb02b6981cd325239aa3f",
+  "release_url": "https://github.com/confeden/Nova/releases/tag/v1.29"
 }
