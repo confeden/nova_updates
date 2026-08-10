@@ -1,6 +1,6 @@
 {
-  "version": "7.0.9",
-  "url": "https://github.com/confeden/Novagram/releases/download/v7.0.9/12.9.2/NovaGramSetup-7.0.9-x64.exe",
-  "sha256": "ef32d1cc35f0e4ec55c5bdd90c6046998806e34e59f6c2192ee7cdb262afdb91",
-  "release_url": "https://github.com/confeden/Novagram/releases/tag/v7.0.9/12.9.2"
+  "version": "7.0.9.1",
+  "url": "https://github.com/confeden/Novagram/releases/download/v7.0.9.1/12.9.2.1/NovaGramSetup-7.0.9.1-x64.exe",
+  "sha256": "2ec162d63c4e673ac91932d6ed114e3ca0a8f2775fcaac89804f66a615047426",
+  "release_url": "https://github.com/confeden/Novagram/releases/tag/v7.0.9.1/12.9.2.1"
 }
