@@ -1,0 +1,58 @@
+name: Publish Opera endpoint list
+
+# Lives in confeden/nova_updates as .github/workflows/publish-opera-endpoints.yml
+#
+# Asks SurfEasy's discover from a GitHub runner and writes opera_endpoints.json
+# next to apk_version.json. Nova reads it into the same cache its own discover
+# fills, so builds without the API relay password -- F-Droid ones -- can still
+# reach Opera's proxies from a country where discover answers with unreachable
+# addresses. See .github/scripts/opera_endpoints.py for the details.
+
+on:
+  schedule:
+    # Hourly. The addresses rotate, and a client that hits a dead one pays a
+    # full connect timeout for it.
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: opera-endpoints
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          # The version opera-proxy's go.mod asks for. Nothing here needs a
+          # newer toolchain, and pinning keeps the run independent of what
+          # "stable" happens to mean today.
+          go-version: '1.24.x'
+
+      - name: Build opera-proxy from the pinned fork
+        run: |
+          git clone --quiet --depth 1 --branch v1.15.0-fork \
+            https://github.com/snawoot-proxies-forks/opera-proxy /tmp/opera-proxy-src
+          cd /tmp/opera-proxy-src
+          go build -trimpath -o /tmp/opera-proxy .
+
+      - name: Ask discover for the current endpoints
+        run: python3 .github/scripts/opera_endpoints.py --binary /tmp/opera-proxy --output opera_endpoints.json
+
+      - name: Commit when something changed
+        run: |
+          if git diff --quiet -- opera_endpoints.json; then
+            echo "Endpoint list already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add opera_endpoints.json
+          git commit -m "Opera: publish endpoint list"
+          git push
