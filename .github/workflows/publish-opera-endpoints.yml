@@ -8,11 +8,14 @@ name: Publish Opera endpoint list
 # reach Opera's proxies from a country where discover answers with unreachable
 # addresses. See .github/scripts/opera_endpoints.py for the details.
 
+# Manual only. The hourly schedule is off because the list turned out not to
+# help: measured on a device in Russia, endpoints discovered from this runner
+# are TCP-reachable but answer 502 Bad Gateway to any session whose SurfEasy
+# API calls came from a Russian address — and so does an address the device's
+# own discover produced minutes earlier. The endpoint serves the session, not
+# the address. Kept runnable by hand in case an out-of-country API path lands
+# later, when a ready list saves the client a round of discovery.
 on:
-  schedule:
-    # Hourly. The addresses rotate, and a client that hits a dead one pays a
-    # full connect timeout for it.
-    - cron: '23 * * * *'
   workflow_dispatch:
 
 permissions:
