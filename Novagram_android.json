@@ -1,7 +1,7 @@
 {
-  "version": "12.10.1.1",
-  "url": "https://github.com/confeden/Novagram/releases/download/v7.1.3/12.10.1.1/NovaGram-12.10.1.1-release.apk",
-  "sha256": "5f139755f885c6514242f2f91ac697f61500a6470b522397c684e2a6cedc0864",
-  "release_url": "https://github.com/confeden/Novagram/releases/tag/v7.1.3/12.10.1.1",
-  "size": 124805735
+  "version": "12.10.1.2",
+  "url": "https://github.com/confeden/Novagram/releases/download/v7.2.8/12.10.1.2/NovaGram-12.10.1.2-release.apk",
+  "sha256": "c3e37a93e33b604846dc297d4e5302b0d299e3f9366fe5b4a6b021f3c7026d88",
+  "release_url": "https://github.com/confeden/Novagram/releases/tag/v7.2.8/12.10.1.2",
+  "size": 57150846
 }
