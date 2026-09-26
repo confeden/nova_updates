@@ -10,6 +10,7 @@ adobe.com
 adobe.io
 akamaiedge.net
 alternativeto.net
+launchdarkly.com
 amazonaws.com
 amnezia.org
 announcekit.app
