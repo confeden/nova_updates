@@ -38,9 +38,11 @@ bridge.claudeusercontent.com
 cline.bot
 grok.com
 chatgpt.com
+app.cline.bot
 ab.chatgpt.com
 auth.openai.com
 api.openai.com
+api.cline.bot
 ws.chatgpt.com
 webrtc.chatgpt.com
 api.chatgpt.com
