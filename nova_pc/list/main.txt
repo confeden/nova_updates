@@ -8,6 +8,7 @@ activatica.org
 adguard-mail.com
 adobe.com
 adobe.io
+cline.bot
 akamaiedge.net
 medal.tv
 alternativeto.net
