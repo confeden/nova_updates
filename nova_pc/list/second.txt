@@ -16,6 +16,7 @@ claude.ai
 claude.com
 claudemcpcontent.com
 claudeusercontent.com
+cline.bot
 codegpt.co
 collaborator.pro
 copilot.microsoft.com

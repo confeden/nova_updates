@@ -35,6 +35,7 @@ downloads.claude.com
 claudeusercontent.com
 www.claudeusercontent.com
 bridge.claudeusercontent.com
+cline.bot
 grok.com
 chatgpt.com
 ab.chatgpt.com

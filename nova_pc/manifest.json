@@ -1,8 +1,8 @@
 {
   "files": {
     "list/ai.txt": {
-      "sha256": "9b01fee3676b49964d803813546d0e52315ce7c17f247a359e69aba0a9e72dd3",
-      "size": 1417
+      "sha256": "45da0a7d67b9207ce2c2936233349fb5ec2287e2027534ac7e138a43594f0e46",
+      "size": 1357
     },
     "list/cloudflare.txt": {
       "sha256": "337c6735311fa93b31c712223e61f1b10dfbb03dee6dafc3caf110d07305b709",
@@ -25,8 +25,8 @@
       "size": 1057445
     },
     "list/main.txt": {
-      "sha256": "d72a4450b33975725f90bc3f92320963e951ba2d9630e28661a4838fcd4d0dd7",
-      "size": 4755
+      "sha256": "6f36f322afc6cd5447e6556cf3831791aa002f674792d626c4ffe6844a54f201",
+      "size": 4425
     },
     "list/opera_bootstrap_domains.txt": {
       "sha256": "975fa20501d5472b848384b9ea7f4ea8565ce7a1e5791a36e76b9a4dbe0860d8",
@@ -37,8 +37,8 @@
       "size": 2337
     },
     "list/second.txt": {
-      "sha256": "783b153114f0811bee6005b807b27fc487ecaf6ecf9b8d992af85c3c88ed1933",
-      "size": 1730
+      "sha256": "7230e9f0aa2e2e25278226adf5fc45d8aef5f096643d6e52edd9b8b55d7f1981",
+      "size": 1617
     },
     "list/telegram.txt": {
       "sha256": "4bbd4c72ce8e7681f12ab1eb92090687060d4e45da8996658f8566bc41ccbc94",
@@ -53,7 +53,7 @@
       "size": 335
     }
   },
-  "generated": 1790448474,
+  "generated": 1790449493,
   "schema": 1,
   "version": "1.41"
 }
