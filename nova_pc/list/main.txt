@@ -9,6 +9,7 @@ adguard-mail.com
 adobe.com
 adobe.io
 akamaiedge.net
+medal.tv
 alternativeto.net
 launchdarkly.com
 amazonaws.com
