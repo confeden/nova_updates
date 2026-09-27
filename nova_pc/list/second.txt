@@ -6,7 +6,10 @@ anthropic.com
 autodesk.com
 autodesk360.com
 b-cdn.net
+telegram.me
 bbci.co.uk
+telesco.pe
+telegram.org
 broadcom.com
 cdn.cookielaw.org
 battle.net
