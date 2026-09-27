@@ -114,6 +114,7 @@ soulmatcher.app
 sourceforge.net
 spotify.com
 spotifycdn.com
+store.steampowered.com
 streamx.cash
 stripe.com
 stripe.network
