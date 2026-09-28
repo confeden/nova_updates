@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-29T00:50:00Z",
+  "servers": [
+    {
+      "id": "nova-dns-1",
+      "domain": "t.nova-app.eu",
+      "ip": "191.44.41.242",
+      "method": 5,
+      "key": "nova1:9e9ad8a52bf1ec284c1b2aa5994a9ab2",
+      "record": "TXT"
+    }
+  ]
+}
