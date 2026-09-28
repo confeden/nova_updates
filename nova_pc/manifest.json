@@ -13,8 +13,8 @@
       "size": 881
     },
     "list/exclude.txt": {
-      "sha256": "50194447d534b26aa91fb131a93bbd71808f0c3720271b2d5ebc0564e3368984",
-      "size": 1293
+      "sha256": "337b35ac51cddd9287620ec41bc6b2f8cff5febe30022abcdcb81401c45b77a3",
+      "size": 1335
     },
     "list/games.txt": {
       "sha256": "63b48f7b1984aae2c46c36deacacb21a62dda3b4ddbba015c228ca62e93b2580",
@@ -53,7 +53,7 @@
       "size": 335
     }
   },
-  "generated": 1790553343,
+  "generated": 1790597589,
   "schema": 1,
   "version": "1.41.1"
 }
