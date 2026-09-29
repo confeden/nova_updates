@@ -11,6 +11,10 @@ robinfrontend-pa.googleapis.com
 jules.google.com
 flow.google.com
 aisandbox-pa.googleapis.com
+antigravity-unleash.goog
+www.googleapis.com
+play.googleapis.com
+lh3.googleusercontent.com
 claude.ai
 www.claude.ai
 api.anthropic.com
