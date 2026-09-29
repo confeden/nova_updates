@@ -11,6 +11,7 @@ robinfrontend-pa.googleapis.com
 jules.google.com
 flow.google.com
 aisandbox-pa.googleapis.com
+daily-cloudcode-pa.googleapis.com
 antigravity-unleash.goog
 www.googleapis.com
 play.googleapis.com
