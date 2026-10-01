@@ -187,6 +187,7 @@ obsproject.com
 ohi-s.com
 on.aws
 onorca.dev
+oauth.tg.dev
 ookla.com
 bbc.co.uk
 optimizely.com
