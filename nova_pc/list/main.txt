@@ -82,7 +82,6 @@ dw.com
 ecosyste.ms
 edgee.ai
 element.io
-emp.bbc.co.uk
 engagement.ai
 etoneya.su
 evolution-x.org
@@ -189,7 +188,7 @@ ohi-s.com
 on.aws
 onorca.dev
 ookla.com
-open.live.bbc.co.uk
+bbc.co.uk
 optimizely.com
 pacloudflare.com
 pastes.dev
