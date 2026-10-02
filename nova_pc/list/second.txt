@@ -36,7 +36,6 @@ cursor.so
 cursorapi.com
 digikey.com
 digikeyassets.com
-digiseller.mycdn.ink
 dreamina.capcut.com
 elevenmusic.io
 emergent.sh
