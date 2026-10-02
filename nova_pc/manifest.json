@@ -37,8 +37,8 @@
       "size": 2337
     },
     "list/second.txt": {
-      "sha256": "31a3674d06fd8d75c29deb58c77c4a69a940b3227324a0cce8de154ceac5db02",
-      "size": 1773
+      "sha256": "c827cb7344768f91bdfdc2ae0a35fd548bc49e89aec883721c802cff0c66561a",
+      "size": 1761
     },
     "list/telegram.txt": {
       "sha256": "4bbd4c72ce8e7681f12ab1eb92090687060d4e45da8996658f8566bc41ccbc94",
@@ -53,7 +53,7 @@
       "size": 335
     }
   },
-  "generated": 1790920578,
+  "generated": 1790972142,
   "schema": 1,
   "version": "1.41.1"
 }
