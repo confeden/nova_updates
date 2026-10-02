@@ -193,6 +193,7 @@ qwenlm.ai
 ucweb.com
 alibaba.com
 onorca.dev
+qwen.com
 oauth.tg.dev
 ookla.com
 bbc.co.uk
