@@ -97,7 +97,8 @@ patreonusercontent.com
 performance.radar.cloudflare.com
 pixabay.com
 plati.io
-
+plati.market
+mycdn.ink
 play.google.com
 puter.com
 qoder.com
