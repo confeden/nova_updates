@@ -186,6 +186,12 @@ obmen.one
 obsproject.com
 ohi-s.com
 on.aws
+taobao.com
+alicdn.com
+qwen.ai
+qwenlm.ai
+ucweb.com
+alibaba.com
 onorca.dev
 oauth.tg.dev
 ookla.com
