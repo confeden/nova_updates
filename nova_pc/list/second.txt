@@ -102,6 +102,8 @@ mycdn.ink
 digiseller.com
 play.google.com
 canva.com
+figma.com
+figma.ai
 puter.com
 qoder.com
 qt.io
