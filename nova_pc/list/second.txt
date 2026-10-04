@@ -16,7 +16,6 @@ battle.net
 blizzard.com
 forge.akamaized.net
 blz-contentstack-images.akamaized.net
-arkoselabs.com
 cdnbunny.org
 cerebras.ai
 chatgpt.com

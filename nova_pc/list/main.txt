@@ -177,6 +177,7 @@ gameseal.com
 neuralwriter.com
 nnmclub.to
 nnmstatic.win
+figma-api.arkoselabs.com
 notion.site
 googletagmanager.com
 nova-app.eu
