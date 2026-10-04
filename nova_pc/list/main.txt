@@ -184,6 +184,7 @@ sanity.io
 statsigapi.net
 prodregistryv2.org
 featureassets.org
+figma.com
 notion.site
 nova-app.eu
 nova.app
