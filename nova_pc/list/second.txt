@@ -101,6 +101,7 @@ plati.market
 mycdn.ink
 digiseller.com
 play.google.com
+canva.com
 puter.com
 qoder.com
 qt.io
