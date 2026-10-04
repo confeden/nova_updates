@@ -179,6 +179,11 @@ nnmclub.to
 nnmstatic.win
 figma-api.arkoselabs.com
 vimeocdn.com
+vimeo.com
+sanity.io
+statsigapi.net
+prodregistryv2.org
+featureassets.org
 notion.site
 googletagmanager.com
 nova-app.eu
