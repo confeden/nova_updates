@@ -177,14 +177,6 @@ gameseal.com
 neuralwriter.com
 nnmclub.to
 nnmstatic.win
-figma-api.arkoselabs.com
-vimeocdn.com
-vimeo.com
-sanity.io
-statsigapi.net
-prodregistryv2.org
-featureassets.org
-figma.com
 notion.site
 nova-app.eu
 nova.app
