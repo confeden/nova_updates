@@ -98,6 +98,9 @@ pixabay.com
 plati.io
 plati.market
 mycdn.ink
+hasura-app.io
+ql.app
+hasura.io
 digiseller.com
 play.google.com
 canva.com
