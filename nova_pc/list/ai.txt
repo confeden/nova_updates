@@ -16,7 +16,6 @@ antigravity-unleash.goog
 www.googleapis.com
 play.googleapis.com
 lh3.googleusercontent.com
-ag-proxy.nova-app.eu
 claude.ai
 www.claude.ai
 api.anthropic.com
