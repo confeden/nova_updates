@@ -98,8 +98,10 @@ pixabay.com
 plati.io
 plati.market
 mycdn.ink
+cdn-apple.com
 2nd-no.com
 hasura-app.io
+2no.pl
 ql.app
 hasura.io
 digiseller.com
