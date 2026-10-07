@@ -173,6 +173,7 @@ myqcloud.com
 namecheap.com
 namecheapapi.com
 nc-img.com
+gname.net
 gameseal.com
 poecdn.com
 neuralwriter.com
