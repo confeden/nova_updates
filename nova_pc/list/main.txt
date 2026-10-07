@@ -182,6 +182,9 @@ nnmclub.to
 nnmstatic.win
 notion.site
 nova.app
+nvidia.com
+adobedtm.com
+geforce.com
 nova.net
 nowpayments.io
 ntfy.sh

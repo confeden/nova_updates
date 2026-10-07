@@ -75,7 +75,6 @@ mozilla.org
 msys2.org
 mtraf.io
 netflix.com
-ngc.nvidia.com
 nitter.net
 notebooklm.google.com
 notion.com
