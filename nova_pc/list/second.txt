@@ -96,10 +96,12 @@ patreonusercontent.com
 performance.radar.cloudflare.com
 pixabay.com
 plati.io
+coveo.com
 plati.market
 mycdn.ink
 cdn-apple.com
 2nd-no.com
+deepl.com
 hasura-app.io
 2no.pl
 ql.app
