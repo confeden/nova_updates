@@ -186,6 +186,7 @@ nvidia.com
 adobedtm.com
 geforce.com
 nova.net
+amd.com
 nowpayments.io
 ntfy.sh
 obmen.one
