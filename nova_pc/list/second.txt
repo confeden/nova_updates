@@ -94,6 +94,7 @@ parklogic.com
 patreon.com
 patreonusercontent.com
 performance.radar.cloudflare.com
+notebooklm-pa.googleapis.com
 pixabay.com
 plati.io
 coveo.com
