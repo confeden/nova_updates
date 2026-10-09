@@ -19,6 +19,7 @@ blz-contentstack-images.akamaized.net
 cdnbunny.org
 cerebras.ai
 chatgpt.com
+konami.net
 claude.ai
 claude.com
 claudemcpcontent.com
