@@ -51,6 +51,7 @@ cloudflare-ech.com
 cloudflare.com
 cloudflare.dev
 cloudflare.net
+usercentrics.eu
 cloudflareaccess.com
 cloudflareclient.com
 cloudflareinsights.com
