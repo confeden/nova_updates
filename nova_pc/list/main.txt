@@ -51,6 +51,7 @@ cloudflare-ech.com
 cloudflare.com
 cloudflare.dev
 zerofs.link
+crowdsec.net
 mycountrymobile.com
 ipway.com
 tailscale.com
