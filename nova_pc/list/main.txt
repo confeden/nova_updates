@@ -49,6 +49,7 @@ clawbot.ai
 cloudflare-dns.com
 cloudflare-ech.com
 cloudflare.com
+zerofs.link
 cloudflare.dev
 cloudflare.net
 usercentrics.eu
