@@ -53,7 +53,6 @@ cloudflare.dev
 zerofs.link
 mycountrymobile.com
 ipway.com
-crowdsec.com
 auth0.com
 cloudflare.net
 usercentrics.eu

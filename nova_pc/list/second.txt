@@ -92,6 +92,7 @@ otzyvmarketing.ru
 paddle.com
 parklogic.com
 infin-id.com
+crowdsec.com
 patreon.com
 patreonusercontent.com
 performance.radar.cloudflare.com
