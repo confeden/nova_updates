@@ -290,6 +290,7 @@ def sheet_rows(data, filename):
 # --- numbered text lists -----------------------------------------------------
 
 ENTRY_START = re.compile(r"^\s*(\d{1,4})\s*[.)]\s+(\S.*)$")
+EXCLUDED_ENTRY = re.compile(r"^\W*(организация\s+)?исключен|исключен[аоы]?\s+из\s+(перечня|списка|реестра)", re.I)
 
 
 def numbered_items(soup):
@@ -331,6 +332,10 @@ def numbered_items(soup):
     items = []
     for parts in best:
         text = " ".join(parts)
+        # A delisted organisation keeps its number with a note in place of
+        # the name, such as "Организация исключена из перечня ...".
+        if EXCLUDED_ENTRY.search(text):
+            continue
         posted = re.search(r"дата\s+(размещения|включения)[^:]*:\s*([\d.]+)", text, re.I)
         date = cell_date(posted.group(2)) if posted else None
         if date is None:
