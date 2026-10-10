@@ -1,0 +1,64 @@
+name: Publish banned lists
+
+# Lives in confeden/nova_updates as .github/workflows/publish-banned-lists.yml
+#
+# Once a day rebuilds "список запрещённых" from the official registries of
+# Minjust and the FSB (see .github/scripts/banned_lists.py) and commits only
+# when a list changed.
+#
+# Runs on a self-hosted runner in Russia with the "banned-lists" label:
+# minjust.gov.ru and fsb.ru do not answer GitHub's own runners abroad. Setting
+# that runner up is described in "список запрещённых/README.md".
+
+on:
+  schedule:
+    # 03:40 UTC, 06:40 Moscow time: after the registries' working-day updates
+    # of the previous day.
+    - cron: '40 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: banned-lists
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: [self-hosted, linux, banned-lists]
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare Python
+        run: |
+          venv="$HOME/.cache/banned-lists-venv"
+          [ -x "$venv/bin/python" ] || python3 -m venv "$venv"
+          "$venv/bin/pip" install -q -r .github/scripts/banned_lists.requirements.txt
+          echo "$venv/bin" >> "$GITHUB_PATH"
+
+      - name: Build lists
+        id: build
+        env:
+          # Debian's own Chromium; Playwright drives it instead of downloading one.
+          CHROMIUM_PATH: /usr/bin/chromium
+        run: python .github/scripts/banned_lists.py
+
+      # Runs even when one source failed, so the lists that did load are still
+      # published; the failed one keeps its last good version and the run
+      # stays red.
+      - name: Commit when something changed
+        if: success() || steps.build.outcome == 'failure'
+        run: |
+          git config core.quotepath off
+          git add "список запрещённых"
+          if git diff --cached --quiet; then
+            echo "Lists already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Списки запрещённых: обновление $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
