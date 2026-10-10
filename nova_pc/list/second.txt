@@ -99,6 +99,10 @@ pixabay.com
 plati.io
 coveo.com
 intercomassets.com
+widget.intercom.io
+js.intercomcdn.com
+api-iam.intercom.io
+nexus-websocket-a.intercom.io
 plati.market
 mycdn.ink
 cdn-apple.com

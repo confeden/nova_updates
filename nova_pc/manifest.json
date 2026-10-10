@@ -1,8 +1,8 @@
 {
   "files": {
     "list/ai.txt": {
-      "sha256": "ef2e4f0cadcc1ed0b240d9db088cbc57fada45f42d36179e2e98b71ea56ab805",
-      "size": 1587
+      "sha256": "80c9b8b5579e15e40db8a9147301435b262ec078567764e2bcb8e8237396aa51",
+      "size": 1649
     },
     "list/cloudflare.txt": {
       "sha256": "337c6735311fa93b31c712223e61f1b10dfbb03dee6dafc3caf110d07305b709",
@@ -33,8 +33,8 @@
       "size": 2337
     },
     "list/second.txt": {
-      "sha256": "653fad54cc5970bb9e652ff24e6a538a1723939c5e7ad5d62f4ede77960a06a8",
-      "size": 2064
+      "sha256": "dafc3deac40f03b8c6b1450613ffe7cf858149d047894212c0196b47797a189f",
+      "size": 2156
     },
     "list/telegram.txt": {
       "sha256": "4bbd4c72ce8e7681f12ab1eb92090687060d4e45da8996658f8566bc41ccbc94",
@@ -49,7 +49,7 @@
       "size": 335
     }
   },
-  "generated": 1791646830,
+  "generated": 1791648013,
   "schema": 1,
   "version": "1.42"
 }
