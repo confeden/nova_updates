@@ -52,7 +52,6 @@ cloudflare.com
 cloudflare.dev
 zerofs.link
 auth0.com
-ipway.com
 cloudflare.net
 usercentrics.eu
 cloudflareaccess.com

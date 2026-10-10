@@ -21,8 +21,8 @@
       "size": 432
     },
     "list/main.txt": {
-      "sha256": "1c5db1a299688788163417ca7e96bf53f61443d1fc7c7547a1fec73521af5a35",
-      "size": 5039
+      "sha256": "dc291cf9108437584afbce6e4a717339369268fb581c6e1eed759f9206bee0a4",
+      "size": 5028
     },
     "list/opera_bootstrap_domains.txt": {
       "sha256": "975fa20501d5472b848384b9ea7f4ea8565ce7a1e5791a36e76b9a4dbe0860d8",
@@ -33,8 +33,8 @@
       "size": 2337
     },
     "list/second.txt": {
-      "sha256": "dafc3deac40f03b8c6b1450613ffe7cf858149d047894212c0196b47797a189f",
-      "size": 2156
+      "sha256": "9c9846923bb630d302492c379c0f27b6294e12a348b7b479d468da0692e3d395",
+      "size": 2167
     },
     "list/telegram.txt": {
       "sha256": "4bbd4c72ce8e7681f12ab1eb92090687060d4e45da8996658f8566bc41ccbc94",
@@ -49,7 +49,7 @@
       "size": 335
     }
   },
-  "generated": 1791648013,
+  "generated": 1791648384,
   "schema": 1,
   "version": "1.42"
 }
