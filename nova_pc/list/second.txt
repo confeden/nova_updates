@@ -98,6 +98,7 @@ notebooklm-pa.googleapis.com
 pixabay.com
 plati.io
 coveo.com
+intercomassets.com
 plati.market
 mycdn.ink
 cdn-apple.com
