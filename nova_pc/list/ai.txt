@@ -61,6 +61,7 @@ www.copilot.com
 generativelanguage.googleapis.com
 www.strava.com
 strava.com
+nova-app.eu
 cdn-1.strava.com
 graphql.strava.com
 accounts.youtube.com
