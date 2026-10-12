@@ -215,6 +215,7 @@ on.aws
 taobao.com
 adjust.com
 adjust.world
+aeza.net
 alicdn.com
 qwen.ai
 qwenlm.ai

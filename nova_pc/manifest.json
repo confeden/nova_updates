@@ -21,8 +21,8 @@
       "size": 432
     },
     "list/main.txt": {
-      "sha256": "b4954fca197422e4f5633da4fd04076a85fe48c0397b49dde93c200904624145",
-      "size": 5171
+      "sha256": "1482cd8c477384f06fc86ebe54538183296926cd78f9e5f5db67fb29290fdbb7",
+      "size": 5181
     },
     "list/opera_bootstrap_domains.txt": {
       "sha256": "975fa20501d5472b848384b9ea7f4ea8565ce7a1e5791a36e76b9a4dbe0860d8",
@@ -49,7 +49,7 @@
       "size": 335
     }
   },
-  "generated": 1791827728,
+  "generated": 1791835643,
   "schema": 1,
   "version": "1.43.2"
 }
