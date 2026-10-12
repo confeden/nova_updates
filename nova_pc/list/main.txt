@@ -209,6 +209,7 @@ global.canon
 nowpayments.io
 ntfy.sh
 obmen.one
+devin.ai
 obsproject.com
 ohi-s.com
 on.aws
