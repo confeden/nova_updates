@@ -213,6 +213,8 @@ obsproject.com
 ohi-s.com
 on.aws
 taobao.com
+adjust.com
+adjust.world
 alicdn.com
 qwen.ai
 qwenlm.ai
