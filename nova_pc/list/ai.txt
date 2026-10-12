@@ -81,3 +81,6 @@ agentn.global.api5.cursor.sh
 us-only.gcpp.cursor.sh
 gql.twitch.tv
 usher.ttvnw.net
+clientservices.googleapis.com
+accountcapabilities-pa.googleapis.com
+optimizationguide-pa.googleapis.com
