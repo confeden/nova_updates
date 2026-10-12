@@ -85,3 +85,4 @@ usher.ttvnw.net
 clientservices.googleapis.com
 accountcapabilities-pa.googleapis.com
 optimizationguide-pa.googleapis.com
+devin.ai
