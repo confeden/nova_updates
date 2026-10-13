@@ -84,6 +84,8 @@ ntc.party
 nxp.com
 oaistatic.com
 oaiusercontent.com
+okta.com
+oktacdn.com
 onlinesim.io
 openai.com
 tokenharbor.ai
