@@ -208,6 +208,7 @@ evidon.com
 amazon-adsystem.com
 global.canon
 scorecardresearch.com
+amazon.com
 nowpayments.io
 ntfy.sh
 obmen.one
