@@ -81,6 +81,7 @@ notebooklm.google.com
 notion.com
 notion.so
 ntc.party
+playground.google
 nxp.com
 oaistatic.com
 oaiusercontent.com
