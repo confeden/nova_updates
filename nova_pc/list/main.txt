@@ -205,7 +205,9 @@ tiqcdn.com
 amplience.net
 adis.ws
 evidon.com
+amazon-adsystem.com
 global.canon
+scorecardresearch.com
 nowpayments.io
 ntfy.sh
 obmen.one
