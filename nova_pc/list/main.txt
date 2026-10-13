@@ -165,6 +165,7 @@ mate.tools
 matrix.org
 mcpmarket.com
 media-amazon.com
+ssl-images-amazon.com
 meduza.io
 meet.google.com
 meshworld.in
