@@ -68,6 +68,7 @@ accounts.youtube.com
 manus.im
 www.manus.im
 api.manus.im
+oaiusercontent.com
 www.genspark.ai
 api2.cursor.sh
 api2direct.cursor.sh
