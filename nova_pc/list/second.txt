@@ -82,6 +82,7 @@ notion.com
 notion.so
 ntc.party
 playground.google
+chromewebstore.google.com
 gemini.google
 nxp.com
 oaistatic.com
