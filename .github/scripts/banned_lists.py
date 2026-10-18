@@ -6,7 +6,7 @@ Lives in confeden/nova_updates as .github/scripts/banned_lists.py and is run by
 minjust.gov.ru and fsb.ru do not answer addresses outside the country, so a
 GitHub-hosted runner never gets a page.
 
-All four lists go into one file, keyed by list name:
+All five lists go into one file, keyed by list name:
 
     {"lists": {"<name>": {"title", "source", "count",
                           "items": [{"n", "name", "short_name", "date"}]}}}
@@ -26,12 +26,14 @@ published one is not written: an official page that half-loaded must not wipe
 a list someone checks against. The run then fails, so the failure is seen.
 """
 
+import csv
 import datetime
 import io
 import json
 import os
 import re
 import sys
+import urllib.request
 
 from bs4 import BeautifulSoup
 
@@ -52,6 +54,10 @@ SOURCES = (
     ("нежелательные", "Перечень организаций, деятельность которых признана нежелательной",
      "https://minjust.gov.ru/ru/pages/perechen-inostrannyh-i-mezhdunarodnyh-organizacij-deyatelnost-kotoryh-priznana-nezhelatelnoj-na-territorii-rossijskoj-federacii/",
      100),
+    # The materials list is published as a CSV file next to its page
+    # (https://minjust.gov.ru/ru/extremist-materials/); the URL ends in .csv.
+    ("материалы", "Федеральный список экстремистских материалов",
+     "https://minjust.gov.ru/uploaded/files/exportfsm.csv", 3000),
 )
 
 # A new list shorter than this share of the published one is treated as a
@@ -303,6 +309,42 @@ def sheet_rows(data, filename):
     raise ValueError(f"unknown spreadsheet format: {filename}")
 
 
+def fetch_bytes(url):
+    """A file that needs no page: the request carries an ordinary browser User-Agent."""
+    request = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA})
+    with urllib.request.urlopen(request, timeout=120) as response:
+        return response.read()
+
+
+def materials_items(data):
+    """Items from the materials CSV: "#;Материал;Дата включения", separator ";".
+
+    Only rows whose first cell is a number are entries. The date column is
+    empty for the older entries; for those, the court decision date in the
+    text is used ("решение вынесено ... от 23.11.2006").
+    """
+    try:
+        text = data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        text = data.decode("cp1251", "replace")
+    items = []
+    for row in csv.reader(text.splitlines(), delimiter=";"):
+        if len(row) < 2 or not re.fullmatch(r"\d+", clean(row[0])):
+            continue
+        name = clean(row[1])
+        if not name:
+            continue
+        date = cell_date(row[2]) if len(row) > 2 else None
+        if date is None:
+            decision = re.search(r"решение.*?\bот\s+(\d{1,2}[./]\d{1,2}[./]\d{4})", name)
+            date = cell_date(decision.group(1)) if decision else None
+        if date is None:
+            found = dates_in(name)
+            date = found[-1] if found else None
+        items.append({"name": name, "short_name": "", "date": date, "links": []})
+    return items
+
+
 # --- numbered text lists -----------------------------------------------------
 
 MAX_NUMBER_GAP = 30
@@ -470,8 +512,11 @@ def main():
                 continue
             log(f"== {key}: {url}")
             try:
-                html, sheet = fetch(browser, url)
-                items, how = parse(html, sheet)
+                if url.endswith(".csv"):
+                    items, how = materials_items(fetch_bytes(url)), "csv"
+                else:
+                    html, sheet = fetch(browser, url)
+                    items, how = parse(html, sheet)
             except Exception as error:
                 log(f"    failed: {error.__class__.__name__}: {error}")
                 failed.append(key)

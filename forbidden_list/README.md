@@ -9,6 +9,11 @@
 | `террористы` | [Единый федеральный список террористических организаций, ФСБ](http://www.fsb.ru/fsb/npd/terror.htm) |
 | `экстремисты` | [Перечень экстремистских организаций, Минюст](https://minjust.gov.ru/ru/documents/7822/) |
 | `нежелательные` | [Перечень нежелательных организаций, Минюст](https://minjust.gov.ru/ru/pages/perechen-inostrannyh-i-mezhdunarodnyh-organizacij-deyatelnost-kotoryh-priznana-nezhelatelnoj-na-territorii-rossijskoj-federacii/) |
+| `материалы` | [Федеральный список экстремистских материалов, Минюст](https://minjust.gov.ru/ru/extremist-materials/) (выгрузка CSV) |
+
+В `материалы` записи — это сами материалы (книги, аудио, видео и т. п.), а не
+организации и люди. У каждой записи `name` — текст из реестра с автором и судом,
+`links` пустой, `short_name` пустой. У 10 записей дата не указана.
 
 Структура файла:
 
