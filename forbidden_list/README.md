@@ -38,26 +38,14 @@
 ## Где выполняется
 
 Сайты minjust.gov.ru и fsb.ru не отвечают зарубежным адресам, поэтому workflow
-выполняется на self-hosted runner с меткой `banned-lists` на сервере в России.
+выполняется на self-hosted runner `debian-banned-lists` с меткой `banned-lists`.
+Он стоит на домашнем сервере с Debian в России, как systemd-сервис от пользователя
+`ghrunner`; для сборки нужны `python3`, `git` и `chromium` из apt.
 
-Настройка на Debian (один раз):
-
-```sh
-sudo apt install -y git python3 python3-venv chromium
-sudo useradd -m -s /bin/bash ghrunner
-sudo -iu ghrunner
-```
-
-Затем в GitHub: **Settings → Actions → Runners → New self-hosted runner → Linux**.
-Выполни показанные там команды под пользователем `ghrunner`, а в `./config.sh`
-добавь метку:
-
-```sh
-./config.sh --url https://github.com/confeden/nova_updates --token <токен со страницы> --labels banned-lists
-exit                     # обратно в пользователя с sudo
-cd /home/ghrunner/actions-runner
-sudo ./svc.sh install ghrunner && sudo ./svc.sh start
-```
+Если runner придётся поставить заново, в GitHub: **Settings → Actions → Runners →
+New self-hosted runner → Linux**. Команды со страницы выполняются под пользователем
+`ghrunner`, а при `./config.sh` добавляется метка `banned-lists`. Затем
+`sudo ./svc.sh install ghrunner && sudo ./svc.sh start` в каталоге runner.
 
 Первый запуск можно сделать вручную: **Actions → Publish banned lists → Run workflow**.
 Лог первого запуска покажет столбцы и первые записи каждого источника.
