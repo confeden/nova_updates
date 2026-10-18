@@ -1,0 +1,119 @@
+{
+ "version": 1,
+ "updated": "2026-10-18",
+ "note": "Relay list for NovaGram WSS transport. Bump `version` on every change; clients ignore a lower one. `official` is tried first, then `own` in order, then `fronts` (rotated). {dc} = data centre number, {media} = '-1' for media connections on the official relay. `ips` pins an address per data centre; without it the name is resolved over DoH.",
+ "official": {
+  "host": "kws{dc}{media}.web.telegram.org",
+  "path": "/apiws",
+  "ips": {
+   "1": "149.154.174.100",
+   "2": "149.154.167.220",
+   "3": "149.154.174.100",
+   "4": "149.154.167.220",
+   "5": "149.154.170.100"
+  }
+ },
+ "own": [],
+ "fronts": [
+  {
+   "host": "kws{dc}.pclead.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.offshor.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.cakeisalie.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.noskomnadzor.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.lovetrue.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.sorokdva.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.pyatdesyatdva.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.kartoshka.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.sorokodin.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.pyatdesyatodin.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.notelega.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.ebally.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.nebally.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.havegreatday.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.pomogite.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.fixtelega.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.sadnews.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.onedaychamp.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.stopblocking.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  },
+  {
+   "host": "kws{dc}.nothingthere.co.uk",
+   "path": "/apiws",
+   "source": "tg-ws-proxy / ZaStoGram fronts (Cloudflare), verified 101 from a RU line 2026-10-18, DC2"
+  }
+ ]
+}
