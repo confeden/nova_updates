@@ -289,6 +289,7 @@ def sheet_rows(data, filename):
 
 # --- numbered text lists -----------------------------------------------------
 
+MAX_NUMBER_GAP = 30
 ENTRY_START = re.compile(r"^\s*(\d{1,4})\s*[.)]\s+(\S.*)$")
 EXCLUDED_ENTRY = re.compile(r"^\W*(организация\s+)?исключен|исключен[аоы]?\s+из\s+(перечня|списка|реестра)", re.I)
 
@@ -296,7 +297,7 @@ EXCLUDED_ENTRY = re.compile(r"^\W*(организация\s+)?исключен|�
 def numbered_items(soup):
     """Items from a list written as "1. ...", "2. ..." paragraphs.
 
-    Takes the longest run of lines numbered 1, 2, 3, ... and joins each
+    Takes the longest run of lines numbered 1, 2, 3, ... (gaps allowed) and joins each
     entry with the lines after it up to the next number. Lines after the last
     entry are only taken while they look like its decision note, so the page
     footer does not end up in the last name.
@@ -314,15 +315,17 @@ def numbered_items(soup):
         run, expected, i = [], 1, start
         while i < len(lines):
             m = ENTRY_START.match(lines[i])
-            if m and int(m.group(1)) == expected:
+            # The extremist list leaves gaps where entries were removed (2 is
+            # followed by 6), so a somewhat higher number still continues it.
+            if m and expected <= int(m.group(1)) <= expected + MAX_NUMBER_GAP:
                 run.append([m.group(2)])
-                expected += 1
+                expected = int(m.group(1)) + 1
             elif m and int(m.group(1)) > expected and run:
                 break
             elif run:
                 run[-1].append(lines[i])
             i += 1
-        if len(run) > len(best):
+        if len(run) >= len(best):  # on a tie the later start is the cleaner one
             best = run
     if not best:
         return []
