@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Rebuilds the lists in "список запрещённых" from the official registries.
+"""Rebuilds forbidden_list/forbidden_list.json from the official registries.
 
 Lives in confeden/nova_updates as .github/scripts/banned_lists.py and is run by
 .github/workflows/publish-banned-lists.yml on a self-hosted runner in Russia:
 minjust.gov.ru and fsb.ru do not answer addresses outside the country, so a
 GitHub-hosted runner never gets a page.
 
-Each list is written twice, with the same content:
+All four lists go into one file, keyed by list name:
 
-    <name>.json   {"source": ..., "count": ..., "items": [{"n", "name",
-                   "short_name", "date"}]}  for programs
-    <name>.md     a numbered table                         for people
+    {"lists": {"<name>": {"title", "source", "count",
+                          "items": [{"n", "name", "short_name", "date"}]}}}
 
 "date" is the date the entry entered the registry, as the source gives it,
 in YYYY-MM-DD. Where the source has no such date for an entry (the oldest
@@ -36,7 +35,8 @@ import sys
 
 from bs4 import BeautifulSoup
 
-OUT_DIR = "список запрещённых"
+OUT_DIR = "forbidden_list"
+OUT_FILE = os.path.join(OUT_DIR, "forbidden_list.json")
 
 # (file name, title, page, smallest believable count)
 SOURCES = (
@@ -399,14 +399,6 @@ def parse(html, sheet):
 
 # --- writing -----------------------------------------------------------------
 
-def published_count(path):
-    try:
-        with open(path, encoding="utf-8") as fh:
-            return json.load(fh).get("count", 0)
-    except (OSError, ValueError):
-        return 0
-
-
 def dedupe(items):
     seen, out = set(), []
     for item in items:
@@ -417,26 +409,27 @@ def dedupe(items):
     return out
 
 
-def md_cell(text):
-    return str(text or "").replace("|", "\\|")
+def load_published():
+    """The lists already in OUT_FILE, so a failed source keeps its last good version."""
+    try:
+        with open(OUT_FILE, encoding="utf-8") as fh:
+            return json.load(fh).get("lists", {})
+    except (OSError, ValueError):
+        return {}
 
 
-def write(key, title, url, items):
+def write(lists):
     os.makedirs(OUT_DIR, exist_ok=True)
+    with open(OUT_FILE, "w", encoding="utf-8") as fh:
+        json.dump({"lists": lists}, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+
+
+def as_list(title, url, items):
     numbered = [{"n": i, "name": it["name"], "short_name": it["short_name"],
                  "date": it["date"].isoformat() if it["date"] else None}
                 for i, it in enumerate(items, 1)]
-    with open(os.path.join(OUT_DIR, key + ".json"), "w", encoding="utf-8") as fh:
-        json.dump({"source": url, "count": len(numbered), "items": numbered},
-                  fh, ensure_ascii=False, indent=1)
-        fh.write("\n")
-    lines = [f"# {title}", "", f"Источник: {url}", "", f"Записей: {len(numbered)}", "",
-             "| № | Название | Сокращённое | Дата внесения |", "|---|---|---|---|"]
-    for it in numbered:
-        date = (datetime.date.fromisoformat(it["date"]).strftime("%d.%m.%Y") if it["date"] else "")
-        lines.append(f"| {it['n']} | {md_cell(it['name'])} | {md_cell(it['short_name'])} | {date} |")
-    with open(os.path.join(OUT_DIR, key + ".md"), "w", encoding="utf-8") as fh:
-        fh.write("\n".join(lines) + "\n")
+    return {"title": title, "source": url, "count": len(numbered), "items": numbered}
 
 
 def main():
@@ -444,6 +437,7 @@ def main():
 
     only = set(sys.argv[1:])
     failed = []
+    lists = load_published()
     with sync_playwright() as pw:
         chromium = os.environ.get("CHROMIUM_PATH") or None
         browser = pw.chromium.launch(executable_path=chromium, headless=True)
@@ -462,13 +456,16 @@ def main():
             log(f"    {len(items)} entries from the {how}")
             for it in items[:3] + items[-2:]:
                 log(f"      {it}")
-            previous = published_count(os.path.join(OUT_DIR, key + ".json"))
+            previous = lists.get(key, {}).get("count", 0)
             if len(items) < floor or len(items) < previous * MIN_SHARE_OF_PREVIOUS:
                 log(f"    refusing to publish: {len(items)} entries, floor {floor}, published {previous}")
                 failed.append(key)
                 continue
-            write(key, title, url, items)
+            lists[key] = as_list(title, url, items)
         browser.close()
+    # Written once, after every source, so the file changes only when a list did.
+    if lists:
+        write({key: lists[key] for key, *_ in SOURCES if key in lists})
     if failed:
         log(f"not updated: {', '.join(failed)}")
         sys.exit(1)
