@@ -38,6 +38,9 @@ from bs4 import BeautifulSoup
 OUT_DIR = "forbidden_list"
 OUT_FILE = os.path.join(OUT_DIR, "forbidden_list.json")
 
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
+
 # (file name, title, page, smallest believable count)
 SOURCES = (
     ("иноагенты", "Реестр иностранных агентов",
@@ -258,7 +261,9 @@ def sheet_rows(data, filename):
     """Rows of the first sheet of an .xlsx or .xls file."""
     if data[:2] == b"PK":
         import openpyxl
-        book = openpyxl.load_workbook(io.BytesIO(data), read_only=True, data_only=True)
+        # Not read_only: the registry's sheet has no size header, and read-only
+        # mode then reports one row.
+        book = openpyxl.load_workbook(io.BytesIO(data), data_only=True)
         sheet = book.worksheets[0]
         return [list(r) for r in sheet.iter_rows(values_only=True)]
     if data[:4] == b"\xd0\xcf\x11\xe0":
@@ -290,7 +295,8 @@ def sheet_rows(data, filename):
 # --- numbered text lists -----------------------------------------------------
 
 MAX_NUMBER_GAP = 30
-ENTRY_START = re.compile(r"^\s*(\d{1,4})\s*[.)]\s+(\S.*)$")
+# The space after the dot is optional: the extremist list writes "68.Название".
+ENTRY_START = re.compile(r"^\s*(\d{1,4})\s*[.)]\s*(\S.*)$")
 EXCLUDED_ENTRY = re.compile(r"^\W*(организация\s+)?исключен|исключен[аоы]?\s+из\s+(перечня|списка|реестра)", re.I)
 
 
@@ -354,7 +360,10 @@ def numbered_items(soup):
 
 def fetch(browser, url):
     """The rendered page and, if the page offers one, its spreadsheet."""
-    page = browser.new_page(locale="ru-RU", accept_downloads=True)
+    # Headless Chromium announces itself as "HeadlessChrome" and minjust.gov.ru
+    # answers that with 403, so the page is asked for with an ordinary Chrome
+    # user agent, as any browser would send.
+    page = browser.new_page(locale="ru-RU", accept_downloads=True, user_agent=BROWSER_UA)
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=120_000)
         try:
