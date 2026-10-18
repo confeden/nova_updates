@@ -178,9 +178,14 @@ def name_parts(text):
 HEADER_NAME = re.compile(r"наименовани|ф\.?\s*и\.?\s*о|фамилия|организаци", re.I)
 
 
+def split_links(text):
+    """Internet addresses from a cell such as "https://t.me/x, ID: 1; https://vk.com/y"."""
+    return [part for part in (clean(p) for p in str(text or "").split(";")) if part]
+
+
 def find_columns(header):
-    """Column indices for name, short name, entry date and exclusion date."""
-    cols = {"name": None, "short": None, "date": None, "excluded": None}
+    """Column indices for name, short name, entry date, exclusion date and links."""
+    cols = {"name": None, "short": None, "date": None, "excluded": None, "links": None}
     date_rank = None
     for i, cell in enumerate(header):
         h = clean(cell).lower()
@@ -188,6 +193,9 @@ def find_columns(header):
             continue
         if "исключ" in h:
             cols["excluded"] = i
+            continue
+        if re.search(r"доменн|сайт|интернет", h) and cols["links"] is None:
+            cols["links"] = i
             continue
         if "сокращ" in h and cols["short"] is None:
             cols["short"] = i
@@ -241,8 +249,11 @@ def table_items(rows):
             if date is None:
                 found = dates_in(raw_name)
                 date = found[0] if found else None
+        links = []
+        if cols.get("links") is not None and cols["links"] < len(cells):
+            links = split_links(cells[cols["links"]])
         if name:
-            items.append({"name": name, "short_name": short, "date": date})
+            items.append({"name": name, "short_name": short, "date": date, "links": links})
     return items
 
 
@@ -439,7 +450,8 @@ def write(lists):
 
 def as_list(title, url, items):
     numbered = [{"n": i, "name": it["name"], "short_name": it["short_name"],
-                 "date": it["date"].isoformat() if it["date"] else None}
+                 "date": it["date"].isoformat() if it["date"] else None,
+                 "links": it.get("links", [])}
                 for i, it in enumerate(items, 1)]
     return {"title": title, "source": url, "count": len(numbered), "items": numbered}
 
