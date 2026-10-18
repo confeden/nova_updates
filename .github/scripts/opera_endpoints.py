@@ -26,9 +26,9 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 
-# Region codes as opera-proxy spells them. Nova asks for exactly these two:
-# "EU" and "AM" (the user-facing label for AM is "US").
-REGIONS = ("EU", "AM")
+# Region codes as opera-proxy spells them. Nova asks for exactly these three:
+# "EU", "AM" (the user-facing label for AM is "US") and "AS" (Asia).
+REGIONS = ("EU", "AM", "AS")
 
 # Two passes per region. Each run registers a fresh anonymous device and the
 # answer differs between registrations, so a second pass widens the set for
