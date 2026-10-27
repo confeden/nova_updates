@@ -4,6 +4,7 @@ agent-router.org
 analog.com
 anthropic.com
 autodesk.com
+autodesk.net
 autodesk360.com
 b-cdn.net
 telegram.me
