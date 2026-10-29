@@ -9,12 +9,12 @@
       "size": 1405
     },
     "list/discord.txt": {
-      "sha256": "313e1858c9a6ed9cfe032b8f9777f9dec28ecfd6b63b5fa7a18d0038e4fc7c45",
-      "size": 881
+      "sha256": "5f7a5ee76c25fb2b809209dccd6385c5676c5b88df15f0fe301e6cb19a5e5cf6",
+      "size": 937
     },
     "list/exclude.txt": {
-      "sha256": "8a3ab9562be29480f99e205c7daf227ee9b5154a77ba05acbb0554c7f660f15b",
-      "size": 2128
+      "sha256": "1bb95e9405991e80c18d7f2c6264c0fe69d853bb03f5172725e9accf3c1a2561",
+      "size": 2773
     },
     "list/games.txt": {
       "sha256": "63b48f7b1984aae2c46c36deacacb21a62dda3b4ddbba015c228ca62e93b2580",
@@ -33,8 +33,8 @@
       "size": 2337
     },
     "list/second.txt": {
-      "sha256": "166b8c05e36d2055a5704abf48b169ae83c7ab8265b5d4b4667fd4e80bfb49c7",
-      "size": 2401
+      "sha256": "99b0772de57254a0e7755dd43ce237cbb6777fe0e1be8789377c5a86d6139020",
+      "size": 2403
     },
     "list/telegram.txt": {
       "sha256": "4bbd4c72ce8e7681f12ab1eb92090687060d4e45da8996658f8566bc41ccbc94",
@@ -49,7 +49,7 @@
       "size": 335
     }
   },
-  "generated": 1793090591,
+  "generated": 1793275259,
   "schema": 1,
-  "version": "1.43.2"
+  "version": "1.44.1"
 }
