@@ -15052,7 +15052,7 @@
   "нежелательные": {
    "title": "Перечень организаций, деятельность которых признана нежелательной",
    "source": "https://minjust.gov.ru/ru/pages/perechen-inostrannyh-i-mezhdunarodnyh-organizacij-deyatelnost-kotoryh-priznana-nezhelatelnoj-na-territorii-rossijskoj-federacii/",
-   "count": 424,
+   "count": 425,
    "items": [
     {
      "n": 1,
@@ -18020,6 +18020,13 @@
      "name": "Stichting Raam op Rusland (RAAM, «Окно в Россию»), Королевство Нидерландов",
      "short_name": "",
      "date": "2026-10-14",
+     "links": []
+    },
+    {
+     "n": 425,
+     "name": "Suomi-Ukraina Maanpuolustusyhdistys (SUMPY, SUM, «Финско-украинская ассоциация национальной обороны»), Финляндская Республика",
+     "short_name": "",
+     "date": "2026-10-26",
      "links": []
     }
    ]
