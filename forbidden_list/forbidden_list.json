@@ -29,9 +29,9 @@
      "short_name": "",
      "date": "2026-10-23",
      "links": [
-      "https://t.me/gamechangers_society, ID: -1002146088984",
-      "https://t.me/Activists_Nsk, ID: -1002102907866",
-      "https://t.me/bright_life_news, ID: -1001408123758"
+      "https://vk.com/prostpolitikansk",
+      "https://t.me/politikansk, ID: -1001343402562",
+      "https://www.instagram.com/pro.politika.nsk"
      ]
     },
     {
@@ -1067,7 +1067,8 @@
       "https://www.youtube.com/@SocioCult",
       "https://t.me/saerofeev, ID: -1001079246368",
       "https://www.instagram.com/saerofeev/",
-      "https://www.threads.com/@saerofeev"
+      "https://www.threads.com/@saerofeev",
+      "https://www.linkedin.com/in/sergei-erofeev-5aa0595"
      ]
     },
     {
@@ -2075,7 +2076,12 @@
       "https://www.facebook.com/orlova.v",
       "https://x.com/happierandfreer",
       "https://www.instagram.com/happierandfreer",
-      "https://www.linkedin.com/in/vasilinaorlova"
+      "https://www.linkedin.com/in/vasilinaorlova",
+      "https://decolonizingrussia.substack.com",
+      "https://happierandfreer.wordpress.com",
+      "https://substack.com/@vasilinaorlova",
+      "https://vasilinaorlova.tumblr.com",
+      "https://vasilinaorlova.wordpress.com"
      ]
     },
     {
@@ -2356,7 +2362,9 @@
       "https://www.facebook.com/dmitry.chernyshevskiy",
       "https://t.me/Savromatius, ID: -1001815734113",
       "https://boosty.to/savromat",
-      "https://www.patreon.com/user?u=54346697"
+      "https://www.patreon.com/user?u=54346697",
+      "https://www.youtube.com/@Savromat-war-and-peace",
+      "https://www.youtube.com/@SavromatHistory"
      ]
     },
     {
@@ -2698,7 +2706,9 @@
       "https://www.youtube.com/@RealTrueVietnam",
       "https://t.me/NerusskiyMir, ID: -1001828874035",
       "https://www.instagram.com/sergey_kuropov/",
-      "https://www.facebook.com/kuropov"
+      "https://www.facebook.com/kuropov",
+      "https://www.linkedin.com/in/sergey-kuropov-821986359",
+      "https://www.threads.com/@sergey_kuropov"
      ]
     },
     {
@@ -3618,7 +3628,9 @@
       "https://www.instagram.com/alexexler",
       "https://www.threads.com/@alexexler",
       "https://exler.livejournal.com",
-      "https://boosty.to/exler"
+      "https://boosty.to/exler",
+      "https://club443.com",
+      "https://club443.ru"
      ]
     },
     {
@@ -3710,7 +3722,7 @@
     },
     {
      "n": 293,
-     "name": "Слабых Игорь Игоревич",
+     "name": "Слабых Игорь Игорьевич",
      "short_name": "",
      "date": "2025-05-23",
      "links": [
@@ -7916,7 +7928,8 @@
       "https://www.youtube.com/@MyRussianRights",
       "https://t.me/MyRussianRights",
       "https://www.tiktok.com/@my.russian.rights",
-      "https://boosty.to/myrussianrights"
+      "https://boosty.to/myrussianrights",
+      "https://myrussianrights.org"
      ]
     },
     {
@@ -10239,7 +10252,8 @@
       "https://www.instagram.com/kolezev_personal",
       "https://itsmycity.net",
       "https://t.me/itsmycity, ID: -1001047260531",
-      "https://x.com/itsmycityekb"
+      "https://x.com/itsmycityekb",
+      "https://castbox.fm/channel/4367176?country=ru"
      ]
     },
     {
@@ -15052,7 +15066,7 @@
   "нежелательные": {
    "title": "Перечень организаций, деятельность которых признана нежелательной",
    "source": "https://minjust.gov.ru/ru/pages/perechen-inostrannyh-i-mezhdunarodnyh-organizacij-deyatelnost-kotoryh-priznana-nezhelatelnoj-na-territorii-rossijskoj-federacii/",
-   "count": 425,
+   "count": 436,
    "items": [
     {
      "n": 1,
@@ -18028,13 +18042,90 @@
      "short_name": "",
      "date": "2026-10-26",
      "links": []
+    },
+    {
+     "n": 426,
+     "name": "Family Federation for World Peace and Unification (FFWPU, «Федерация семей за объединение и мир во всем мире», «Федерация семей за единство и мир во всем мире»), Республика Корея",
+     "short_name": "",
+     "date": "2026-10-26",
+     "links": []
+    },
+    {
+     "n": 427,
+     "name": "Universal Peace Federation , Соединенные Штаты Америки",
+     "short_name": "«Федерация за всеобщий мир»",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 428,
+     "name": "Women´s Federation for World Peace , Соединенные Штаты Америки",
+     "short_name": "«Федерация женщин за мир во всем мире»",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 429,
+     "name": "Institut für Friedensforschung und Sicherheitspolitik an der Universität Hamburg , Федеративная Республика Германия",
+     "short_name": "«Институт исследования проблем мира и политики безопасности при Гамбургском университете», IFSH",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 430,
+     "name": "United Help Ukraine , Соединенные Штаты Америки",
+     "short_name": "«Объединенная помощь Украине»",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 431,
+     "name": "Anti-war pastoral Initiative , Эстонская Республика",
+     "short_name": "«Антивоенная пасторская инициатива»",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 432,
+     "name": "Vidim Books, Словацкая Республика",
+     "short_name": "",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 433,
+     "name": "Ingushian Culture Center of Tbilisi (ICCT, «Тбилисский ингушский культурный центр», ТИКЦ), Грузия",
+     "short_name": "",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 434,
+     "name": "Громадська органiзацiя «Правозахисна Група «CIЧ» (ГО «ПГ «CIЧ», «Human Rights Protection Group «SICH», «HRPG «SICH», «Правозащитная Группа «Сечь»), Украина",
+     "short_name": "",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 435,
+     "name": "Senate Square Society , Соединенные Штаты Америки",
+     "short_name": "«Общество Сенатской площади»",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 436,
+     "name": "Platform for Dialogue with Russian Democratic Forces (RDF, «Платформа для диалога с российскими демократическими силами», РДС), Франция",
+     "short_name": "",
+     "date": "2026-10-29",
+     "links": []
     }
    ]
   },
   "материалы": {
    "title": "Федеральный список экстремистских материалов",
    "source": "https://minjust.gov.ru/uploaded/files/exportfsm.csv",
-   "count": 5296,
+   "count": 5300,
    "items": [
     {
      "n": 1,
@@ -55106,6 +55197,34 @@
      "name": "Аудиозапись и текст песни исполнителя, использующего творческий псевдоним «Эльдар Далгатов» с названием «Шамиль Смолян», начинающимися словами «Среди высоких гор», заканчивающимися словами «Удачи вам, жизнь ворам» (решение Санкт-Петербургского городского суда от 30.06.2026)",
      "short_name": "",
      "date": "2026-10-07",
+     "links": []
+    },
+    {
+     "n": 5297,
+     "name": "Распространенный в сети «Интернет» информационный материал – аудиозапись и текст песни музыкальной под названием «Сейтар» с наименованием «Азов», «Сокира Перуна Азов Повний Контакт» продолжительностью от 3 минут 2 секунд до 3 минут 37 секунд, который начинается словами, исполняемыми мужским голосом на украинском языке под музыку: « Вглядываясь в глаза волчьи...», заканчивается словами « ... есть полный контакт» (решение Севастопольского городского суда от 26.08.2026)",
+     "short_name": "",
+     "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 5298,
+     "name": "Книга в сером переплете на русском языке, на обложке книги и внутри нее имеются надписи «Священное Писание – Перевод нового мира», переведено с английского издания «Священное Писание – Перевод нового мира», исправленного в 1984 году, издание 2017 года, издательство – WATCHTOWER BIBLE AND TRACT SOCIETY OF NEW YORK, INC. Wallkill, New York, U.S.A., общий тираж всех изданий «Перевода нового мира» 222151997 экземпляров, Беларусь: Религиозное объединение Свидетелей Иеговы в Республике Беларусь, 220030, Минск, а/я 9, New World Translation of the Holy Scriptures Russian (bil2-U), сделано в Соединенных Штатах Америки (решение Мурманского областного суда от 17.08.2026)",
+     "short_name": "",
+     "date": "2026-10-30",
+     "links": []
+    },
+    {
+     "n": 5299,
+     "name": "Книга в сером переплете на русском языке, на обложке книги и внутри нее имеются надписи «Священное Писание – Перевод нового мира», переведено с английского издания «Священное Писание – Перевод нового мира», исправленного в 1984 году, издание 2019 года, Издательство – WATCHTOWER BIBLE AND TRACT SOCIETY OF NEW YORK, INC. Wallkill, New York, U.S.A., общий тираж всех изданий «Перевода нового мира» 235 115 528 экземпляров, Религиозное объединение Свидетелей Иеговы в Республике Беларусь, 220030, Минск, а/я 9, New World Translation of the Holy Scriptures Russian (bil2-U), сделано в Соединенных Штатах Америки (решение Мурманского областного суда от 17.08.2026)",
+     "short_name": "",
+     "date": "2026-10-30",
+     "links": []
+    },
+    {
+     "n": 5300,
+     "name": "Книгопечатное издание под названием «Мое имя Полынь» за авторством Суликовой Елены Сергеевны, использующей псевдоним Алена Полынь, издательство «Велигор», Москва, 2020 год, ISBN 975-5-88875-805-2, объемом 242 страницы» (решение Московского областного суда от 08.09.2026)",
+     "short_name": "",
+     "date": "2026-10-30",
      "links": []
     }
    ]
