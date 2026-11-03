@@ -8,13 +8,13 @@ name: Publish Opera endpoint list
 # reach Opera's proxies from a country where discover answers with unreachable
 # addresses. See .github/scripts/opera_endpoints.py for the details.
 
-# Every 3 hours (the client re-reads the list at most that often). The list buys
+# Check hourly; publish the same public endpoint facts for Android and PC. The list buys
 # nothing for a session registered from a Russian address (502 from these
 # endpoints), but it saves builds without the API relay a round of discovery and
 # keeps the file honest instead of months old.
 on:
   schedule:
-    - cron: "23 */3 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -45,7 +45,10 @@ jobs:
           go build -trimpath -o /tmp/opera-proxy .
 
       - name: Ask discover for the current endpoints
-        run: python3 .github/scripts/opera_endpoints.py --binary /tmp/opera-proxy --output opera_endpoints.json
+        run: |
+          python3 .github/scripts/opera_endpoints.py --binary /tmp/opera-proxy --output opera_endpoints.json
+          mkdir -p nova_pc
+          cp opera_endpoints.json nova_pc/opera_endpoints.json
 
       - name: Show what was written
         run: cat opera_endpoints.json
@@ -55,12 +58,13 @@ jobs:
           # `git add` first: `git diff` alone does not see a file that is not
           # tracked yet, so the very first run committed nothing and said it was
           # already current.
-          git add opera_endpoints.json
-          if git diff --cached --quiet -- opera_endpoints.json; then
+          git add opera_endpoints.json nova_pc/opera_endpoints.json
+          if git diff --cached --quiet -- opera_endpoints.json nova_pc/opera_endpoints.json; then
             echo "Endpoint list already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Opera: publish endpoint list"
+          git pull --rebase origin main
           git push
