@@ -24,13 +24,14 @@ import json
 import sys
 import time
 import urllib.request
+import urllib.error
 from pathlib import Path
 
 HOSTS = ["https://vpn-api.proton.me", "https://api.protonvpn.ch"]
-APP_VERSION = "android-vpn@5.4.44.0"
+APP_VERSION = "android-vpn@5.20.21.0"
 CHALLENGE_FRAME_KEY = "vpn-android-v4-challenge-0"
 CHALLENGE_VERSION = "2.0.7"
-USER_AGENT = "ProtonVPN/5.4.44.0 (Android 14; Pixel 7)"
+USER_AGENT = "ProtonVPN/5.20.21.0 (Android 14; Pixel 7)"
 SOURCE = "vpn-api.proton.me /vpn/logicals?Tier=0"
 NOTE = "Only public server facts. No keys, no account: each device registers its own."
 MIN_NODES = 10
@@ -62,7 +63,16 @@ def call(path: str, body: dict | None, session: dict | None) -> dict:
         try:
             with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
                 return json.loads(response.read().decode("utf-8"))
-        except Exception as error:  # noqa: BLE001 - пробуем следующий хост
+        except urllib.error.HTTPError as error:
+            try:
+                detail = json.loads(error.read(65536))
+                # Never print the full response: it can contain session credentials.
+                message = str(detail.get("Error", ""))[:240]
+                last = f"{host}: HTTP {error.code}, Code {detail.get('Code')}: {message}"
+            except (ValueError, AttributeError):
+                last = f"{host}: HTTP {error.code}"
+            print(f"{path}: {last}", file=sys.stderr)
+        except (OSError, ValueError) as error:
             last = f"{host}: {error}"
             print(f"{path}: {last}", file=sys.stderr)
     raise RuntimeError(last)
