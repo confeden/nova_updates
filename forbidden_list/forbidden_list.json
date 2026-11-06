@@ -15066,7 +15066,7 @@
   "нежелательные": {
    "title": "Перечень организаций, деятельность которых признана нежелательной",
    "source": "https://minjust.gov.ru/ru/pages/perechen-inostrannyh-i-mezhdunarodnyh-organizacij-deyatelnost-kotoryh-priznana-nezhelatelnoj-na-territorii-rossijskoj-federacii/",
-   "count": 436,
+   "count": 440,
    "items": [
     {
      "n": 1,
@@ -18118,6 +18118,34 @@
      "name": "Platform for Dialogue with Russian Democratic Forces (RDF, «Платформа для диалога с российскими демократическими силами», РДС), Франция",
      "short_name": "",
      "date": "2026-10-29",
+     "links": []
+    },
+    {
+     "n": 437,
+     "name": "Reforum Space Tallin, Эстонская Республика",
+     "short_name": "",
+     "date": "2026-11-05",
+     "links": []
+    },
+    {
+     "n": 438,
+     "name": "Reforum Space Tbilisi, Грузия",
+     "short_name": "",
+     "date": "2026-11-05",
+     "links": []
+    },
+    {
+     "n": 439,
+     "name": "Reforum Space Vilnius, Литовская Республика",
+     "short_name": "",
+     "date": "2026-11-05",
+     "links": []
+    },
+    {
+     "n": 440,
+     "name": "Reforum Space Berlin, ФРГ",
+     "short_name": "",
+     "date": "2026-11-05",
      "links": []
     }
    ]
