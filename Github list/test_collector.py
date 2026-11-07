@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 import json
 from pathlib import Path
 import tempfile
+from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
@@ -76,6 +77,36 @@ class CollectorTests(unittest.TestCase):
                 collector.finish_pending(root, root)
             self.assertFalse((root / 'pending.json').exists())
             self.assertEqual(json.loads((root / 'Github list/registry.json').read_text()), self.registry)
+
+    def test_progressive_publication_preserves_old_nodes_until_full_sweep(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            folder = repo / 'Github list'
+            folder.mkdir()
+            old = collector.admit(self.registry, {self.key: self.proxy}, {self.key: dict(ok=True)}, self.now)
+            collector.atomic_json(folder / 'registry.json', self.registry)
+            collector.atomic_json(folder / 'nova-list.json', {'proxies': old})
+            fresh = dict(self.proxy, server='new.example.com')
+            fresh_key = collector.identity(fresh)
+            def verify(binary, candidates, workers, seconds, work, checkpoint):
+                results = {fresh_key: dict(ok=True)}
+                checkpoint(results)
+                intermediate = json.loads((folder / 'nova-list.json').read_text())
+                self.assertEqual(len(intermediate['proxies']), 2)
+                self.assertFalse(json.loads((folder / 'status.json').read_text())['complete'])
+                return results
+            args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core',
+                                   workers=1, timeout=1, publish=False)
+            with patch.object(collector, 'fetch', return_value=b'[date][1][source][https://raw.githubusercontent.com/a/b/main/sub]'), \
+                    patch.object(collector, 'source_nodes', side_effect=lambda item, core: (item[0], [fresh], dict(ok=True))), \
+                    patch.object(collector, 'verify', side_effect=verify):
+                collector.run(args)
+            final = json.loads((folder / 'nova-list.json').read_text())
+            self.assertEqual(len(final['proxies']), 1)
+            self.assertIn('_#2_', final['proxies'][0]['name'])
+            history = collector.load_registry(folder / 'registry.json')
+            self.assertFalse(history['entries'][self.key]['active'])
+            self.assertTrue(json.loads((folder / 'status.json').read_text())['complete'])
 
 
 if __name__ == '__main__':

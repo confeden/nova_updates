@@ -138,7 +138,7 @@ def source_nodes(item, binary):
     return url, previous, dict(ok=False, retained=len(previous))
 
 
-def verify(binary, candidates, workers, seconds, work):
+def verify(binary, candidates, workers, seconds, work, checkpoint=None):
     results = {}
     pairs = list(candidates.items())
     for start in range(0, len(pairs), 1000):
@@ -165,6 +165,8 @@ def verify(binary, candidates, workers, seconds, work):
         if code or len(seen) != len(batch):
             raise RuntimeError('probe process incomplete; previous publication retained')
         print(f'checked={len(results)}/{len(pairs)} confirmed={sum(r["ok"] for r in results.values())}', flush=True)
+        if checkpoint:
+            checkpoint(results)
     return results
 
 
@@ -243,27 +245,49 @@ def run(args):
         raise RuntimeError('all sources unavailable; publication retained')
     atomic_json(cache_path, next_cache)
     print(f'sources={len(urls)} candidates={len(candidates)}', flush=True)
-    results = verify(args.core, candidates, args.workers, args.timeout, work)
+    registry = load_registry(folder / 'registry.json')
+    previous = folder / 'nova-list.json'
+    retained = {identity(p): p for p in json.loads(previous.read_text())['proxies']} if previous.exists() else {}
+
+    def snapshot(results, complete):
+        now = datetime.now(timezone(timedelta(hours=3)))
+        chosen = candidates
+        verdicts = results
+        if not complete:
+            chosen = dict(retained)
+            chosen.update({key: candidates[key] for key, result in results.items() if result['ok']})
+            verdicts = {key: dict(ok=True) for key in chosen}
+        active = admit(registry, chosen, verdicts, now)
+        checked_at = now.isoformat(timespec='seconds')
+        status = dict(version=1, checked_at=checked_at, complete=complete, sources=source_status,
+                      candidates=len(candidates), checked=len(results), working=len(active),
+                      retired=len(registry['entries']) - len(active), interval_hours=12)
+        values = {'registry.json': registry, 'nova-list.json': dict(nova_list=dict(version=1,
+                    checked_at=checked_at, count=len(active), complete=True), proxies=active), 'status.json': status}
+        if args.publish:
+            atomic_json(work / 'pending.json', values)
+            finish_pending(args.repo.resolve(), work)
+        else:
+            for name, value in values.items():
+                atomic_json(folder / name, value)
+        return len(active)
+
+    def checkpoint(results):
+        # Add only newly confirmed profiles while the full pass runs. Never retire
+        # the previous snapshot's profiles before all candidates have been checked.
+        try:
+            count = snapshot(results, False)
+            print(f'published checkpoint checked={len(results)} working={count}', flush=True)
+        except RuntimeError as error:
+            print(f'checkpoint upload pending: {error}', flush=True)
+
+    results = verify(args.core, candidates, args.workers, args.timeout, work, checkpoint)
     retry = {key: candidates[key] for key, result in results.items() if not result['ok']}
     if retry:
         print(f'retry={len(retry)}', flush=True)
         results.update(verify(args.core, retry, max(1, args.workers // 2), args.timeout, work))
-    now = datetime.now(timezone(timedelta(hours=3)))
-    registry = load_registry(folder / 'registry.json')
-    active = admit(registry, candidates, results, now)
-    checked_at = now.isoformat(timespec='seconds')
-    status = dict(version=1, checked_at=checked_at, complete=True, sources=source_status,
-                  candidates=len(candidates), checked=len(results), working=len(active),
-                  retired=len(registry['entries']) - len(active), interval_hours=12)
-    values = {'registry.json': registry, 'nova-list.json': dict(nova_list=dict(version=1, checked_at=checked_at,
-                count=len(active), complete=True), proxies=active), 'status.json': status}
-    if args.publish:
-        atomic_json(work / 'pending.json', values)
-        finish_pending(args.repo.resolve(), work)
-    else:
-        for name, value in values.items():
-            atomic_json(folder / name, value)
-    print(f'complete checked={len(results)} working={len(active)}', flush=True)
+    count = snapshot(results, True)
+    print(f'complete checked={len(results)} working={count}', flush=True)
 
 
 def main():

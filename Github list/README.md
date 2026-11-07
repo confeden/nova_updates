@@ -14,7 +14,8 @@ Checks run on Debian on a Russian residential line. Each Mihomo protocol adapter
 carries only its own HTTPS requests: no TUN, system proxy, DNS changes, firewall or
 route changes. A profile is published only after a certificate-validated HTTPS
 `204` from Google, gstatic or Cloudflare, without redirects or direct fallback.
-Failures get a second pass with reduced concurrency. Regional and ISP differences
+Unreachable TCP endpoints have a 1.5 second dial budget; other checks have a total
+9 second budget across three HTTPS targets. Failures get a second pass with reduced concurrency. Regional and ISP differences
 remain possible; a successful check is evidence from this checker, not every ISP.
 
 Names are `PROTOCOL_#NUMBER_YYYYmonD`, for example `VLESS_#24_2026nov7`.
@@ -24,10 +25,12 @@ do not affect identity. A returning working profile keeps its original number/da
 Old private keys are not stored in the registry; only active public-source profiles
 are published. Protocol/endpoint/authentication/transport changes define a new profile.
 
-`status.json` records the last completed sweep. A failed download keeps that
+`status.json` records progress and whether the full sweep is complete. Working
+profiles are added after each 1000 checked candidates, so the first list becomes
+available while the initial full check continues. A failed download keeps that
 source's private cache and rechecks it; a failed discovery uses the last known
-source URLs. An incomplete checker run never replaces the published snapshot.
-After a complete run, unconfirmed profiles are removed from the active list while
+source URLs. Partial checkpoints only add freshly verified profiles and retain
+previously published ones. Only after a complete run are unconfirmed profiles removed while
 their identity history remains. Fetching failures do not erase the entire list.
 
 The Debian `nova-list.timer` runs at 00:00 and 12:00 UTC (03:00/15:00 Moscow).
