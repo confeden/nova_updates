@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:30:12+03:00",
-    "count": 102,
+    "checked_at": "2026-11-07T16:31:15+03:00",
+    "count": 107,
     "complete": true
   },
   "proxies": [
@@ -1948,6 +1948,112 @@
       "type": "vmess",
       "udp": true,
       "uuid": "fb5a4283-dbfb-458b-8619-c4a53739f781",
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#103_2026nov7",
+      "network": "ws",
+      "port": "80",
+      "server": "57.128.164.21",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6c443cb3-9fe8-45e6-a86f-ef6ed19d481e",
+      "ws-opts": {
+        "headers": {
+          "Host": "https.http.www.net.com.ramseyv2.ir."
+        },
+        "path": "/d3d3LmlyYW5ob3N0LmNvbQ=="
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#104_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "chatgpt.com",
+      "servername": "v2ray1.dozapp.xyz",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#105_2026nov7",
+      "network": "tcp",
+      "port": 21041,
+      "server": "dog-hk.kunlun01dns.com",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#106_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "guanwang.awsno.com",
+      "servername": "guanwang.awsno.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "ws-opts": {
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        },
+        "path": "/hls/cctv5phd.m3u8"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#107_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "guanwang.awsno.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "ws-opts": {
+        "headers": {},
+        "path": "/hls/cctv5phd.m3u8"
+      },
       "xudp": true
     }
   ]
