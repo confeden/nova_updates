@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:31:15+03:00",
-    "count": 107,
+    "checked_at": "2026-11-07T16:32:29+03:00",
+    "count": 113,
     "complete": true
   },
   "proxies": [
@@ -2045,6 +2045,131 @@
       "network": "ws",
       "port": "443",
       "server": "guanwang.awsno.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "ws-opts": {
+        "headers": {},
+        "path": "/hls/cctv5phd.m3u8"
+      },
+      "xudp": true
+    },
+    {
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#108_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "www.shopify.com",
+      "servername": "guanwang.awsno.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "ws-opts": {
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        },
+        "path": "/hls/cctv5phd.m3u8"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "edge",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#109_2026nov7",
+      "network": "raw",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "short-id": "41ae8e266bc3346f"
+      },
+      "server": "at1.japancase.site",
+      "servername": "at1.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
+    },
+    {
+      "alpn": [
+        "http/1.1"
+      ],
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#110_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "lvi.su",
+      "servername": "lvi.su",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "7b91b2c3-8af3-449b-a555-00c9460989f4",
+      "ws-opts": {
+        "headers": {
+          "Host": "lvi.su",
+          "User-Agent": "Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+        },
+        "path": "/vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        "h3"
+      ],
+      "auth_str": "dongtaiwang.com",
+      "down": "1000",
+      "name": "HYSTERIA_#111_2026nov7",
+      "obfs": "",
+      "port": "54177",
+      "protocol": "udp",
+      "server": "5.83.129.90",
+      "skip-cert-verify": true,
+      "sni": "apple.com",
+      "type": "hysteria",
+      "up": "500"
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#112_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "guanwang.awsno.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "ws-opts": {
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        },
+        "path": "/hls/cctv5phd.m3u8"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#113_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "guanwang.awsno.com",
+      "servername": "guanwang.awsno.com",
       "skip-cert-verify": false,
       "tls": true,
       "type": "vmess",

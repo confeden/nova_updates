@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 108,
+  "next_number": 114,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -640,6 +640,42 @@
     },
     "207a8f132e2c9aa593ac4d18cdc24ee5c03ccca772dfb76e2356d11c1e04549d": {
       "number": 107,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "eeb7ac2c6f4a179168b98dc4d06625da3a0409f1557f884bc684641d3702f75b": {
+      "number": 108,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "ec35968b01fc6b81bf5ebf1b4361c346bd42d9d1016cfe80eea051127ab282c5": {
+      "number": 109,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "bcc4b8c6f2e2d6870b1d6f624b68174c768c296dbf38ad9a6709397ad3e60b1f": {
+      "number": 110,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "62918192e617f27f04b9a185e9772ca30fe5467021576653de20815b5367211a": {
+      "number": 111,
+      "added": "2026nov7",
+      "protocol": "HYSTERIA",
+      "active": true
+    },
+    "8e0b57fd08212747f3d8a38557551645348275063724aaf32d39f3622e31eed7": {
+      "number": 112,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "76005fac9b20c47820130a12d4d7e3fd75bb34711ec8ebce45558aad62fb1eda": {
+      "number": 113,
       "added": "2026nov7",
       "protocol": "VMESS",
       "active": true
