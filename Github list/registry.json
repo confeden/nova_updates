@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 45,
+  "next_number": 47,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -264,6 +264,18 @@
       "number": 44,
       "added": "2026nov7",
       "protocol": "VLESS",
+      "active": true
+    },
+    "b00a50973c733d2b544559c8c909bb374fa6d5c2dcf1fab4cd424a1a9cbedbac": {
+      "number": 45,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "4350063cb4e9ed41a8f6b5b18e26adc1e67861191f3c9e1a753d7737b89c4f38": {
+      "number": 46,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
       "active": true
     }
   }

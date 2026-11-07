@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:13:28+03:00",
-    "count": 44,
+    "checked_at": "2026-11-07T16:15:04+03:00",
+    "count": 46,
     "complete": true
   },
   "proxies": [
@@ -737,6 +737,42 @@
       "udp": true,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "TROJAN_#45_2026nov7",
+      "network": "ws",
+      "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55",
+      "port": "443",
+      "server": "104.17.10.171",
+      "skip-cert-verify": false,
+      "sni": "ltf8.jueson.de5.net",
+      "type": "trojan",
+      "udp": true,
+      "ws-opts": {
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"
+        },
+        "path": "/categories/community/"
+      }
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "TROJAN_#46_2026nov7",
+      "network": "ws",
+      "password": "883e3cc8-9613-4f2d-8c42-0dd3d429db55",
+      "port": "443",
+      "server": "104.25.95.49",
+      "skip-cert-verify": false,
+      "sni": "ltf8.jueson.de5.net",
+      "type": "trojan",
+      "udp": true,
+      "ws-opts": {
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
+        },
+        "path": ""
+      }
     }
   ]
 }
