@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:25:50+03:00",
-    "count": 87,
+    "checked_at": "2026-11-07T16:27:58+03:00",
+    "count": 90,
     "complete": true
   },
   "proxies": [
@@ -1618,6 +1618,60 @@
       "type": "vless",
       "udp": true,
       "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#88_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "short-id": "41ae8e266bc3346f"
+      },
+      "server": "178.22.31.171",
+      "servername": "at1.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#89_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc",
+        "short-id": "5037f0423dc4e4ff"
+      },
+      "server": "pl3.japancase.site",
+      "servername": "pl3.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#90_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "short-id": "41ae8e266bc3346f"
+      },
+      "server": "at1.japancase.site",
+      "servername": "at1.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "xudp": true
     }
   ]
