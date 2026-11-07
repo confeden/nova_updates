@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:12:13+03:00",
-    "count": 42,
+    "checked_at": "2026-11-07T16:13:28+03:00",
+    "count": 44,
     "complete": true
   },
   "proxies": [
@@ -704,6 +704,39 @@
       "server": "8.6.112.42",
       "type": "wireguard",
       "udp": true
+    },
+    {
+      "alterId": 0,
+      "cipher": "auto",
+      "name": "VMESS_#43_2026nov7",
+      "network": "raw",
+      "port": "21021",
+      "server": "dog-hk.kunlun01dns.com",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "edge",
+      "encryption": "none",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#44_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
+        "short-id": "41ae8e266bc3346f"
+      },
+      "server": "at1.japancase.site",
+      "servername": "at1.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
     }
   ]
 }
