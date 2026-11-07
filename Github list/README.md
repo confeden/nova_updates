@@ -26,8 +26,9 @@ Old private keys are not stored in the registry; only active public-source profi
 are published. Protocol/endpoint/authentication/transport changes define a new profile.
 
 `status.json` records progress and whether the full sweep is complete. Working
-profiles are added after each 1000 checked candidates, so the first list becomes
-available while the initial full check continues. A failed download keeps that
+profiles are published in batches of 50 newly confirmed nodes, during both the
+first and retry passes. The final smaller batch is published when the sweep ends.
+Nova can download every published snapshot while checking continues. A failed download keeps that
 source's private cache and rechecks it; a failed discovery uses the last known
 source URLs. Partial checkpoints only add freshly verified profiles and retain
 previously published ones. Only after a complete run are unconfirmed profiles removed while

@@ -17,6 +17,7 @@ from urllib.parse import urlsplit
 AGGREGATOR = 'https://sub-aggregator.vercel.app/data.txt'
 IGARECK = 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt'
 MAX_BYTES = 8 * 1024 * 1024
+PUBLISH_BATCH_SIZE = 50
 MONTHS = ('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')
 
 
@@ -161,12 +162,12 @@ def verify(binary, candidates, workers, seconds, work, checkpoint=None):
                         raise ValueError('invalid probe result')
                     seen.add(index)
                     results[batch[index][0]] = result
+                    if checkpoint and result['ok']:
+                        checkpoint(results)
                 code = process.wait()
         if code or len(seen) != len(batch):
             raise RuntimeError('probe process incomplete; previous publication retained')
         print(f'checked={len(results)}/{len(pairs)} confirmed={sum(r["ok"] for r in results.values())}', flush=True)
-        if checkpoint:
-            checkpoint(results)
     return results
 
 
@@ -249,13 +250,13 @@ def run(args):
     previous = folder / 'nova-list.json'
     retained = {identity(p): p for p in json.loads(previous.read_text())['proxies']} if previous.exists() else {}
 
-    def snapshot(results, complete):
+    def snapshot(results, complete, additions=None):
         now = datetime.now(timezone(timedelta(hours=3)))
         chosen = candidates
         verdicts = results
         if not complete:
             chosen = dict(retained)
-            chosen.update({key: candidates[key] for key, result in results.items() if result['ok']})
+            chosen.update(additions or {})
             verdicts = {key: dict(ok=True) for key in chosen}
         active = admit(registry, chosen, verdicts, now)
         checked_at = now.isoformat(timespec='seconds')
@@ -272,20 +273,32 @@ def run(args):
                 atomic_json(folder / name, value)
         return len(active)
 
+    cumulative = {}
+
     def checkpoint(results):
-        # Add only newly confirmed profiles while the full pass runs. Never retire
-        # the previous snapshot's profiles before all candidates have been checked.
-        try:
-            count = snapshot(results, False)
-            print(f'published checkpoint checked={len(results)} working={count}', flush=True)
-        except RuntimeError as error:
-            print(f'checkpoint upload pending: {error}', flush=True)
+        cumulative.update(results)
+        ready = {key: candidates[key] for key, result in cumulative.items()
+                 if result['ok'] and key not in retained}
+        # Flush fifty newly confirmed profiles at a time, also during the retry
+        # pass. Previous active profiles remain until a complete sweep retires them.
+        while len(ready) >= PUBLISH_BATCH_SIZE:
+            additions = dict(list(ready.items())[:PUBLISH_BATCH_SIZE])
+            try:
+                count = snapshot(cumulative, False, additions)
+            except RuntimeError as error:
+                print(f'checkpoint upload pending: {error}', flush=True)
+                return
+            retained.update(additions)
+            for key in additions:
+                del ready[key]
+            print(f'published batch added={len(additions)} checked={len(cumulative)} working={count}', flush=True)
 
     results = verify(args.core, candidates, args.workers, args.timeout, work, checkpoint)
+    cumulative.update(results)
     retry = {key: candidates[key] for key, result in results.items() if not result['ok']}
     if retry:
         print(f'retry={len(retry)}', flush=True)
-        results.update(verify(args.core, retry, max(1, args.workers // 2), args.timeout, work))
+        results.update(verify(args.core, retry, max(1, args.workers // 2), args.timeout, work, checkpoint))
     count = snapshot(results, True)
     print(f'complete checked={len(results)} working={count}', flush=True)
 

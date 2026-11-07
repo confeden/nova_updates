@@ -86,27 +86,59 @@ class CollectorTests(unittest.TestCase):
             old = collector.admit(self.registry, {self.key: self.proxy}, {self.key: dict(ok=True)}, self.now)
             collector.atomic_json(folder / 'registry.json', self.registry)
             collector.atomic_json(folder / 'nova-list.json', {'proxies': old})
-            fresh = dict(self.proxy, server='new.example.com')
-            fresh_key = collector.identity(fresh)
+            fresh = [dict(self.proxy, server=f'new-{i}.example.com') for i in range(103)]
+            fresh_keys = [collector.identity(proxy) for proxy in fresh]
             def verify(binary, candidates, workers, seconds, work, checkpoint):
-                results = {fresh_key: dict(ok=True)}
-                checkpoint(results)
-                intermediate = json.loads((folder / 'nova-list.json').read_text())
-                self.assertEqual(len(intermediate['proxies']), 2)
-                self.assertFalse(json.loads((folder / 'status.json').read_text())['complete'])
+                results = {}
+                for i, key in enumerate(fresh_keys, 1):
+                    results[key] = dict(ok=True)
+                    checkpoint(results)
+                    intermediate = json.loads((folder / 'nova-list.json').read_text())
+                    self.assertEqual(len(intermediate['proxies']), 1 + (i // 50) * 50)
+                    if i >= 50:
+                        self.assertFalse(json.loads((folder / 'status.json').read_text())['complete'])
                 return results
             args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core',
                                    workers=1, timeout=1, publish=False)
             with patch.object(collector, 'fetch', return_value=b'[date][1][source][https://raw.githubusercontent.com/a/b/main/sub]'), \
-                    patch.object(collector, 'source_nodes', side_effect=lambda item, core: (item[0], [fresh], dict(ok=True))), \
+                    patch.object(collector, 'source_nodes', side_effect=lambda item, core: (item[0], fresh, dict(ok=True))), \
                     patch.object(collector, 'verify', side_effect=verify):
                 collector.run(args)
             final = json.loads((folder / 'nova-list.json').read_text())
-            self.assertEqual(len(final['proxies']), 1)
+            self.assertEqual(len(final['proxies']), 103)
             self.assertIn('_#2_', final['proxies'][0]['name'])
             history = collector.load_registry(folder / 'registry.json')
             self.assertFalse(history['entries'][self.key]['active'])
             self.assertTrue(json.loads((folder / 'status.json').read_text())['complete'])
+
+    def test_retry_pass_also_publishes_fifty_ready_nodes_before_completion(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            folder = repo / 'Github list'
+            folder.mkdir()
+            nodes = [dict(self.proxy, server=f'retry-{i}.example.com') for i in range(50)]
+            keys = [collector.identity(node) for node in nodes]
+            passes = []
+            def verify(binary, candidates, workers, seconds, work, checkpoint):
+                passes.append(len(candidates))
+                results = {}
+                for i, key in enumerate(candidates):
+                    results[key] = dict(ok=len(passes) == 2 or i < 20)
+                    if results[key]['ok']:
+                        checkpoint(results)
+                if len(passes) == 1:
+                    self.assertFalse((folder / 'nova-list.json').exists())
+                else:
+                    self.assertEqual(len(json.loads((folder / 'nova-list.json').read_text())['proxies']), 50)
+                    self.assertFalse(json.loads((folder / 'status.json').read_text())['complete'])
+                return results
+            args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core',
+                                   workers=2, timeout=1, publish=False)
+            with patch.object(collector, 'fetch', return_value=b'[x][x][x][https://raw.githubusercontent.com/a/b/main/sub]'), \
+                    patch.object(collector, 'source_nodes', side_effect=lambda item, core: (item[0], nodes, dict(ok=True))), \
+                    patch.object(collector, 'verify', side_effect=verify):
+                collector.run(args)
+            self.assertEqual(passes, [50, 30])
 
 
 if __name__ == '__main__':
