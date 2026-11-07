@@ -1,0 +1,30 @@
+[Unit]
+Description=Verify and publish Nova list without system VPN
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=nova-list
+Group=nova-list
+WorkingDirectory=/var/lib/nova-list/repo
+Environment=HOME=/var/lib/nova-list
+Environment=GIT_SSH_COMMAND=/usr/bin/ssh -F /var/lib/nova-list/ssh_config
+ExecStart=/usr/bin/python3 /opt/nova-list/collector.py --repo /var/lib/nova-list/repo --core /opt/nova-list/nova-proxy --work /var/lib/nova-list/cache --workers 32 --timeout 9 --publish
+TimeoutStartSec=11h
+UMask=0077
+Nice=10
+CPUQuota=150%
+MemoryMax=1500M
+TasksMax=256
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+ReadWritePaths=/var/lib/nova-list
+StandardOutput=journal
+StandardError=journal
+
