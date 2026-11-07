@@ -35,8 +35,16 @@ def fetch(url):
     # Ignore host proxy environment: this service must measure the Debian ISP path.
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
     request = urllib.request.Request(url, headers={'User-Agent': 'v2rayNG/1.10.6'})
-    with opener.open(request, timeout=40) as response:
-        body = response.read(MAX_BYTES + 1)
+    error = None
+    for attempt in range(3):
+        try:
+            with opener.open(request, timeout=12) as response:
+                body = response.read(MAX_BYTES + 1)
+            break
+        except OSError as caught:
+            error = caught
+    else:
+        raise error
     if len(body) > MAX_BYTES:
         raise ValueError('source exceeds size limit')
     return body
@@ -216,9 +224,13 @@ def run(args):
             raise ValueError('aggregator supplied no GitHub sources')
         atomic_json(work / 'source-urls.json', urls)
     except (OSError, ValueError):
-        if not (work / 'source-urls.json').exists():
+        fallback = work / 'source-urls.json'
+        if not fallback.exists():
+            fallback = folder / 'sources.json'
+        if not fallback.exists():
             raise RuntimeError('source discovery failed; publication retained')
-        urls = json.loads((work / 'source-urls.json').read_text())
+        urls = json.loads(fallback.read_text())
+        print('source discovery unavailable; using last known GitHub sources', flush=True)
     candidates, source_status, next_cache = {}, [], {}
     with ThreadPoolExecutor(max_workers=4) as pool:
         for index, (url, nodes, status) in enumerate(pool.map(

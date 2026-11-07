@@ -7,6 +7,7 @@ import (
 	"encoding/json"
 	"errors"
 	"flag"
+	"fmt"
 	"io"
 	"net"
 	"net/http"
@@ -52,6 +53,20 @@ func probeNode(proxy map[string]any, targets []string, budget time.Duration, roo
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), budget)
 	defer cancel()
+	// A refused/blackholed TCP endpoint cannot carry HTTPS. Avoid spending the full
+	// multi-target TLS budget on it; the collector repeats failures in a separate pass.
+	if kind != "hysteria" && kind != "hysteria2" && kind != "tuic" && kind != "wireguard" {
+		host, _ := proxy["server"].(string)
+		port := fmt.Sprint(proxy["port"])
+		preflight, stop := context.WithTimeout(ctx, 1500*time.Millisecond)
+		connection, err := (&net.Dialer{}).DialContext(preflight, "tcp", net.JoinHostPort(host, port))
+		stop()
+		if err != nil {
+			result.Stage = "tcp"
+			return
+		}
+		connection.Close()
+	}
 	clientProxy, err := adapter.ParseProxy(proxy)
 	if err != nil {
 		return
