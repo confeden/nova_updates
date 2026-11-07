@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:19:40+03:00",
-    "count": 75,
+    "checked_at": "2026-11-07T16:21:08+03:00",
+    "count": 76,
     "complete": true
   },
   "proxies": [
@@ -1387,6 +1387,24 @@
       "type": "vless",
       "udp": true,
       "uuid": "3837e7a5-d40e-4b85-8700-5f9725a5a2cb",
+      "xudp": true
+    },
+    {
+      "encryption": "mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk",
+      "name": "VLESS_#76_2026nov7",
+      "network": "ws",
+      "port": "8180",
+      "server": "dnld.chaqalli.com",
+      "type": "vless",
+      "udp": true,
+      "uuid": "560ecca1-7e20-4b41-b4d6-781fb3bc179d",
+      "ws-opts": {
+        "headers": {
+          "Host": "dnld.chaqalli.com",
+          "User-Agent": "Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+        },
+        "path": "/"
+      },
       "xudp": true
     }
   ]

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 76,
+  "next_number": 77,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -448,6 +448,12 @@
     },
     "8e3e2459e0e3c1d2d2cd849c8b4fbdf42ce94a4d4692fd699314c68d623f4e84": {
       "number": 75,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "687d196139e0c59805482c1c5c666d4bd5ec1078603e1bcb4fcdf5710bdbc4ca": {
+      "number": 76,
       "added": "2026nov7",
       "protocol": "VLESS",
       "active": true
