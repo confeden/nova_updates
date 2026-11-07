@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 79,
+  "next_number": 82,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -466,6 +466,24 @@
     },
     "9b5f3115f6081181e3fe45d87fc4103a3a341e145f6f6a87e1cadba819451e80": {
       "number": 78,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "accce62742679c7551e1b2422b02d4d8dd69e78a1e60e6e045e9ed56d4b516bc": {
+      "number": 79,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "ca58cafa517fc9f9da5d205578c2ff442fa460556c71a0f688fd57cc912eb8bd": {
+      "number": 80,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "d9ce4bb888ffda9e25dce0b6324632ef7a28974cd0ddbd03ee299d734123ddcb": {
+      "number": 81,
       "added": "2026nov7",
       "protocol": "VLESS",
       "active": true
