@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 31,
+  "next_number": 36,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -180,6 +180,36 @@
       "number": 30,
       "added": "2026nov7",
       "protocol": "TROJAN",
+      "active": true
+    },
+    "dbd1e8df62b6cb97fe8a369e7e901de85e98b5de646bc9ccee26ce189a82c240": {
+      "number": 31,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "aff9268564f5c7b30fd44e159bfe7ac4c254cf5762c94474d7cd4a6612202dd5": {
+      "number": 32,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "9f5f3275d4ff05bc9a518424e50e27920244309e5f934950ec9869d8f9362b88": {
+      "number": 33,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "aa61f0bd3dbaa4ba24dbb6f8fe129cd37125727bd84eeacaeb1e4559596a4404": {
+      "number": 34,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "ca5eb82d8a61c64fab56c95f308edc0ad2fd12f3be90f11565fb3f6bd2a5735b": {
+      "number": 35,
+      "added": "2026nov7",
+      "protocol": "VLESS",
       "active": true
     }
   }
