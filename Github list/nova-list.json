@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:27:58+03:00",
-    "count": 90,
+    "checked_at": "2026-11-07T16:29:13+03:00",
+    "count": 98,
     "complete": true
   },
   "proxies": [
@@ -1672,6 +1672,199 @@
       "type": "vless",
       "udp": true,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#91_2026nov7",
+      "network": "xhttp",
+      "port": "61374",
+      "reality-opts": {
+        "public-key": "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI",
+        "short-id": ""
+      },
+      "server": "cz.pythonmakemigreat.wiki",
+      "servername": "cz.pythonmakemigreat.wiki",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "xhttp-opts": {
+        "host": "cz.pythonmakemigreat.wiki",
+        "mode": "packet-up",
+        "path": "/",
+        "reuse-settings": {
+          "max-connections": "3"
+        },
+        "x-padding-bytes": "100-500"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#92_2026nov7",
+      "network": "xhttp",
+      "port": "61374",
+      "reality-opts": {
+        "public-key": "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI",
+        "short-id": ""
+      },
+      "server": "pl-b1.golangwikito.cfd",
+      "servername": "pl-b1.golangwikito.cfd",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "xhttp-opts": {
+        "host": "pl-b1.golangwikito.cfd",
+        "mode": "packet-up",
+        "path": "/",
+        "reuse-settings": {
+          "max-connections": "3"
+        },
+        "x-padding-bytes": "100-500"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "random",
+      "encryption": "none",
+      "name": "VLESS_#93_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "www.visa.com.hk",
+      "servername": "us-lax.862400.xyz",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "fc486b2b-8a22-4c93-8a8b-f40e1522ba78",
+      "ws-opts": {
+        "headers": {
+          "Host": "us-lax.862400.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+        },
+        "path": "/announcement?ed=2048"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#94_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "104.17.77.77",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#95_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "104.18.42.163",
+      "servername": "guanwang.awsno.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "ws-opts": {
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        },
+        "path": "/hls/cctv5phd.m3u8"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#96_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "104.17.77.77",
+      "servername": "v2ray1.dozapp.xyz",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "none",
+      "name": "VMESS_#97_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "104.17.77.77",
+      "servername": "v2ray1.dozapp.xyz",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#98_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "104.27.0.1",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "path": "/ws"
+      },
       "xudp": true
     }
   ]
