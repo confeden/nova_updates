@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 51,
+  "next_number": 76,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -300,6 +300,156 @@
       "number": 50,
       "added": "2026nov7",
       "protocol": "TROJAN",
+      "active": true
+    },
+    "8848ea0f4afe222ebbe6ba43d1baf85dee1e9ac0fe1fc98ad4a40a744bb2a8c7": {
+      "number": 51,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "1df5b4b7b5b9268d811293aad85301745a8437a579200a9b17a5fec246edd7fc": {
+      "number": 52,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "973a69b15c77755d02ab706b2191c722323a50ef9282540787cf3811d0feca05": {
+      "number": 53,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "78cb0ea10ee5d2e35161d78b5c28cc8d912ec886da238f6d34168947ca3effa1": {
+      "number": 54,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "ce3bd6a8f1e257ce81939137663d5c6ed8e21ed00a1d2bac4ca7a7073e7e7072": {
+      "number": 55,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "f66097ff2f89f65a9a3fc84a9c4e0cdee80adc367225f1a72741702508d8abc0": {
+      "number": 56,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "e3829df457f23b54f256ad7e320410846853f850ae9c9f5de920f0bc85ebe2bc": {
+      "number": 57,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "8ae58cb7485e0776d640c76849db8e3414411a58f8c41b827234c55ab98a6743": {
+      "number": 58,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "d6d62c0c57a6fc47d2e6564683c7a7b5520aad7cff1fdebd6dddd058a8299fff": {
+      "number": 59,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "207474763200dd5d5ff0308cf99a720641ae0808cd692622c4c0f28dd56b1a52": {
+      "number": 60,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "eef022b85defb281a2de1a8d3559a8becf2298d06976a4508de4435105ae83b9": {
+      "number": 61,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "0831a1b9f138aeb3a441bf7078dd60f8773232566063aec225d616cdf841daf0": {
+      "number": 62,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "4bb6193b26f9b5392348016af3f4d5606167c20dfdc2393cddc959f4e9b774cc": {
+      "number": 63,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "95b876be521a834340cc6acaf053d8bce1f8569da0ec6a76d4367be877bac711": {
+      "number": 64,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "facd077c579d694b516b4b34d82222867a077a02e1454e858ae87a0111d19d11": {
+      "number": 65,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "da68a0b02af33afb34daec07570d92f5eae492218ec716a63e5e8f8bfde24952": {
+      "number": 66,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "b6f4c29621a8174854d022478194d2a019df5944c31bad7c14b61e37462f2bdb": {
+      "number": 67,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "2c8758fb503315aa330f1cee6ddc1aeeb861bf7283fd338552c8d5c827b51530": {
+      "number": 68,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "4637596f9586ac5ec1d228c52954e94ced790e931274071cf8b264500f8a4520": {
+      "number": 69,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "75410e7a1104ddeafb04efc4a1a1098924e79464dab8c7a7fcd72968e3895e74": {
+      "number": 70,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "2dc4aded87438f9d59073a6c2d6a99df9efa98d905b9f9a1bb4ef26659f8222e": {
+      "number": 71,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "3f9dadf7e1a75c6c14a92977ce7ac667f1865ed159ac39a8ec29712449d5d371": {
+      "number": 72,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "5f2227ede8fd5aebd946edd35f1c3f99302b680db5507693780aaea5015ef8b7": {
+      "number": 73,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "85ddf7d122451c461b0b66fac2555972006e08270bdbd3115f69ed1e082b8f42": {
+      "number": 74,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "8e3e2459e0e3c1d2d2cd849c8b4fbdf42ce94a4d4692fd699314c68d623f4e84": {
+      "number": 75,
+      "added": "2026nov7",
+      "protocol": "VLESS",
       "active": true
     }
   }
