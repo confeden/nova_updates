@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 114,
+  "next_number": 164,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -678,6 +678,306 @@
       "number": 113,
       "added": "2026nov7",
       "protocol": "VMESS",
+      "active": true
+    },
+    "a9b3a732d36aa0a4dad7d667b90565a74b2532d0b829bb493ae13b052d38f43a": {
+      "number": 114,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "429e69cd20064bf103cc41285388cced09c20d438981afcf85f5c1053e3456ea": {
+      "number": 115,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "f8bf2ca34b323778b593f15d20452cf976a3825a0364b1df4be2378849710690": {
+      "number": 116,
+      "added": "2026nov7",
+      "protocol": "ANYTLS",
+      "active": true
+    },
+    "a6a4279b84c09158a74d9536faa3f07c2f57cc617393c46082720d629ec6ae9c": {
+      "number": 117,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "a8ffffa150c8470d19f5e509a17cf8cc60538de08f59fc307d67d7742d10b2fa": {
+      "number": 118,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "f42d52bb4b5194912062969ae8344086177c0f95b5b3e6c0fcefea79138da4cc": {
+      "number": 119,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "359ba41ee1bc7181e24a67f6985bf30490295749b33cf7cd49bd543ed5c6dbd8": {
+      "number": 120,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "120469e74a8efdc73c0987ad479b681fb8bc109215c7bf564ef5ceb88b5b450d": {
+      "number": 121,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "530225e529618350fdaf6472a0eff66a2ce370dabcba496bc3cb41efb7fe289d": {
+      "number": 122,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "d92f9a3823b7c444b8c6585aafde0fb81cc577d873cebe695e3ddb1bfad1b1e8": {
+      "number": 123,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "5cfe5d21bbb821a753e2b8e03668a7dc5fb9a5b6c99f6e92cfe1a6a856a4cbd1": {
+      "number": 124,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "b6e424d04508ecd5949bd6d3d3759dd175407d58c3fa167bf86a5caa3c6a6903": {
+      "number": 125,
+      "added": "2026nov7",
+      "protocol": "SS",
+      "active": true
+    },
+    "f042abf4992bc31b68b2a722cc739982a74cc686c828500c1d48a11bebd1d2d4": {
+      "number": 126,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "c78e7e0edf12721c0709ba70834c528eb6265e8e5bf4e9a2b537591a006544f0": {
+      "number": 127,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "a234d9a597dd5883d95fcabbac8b733da2f6d6f4bab3e4b00280cd99825efc04": {
+      "number": 128,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "2ea8b9de495608306777331242633c4609371e23f5b283d955117fadea8e24a4": {
+      "number": 129,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "8f2f017af994f86808ed1ba2a20ea8389e7015e0364a75a4f6ee0f37d902cf59": {
+      "number": 130,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "84af7cd9a4cb276d2463abab170ad457181afbf2d4a16acd39ad250d9a03429e": {
+      "number": 131,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "1e72785648b4955621c52355d0bb875e52a682323405a1e71940a97f455d936f": {
+      "number": 132,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "fc6ed456980270c46c2ee440b59695e89db66cd04b50a43e041d299dc8a3dfcb": {
+      "number": 133,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "2245ef250f041e7218d6a588818c49be0a01f89f12f0e81684e53966cf49bc73": {
+      "number": 134,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "410ffdcefe6bf5e7787eef6ca30a875dd06ddd1a79f2ef00ee73dbba81662646": {
+      "number": 135,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "41ae69dc52a533bf092b764a68ed09854b1f548914623e4659ea5f6bee95ede9": {
+      "number": 136,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "a16a09134fd6af220a569814bf8097b90852942ae4ce6f594a028f1c6eba2bc7": {
+      "number": 137,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "5d59926f4bbca19633b0ede305d531b4c29e81613858c1df236aa51834b8c243": {
+      "number": 138,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "da55739f0a9a965822865586990290af971ec48e41fbaa76669111b34d80a9d6": {
+      "number": 139,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "3e165700f6571d399ee81cb803082601f31064c2548a933efecd53f78fa0160a": {
+      "number": 140,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "59c59b130845c73acdea7330b160b7c2c2314b653642112d72fbbe715457ce92": {
+      "number": 141,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "9bd35cb704c0ccf15971af12ad9fa930a1576688ece55c2c5c0b0e1c431557fa": {
+      "number": 142,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "14fd8920798366379a382d0ef3d409ae3886baef1696a0d1a750f9c1325f6fdd": {
+      "number": 143,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "34ff4c4661b1c392d4ebf8156aa29e89f5c11c885bbd7ca0167e8719b2e5c128": {
+      "number": 144,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "08393a456ca37b6cdd34dc95337ae6275171b3401485a42f00659ab9f881fd11": {
+      "number": 145,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "aa4f2d19f951cd6ba453bd2920ebeeaca19d380747a5da7392ba4d3d45f9be56": {
+      "number": 146,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "cca3cc584d8f280861a2e593db7324042d07f39129168fd669d6a65e21555d9f": {
+      "number": 147,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "e7312d9d8ae06c40251ba436f541e3e8d2b27ad435bd801bc13ce0e8f6542bb8": {
+      "number": 148,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "392429cc7f671dd89320aa96fabbddcf3fefbd1588aac004460dc17be16bd404": {
+      "number": 149,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "8ee5ac9b86a17e29eddf6acc5b79204660fdecb2e30582038b6746b048e2ad40": {
+      "number": 150,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "063050085beaae4353400d5da2cfab915687e90af85ce006a84efbd33c95278b": {
+      "number": 151,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "b6ab6e8c01592dd740f1467835a5c895b6c533fcaf85c240975fef2bbcfcfb14": {
+      "number": 152,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "a5d09af3fbffd18a5fa3186df8e446347d97c3368462b295a414eac71fcc534f": {
+      "number": 153,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "11d53fd65ddb4f0a61bf530a866f3a203897545506ba0d312aaf1703a236e74d": {
+      "number": 154,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "eb4fac381962f9fe83e5293024b86350273ca935856e480eef5bb80ed0465741": {
+      "number": 155,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "cba2cda56775247f025e63eb8ffbcdfa9bf4887ed24b242e6a3ac2c5c0ade4ee": {
+      "number": 156,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "3c1045156ee02330280ff1668c17dfb1e789c6ec7de525ebe47b8f7cec2bacd8": {
+      "number": 157,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "4049e4ee22d18f5c09d67d3fe40fdcf3f80f10d80ecb436519a10a8ad0f5bf98": {
+      "number": 158,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "01cd74342f11da3e697b774c6e87459ee052622ef4ecc785866eb224199dfa80": {
+      "number": 159,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "2e527b6100304f96f92ac59f5696c2a521e6144d90fed259ed38860a62cc8e99": {
+      "number": 160,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "249114b321d8beedfed2df3f5d128f638859d0b2c01a689497698f156e135c8e": {
+      "number": 161,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "48c20c0af70017b365cdbfd2153403c13817edd2ed906c888f6d3d582240c405": {
+      "number": 162,
+      "added": "2026nov7",
+      "protocol": "VLESS",
+      "active": true
+    },
+    "5174c4e44688ee3cf90203412540761a2c3e7d22ba1fcecf82e91af4057440f2": {
+      "number": 163,
+      "added": "2026nov7",
+      "protocol": "VLESS",
       "active": true
     }
   }
