@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 47,
+  "next_number": 51,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -274,6 +274,30 @@
     },
     "4350063cb4e9ed41a8f6b5b18e26adc1e67861191f3c9e1a753d7737b89c4f38": {
       "number": 46,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "e16b7993d257e79f85ca6482b067237cd3054a830a98941c50cfd19399be6144": {
+      "number": 47,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "3238fb2c71de9267525530518887f6070dfdb741837020d4fcdfa859cfb8d645": {
+      "number": 48,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "79ee0cc71b7de9b7db3e169734caa0066a78fcc15969ecbc74fd7f0d182fa0f9": {
+      "number": 49,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "642325a631be1681fcaab78afd18086b0d8a4383258f0cc81d709d4d22497ae0": {
+      "number": 50,
       "added": "2026nov7",
       "protocol": "TROJAN",
       "active": true
