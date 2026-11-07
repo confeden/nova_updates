@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:24:03+03:00",
-    "count": 81,
+    "checked_at": "2026-11-07T16:25:50+03:00",
+    "count": 87,
     "complete": true
   },
   "proxies": [
@@ -1502,6 +1502,122 @@
       "type": "vless",
       "udp": true,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "encryption": "none",
+      "name": "VLESS_#82_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
+        "short-id": "e572b6579ea525d4"
+      },
+      "server": "71b840t.de7.h1clayd.click",
+      "servername": "71b840t.de7.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "b7b8ee80-db83-4276-8c68-87dc88b0b0b5",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#83_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "fxhub.ir",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "bc4a4b66-c3fc-4f91-938e-4d93698c0d43",
+      "ws-opts": {
+        "headers": {
+          "Host": "soli-gghosin4-cell.dormhost.app",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"
+        },
+        "path": "/jx-ge7wex6ki2ixyk"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "grpc-opts": {
+        "grpc-service-name": "5b79e8a94241"
+      },
+      "name": "VLESS_#84_2026nov7",
+      "network": "grpc",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE",
+        "short-id": "50a749f0eccb628c"
+      },
+      "server": "15b171g.nl7.h1clayd.click",
+      "servername": "15b171g.nl7.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "encryption": "none",
+      "name": "VLESS_#85_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY",
+        "short-id": "ba2a3dce62b99092"
+      },
+      "server": "04535dt.us9.h1clayd.click",
+      "servername": "04535dt.us9.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "encryption": "none",
+      "grpc-opts": {
+        "grpc-service-name": "99f2107b03f8"
+      },
+      "name": "VLESS_#86_2026nov7",
+      "network": "grpc",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk",
+        "short-id": "bd8f712209a9c283"
+      },
+      "server": "0592efg.us9.h1clayd.click",
+      "servername": "0592efg.us9.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "VLESS_#87_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
+        "short-id": "361d0dd59c70516f"
+      },
+      "server": "5d0319t.nl7.h1clayd.click",
+      "servername": "5d0319t.nl7.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "xudp": true
     }
   ]
