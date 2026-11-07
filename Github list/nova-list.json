@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:05:57+03:00",
-    "count": 35,
+    "checked_at": "2026-11-07T16:06:55+03:00",
+    "count": 36,
     "complete": true
   },
   "proxies": [
@@ -573,6 +573,25 @@
         },
         "path": "/?Telegram—mtmvpn—mtmvpn—mtmvpn—mtmvpn"
       },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "encryption": "none",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#36_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+        "short-id": ""
+      },
+      "server": "edge.bookmai.com",
+      "servername": "mother-earth.fyi",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
       "xudp": true
     }
   ]
