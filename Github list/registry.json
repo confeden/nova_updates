@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 37,
+  "next_number": 40,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -216,6 +216,24 @@
       "number": 36,
       "added": "2026nov7",
       "protocol": "VLESS",
+      "active": true
+    },
+    "be6876d4261364a86ed6814e1196872c7dbf4c6c2cc01fd22ba5b3292fec6a01": {
+      "number": 37,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "e69e5a44918a6b707558b6a7dc852f8eb4385290fe29c92750a4c301cdc57cf8": {
+      "number": 38,
+      "added": "2026nov7",
+      "protocol": "VMESS",
+      "active": true
+    },
+    "03290c8e45addadb0d1aa02deb1a330324ce09af4152399c882950277008feb5": {
+      "number": 39,
+      "added": "2026nov7",
+      "protocol": "VMESS",
       "active": true
     }
   }
