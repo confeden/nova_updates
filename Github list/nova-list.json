@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:21:08+03:00",
-    "count": 76,
+    "checked_at": "2026-11-07T16:22:29+03:00",
+    "count": 78,
     "complete": true
   },
   "proxies": [
@@ -1405,6 +1405,46 @@
         },
         "path": "/"
       },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#77_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "lvi.su",
+      "servername": "lvi.su",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "7b91b2c3-8af3-449b-a555-00c9460989f4",
+      "ws-opts": {
+        "headers": {
+          "Host": "lvi.su",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
+        },
+        "path": "/vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "encryption": "none",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#78_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "mN_hxjI9qID3AIRLdoCBLwmYvS-LkifGptrD22SLND0",
+        "short-id": "5d577d2c022228b1"
+      },
+      "server": "dania.izzzyvpn.space",
+      "servername": "dania.izzzyvpn.space",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "7ee8000e-209e-4d88-8a0f-e963edfe45b2",
       "xudp": true
     }
   ]
