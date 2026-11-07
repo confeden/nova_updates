@@ -1,8 +1,8 @@
 {
   "nova_list": {
     "version": 1,
-    "checked_at": "2026-11-07T16:58:04+03:00",
-    "count": 163,
+    "checked_at": "2026-11-07T17:54:35+03:00",
+    "count": 213,
     "complete": true
   },
   "proxies": [
@@ -3160,6 +3160,1026 @@
         "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
       },
       "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#164_2026nov7",
+      "network": "tcp",
+      "port": "20105",
+      "server": "168.113.128.70",
+      "servername": "ripelever.net",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "9aff658c-1f80-4c82-9213-48ca26996142",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#165_2026nov7",
+      "network": "tcp",
+      "port": "20105",
+      "server": "168.113.128.70",
+      "servername": "ripelever.net",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "9aff658c-1f80-4c82-9213-48ca26996142",
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#166_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "172.66.203.67",
+      "servername": "vmess.lbw666.dpdns.org",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "path": "/ws"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#167_2026nov7",
+      "network": "ws",
+      "port": "80",
+      "server": "172.67.187.145",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "path": "/ws"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "grpc-opts": {
+        "grpc-service-name": "8cb5baa18cd7"
+      },
+      "name": "VLESS_#168_2026nov7",
+      "network": "grpc",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E",
+        "short-id": "3b84fc70657725af"
+      },
+      "server": "7cabc1g.de-p1.h1clayd.click",
+      "servername": "7cabc1g.de-p1.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "13e6bdfd-d51b-4e57-a40e-b88784cba8bd",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#169_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"
+        },
+        "path": "/?Telegram—mtmvpn—mtmvpn—mtmvpn—mtmvpn"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#170_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#171_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+        },
+        "path": "/?------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------&"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#172_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "community.fastly.steamstatic.com",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+        },
+        "path": ""
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#173_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"
+        },
+        "path": "/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#174_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+        },
+        "path": "/?Telegram—mtmvpn—mtmvpn—mtmvpn—mtmvpn"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#175_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+        },
+        "path": "/"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#176_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36"
+        },
+        "path": ""
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#177_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "community.fastly.steamstatic.com",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
+        },
+        "path": "/"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#178_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "community.fastly.steamstatic.com",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
+        },
+        "path": "/?------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------Configvibes------&"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#179_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "community.fastly.steamstatic.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+        },
+        "path": "/?TELEGRAM-----TEHRANARGO "
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#180_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"
+        },
+        "path": ""
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "fingerprint": "cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e",
+      "name": "VLESS_#181_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "199.232.249.131",
+      "servername": "cdn.akamai.steamstatic.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "33751cb1-43ea-458c-8dc5-0b8993746bce",
+      "ws-opts": {
+        "headers": {
+          "Host": "copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+        },
+        "path": "/?TELEGRAM-----TOOTFFARANGI "
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        "h2"
+      ],
+      "client-fingerprint": "safari",
+      "encryption": "none",
+      "name": "VLESS_#182_2026nov7",
+      "network": "xhttp",
+      "port": "443",
+      "server": "157.22.240.124",
+      "servername": "call.meettech.org",
+      "skip-cert-verify": true,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "380fc46b-28cb-41a8-9879-38a898ab05d0",
+      "xhttp-opts": {
+        "mode": "auto"
+      },
+      "xudp": true
+    },
+    {
+      "encryption": "mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk",
+      "name": "VLESS_#183_2026nov7",
+      "network": "ws",
+      "port": "8180",
+      "server": "dnld.chaqalli.com",
+      "type": "vless",
+      "udp": true,
+      "uuid": "560ecca1-7e20-4b41-b4d6-781fb3bc179d",
+      "ws-opts": {
+        "headers": {
+          "Host": "dnld.chaqalli.com",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+      },
+      "xudp": true
+    },
+    {
+      "encryption": "mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk",
+      "name": "VLESS_#184_2026nov7",
+      "network": "ws",
+      "port": "8180",
+      "server": "dnld.chaqalli.com",
+      "type": "vless",
+      "udp": true,
+      "uuid": "560ecca1-7e20-4b41-b4d6-781fb3bc179d",
+      "ws-opts": {
+        "headers": {
+          "Host": "",
+          "User-Agent": "Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+        },
+        "path": "/"
+      },
+      "xudp": true
+    },
+    {
+      "encryption": "mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk",
+      "name": "VLESS_#185_2026nov7",
+      "network": "ws",
+      "port": "8180",
+      "server": "dnld.chaqalli.com",
+      "type": "vless",
+      "udp": true,
+      "uuid": "560ecca1-7e20-4b41-b4d6-781fb3bc179d",
+      "ws-opts": {
+        "headers": {
+          "Host": "dnld.chaqalli.com",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36"
+        },
+        "path": "/"
+      },
+      "xudp": true
+    },
+    {
+      "encryption": "mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk",
+      "name": "VLESS_#186_2026nov7",
+      "network": "ws",
+      "port": "8180",
+      "server": "dnld.chaqalli.com",
+      "type": "vless",
+      "udp": true,
+      "uuid": "560ecca1-7e20-4b41-b4d6-781fb3bc179d",
+      "ws-opts": {
+        "headers": {
+          "Host": "",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
+        },
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#187_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.16.0.1",
+      "servername": "eu02.123450908.xyz",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#188_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.16.0.1",
+      "servername": "eu02.123450908.xyz",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#189_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.18.0.181",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#190_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.18.0.181",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#191_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.26.0.1",
+      "servername": "eu02.123450908.xyz",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#192_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.18.0.181",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi Note 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "name": "VLESS_#193_2026nov7",
+      "network": "ws",
+      "port": "2052",
+      "server": "104.26.0.1",
+      "type": "vless",
+      "udp": true,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu02.123450908.xyz",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+        },
+        "path": "/rain1226"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "VLESS_#194_2026nov7",
+      "network": "xhttp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "jhVdP7NFUaEXGfrmOqJlMCHTvqn3fymbzPfPT6NO4i0",
+        "short-id": "f72d4a2c7cbbacb1"
+      },
+      "server": "80cb66x.nl13.h1clayd.click",
+      "servername": "80cb66x.nl13.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xhttp-opts": {
+        "path": "/d610f026b146"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#195_2026nov7",
+      "network": "xhttp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "jhVdP7NFUaEXGfrmOqJlMCHTvqn3fymbzPfPT6NO4i0",
+        "short-id": "f72d4a2c7cbbacb1"
+      },
+      "server": "80cb66x.nl13.h1clayd.click",
+      "servername": "80cb66x.nl13.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xhttp-opts": {
+        "mode": "auto",
+        "path": "/d610f026b146"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#196_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI",
+        "short-id": "8956c57cb4c4f8d2"
+      },
+      "server": "f0d7aft.nl13.h1clayd.click",
+      "servername": "f0d7aft.nl13.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "grpc-opts": {
+        "grpc-service-name": "7d5abcd7d8a1"
+      },
+      "name": "VLESS_#197_2026nov7",
+      "network": "grpc",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA",
+        "short-id": "6d289ff0f47c0aac"
+      },
+      "server": "961ec0g.nl13.h1clayd.click",
+      "servername": "961ec0g.nl13.h1clayd.click",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#198_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM",
+        "short-id": "071c3bd86b0c3c73"
+      },
+      "server": "tr3.japancase.site",
+      "servername": "tr3.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "firefox",
+      "encryption": "none",
+      "flow": "xtls-rprx-vision",
+      "name": "VLESS_#199_2026nov7",
+      "network": "tcp",
+      "port": "443",
+      "reality-opts": {
+        "public-key": "ZsKgmywoAPRRkYHqQ8hUHFB6X_f7tjXfYmvSeHj0-xQ",
+        "short-id": "0d98b07acc98ccef"
+      },
+      "server": "nl3.japancase.site",
+      "servername": "nl3.japancase.site",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "random",
+      "encryption": "none",
+      "name": "VLESS_#200_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "freev2.cloudflare.182682.xyz",
+      "servername": "eu-central.862400.xyz",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "fc486b2b-8a22-4c93-8a8b-f40e1522ba78",
+      "ws-opts": {
+        "headers": {
+          "Host": "eu-central.862400.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"
+        },
+        "path": "/announcement?ed=2048"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "random",
+      "encryption": "none",
+      "name": "VLESS_#201_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "www.visa.com.hk",
+      "servername": "us-lax.862400.xyz",
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "fc486b2b-8a22-4c93-8a8b-f40e1522ba78",
+      "ws-opts": {
+        "headers": {
+          "Host": "us-lax.862400.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+        },
+        "path": "/announcement?ed=2048"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "none",
+      "name": "VMESS_#202_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "104.17.77.77",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#203_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "172.64.80.1",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#204_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "cf.090227.xyz",
+      "servername": "vmess.lbw666.dpdns.org",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "path": "/ws"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#205_2026nov7",
+      "network": "ws",
+      "port": 80,
+      "server": "cf.0sm.com",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "early-data-header-name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "max-early-data": 2048,
+        "path": "/ws"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#206_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "cf.090227.xyz",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "early-data-header-name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "max-early-data": 2048,
+        "path": "/ws"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#207_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "cf.090227.xyz",
+      "servername": "vmess.lbw666.dpdns.org",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "ws-opts": {
+        "early-data-header-name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        },
+        "max-early-data": 2048,
+        "path": "/ws"
+      },
+      "xudp": true
+    },
+    {
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#208_2026nov7",
+      "network": "tcp",
+      "port": 21020,
+      "server": "dog-hk.kunlun01dns.com",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "xudp": true
+    },
+    {
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#209_2026nov7",
+      "network": "tcp",
+      "port": "21010",
+      "server": "dog-us.kunlun01dns.com",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#210_2026nov7",
+      "network": "ws",
+      "port": "8443",
+      "server": "chatgpt.com",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "ws-opts": {
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        },
+        "path": "/lMnsZUN4/"
+      },
+      "xudp": true
+    },
+    {
+      "alpn": [
+        ""
+      ],
+      "alterId": "0",
+      "cipher": "auto",
+      "name": "VMESS_#211_2026nov7",
+      "network": "tcp",
+      "port": "21009",
+      "server": "dog-us.kunlun01dns.com",
+      "skip-cert-verify": false,
+      "tls": false,
+      "type": "vmess",
+      "udp": true,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "xudp": true
+    },
+    {
+      "alpn": [
+        "http/1.1"
+      ],
+      "client-fingerprint": "chrome",
+      "encryption": "none",
+      "name": "VLESS_#212_2026nov7",
+      "network": "ws",
+      "port": "443",
+      "server": "lvi.su",
+      "servername": "lvi.su",
+      "skip-cert-verify": false,
+      "tls": true,
+      "type": "vless",
+      "udp": true,
+      "uuid": "7b91b2c3-8af3-449b-a555-00c9460989f4",
+      "ws-opts": {
+        "headers": {
+          "Host": "lvi.su",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"
+        },
+        "path": "/vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2"
+      },
+      "xudp": true
+    },
+    {
+      "client-fingerprint": "chrome",
+      "name": "TROJAN_#213_2026nov7",
+      "network": "ws",
+      "password": "gHQP0D7D15",
+      "port": "2053",
+      "server": "104.25.239.113",
+      "skip-cert-verify": false,
+      "sni": "marvdasht.phonecomparisonblog.org",
+      "type": "trojan",
+      "udp": true,
+      "ws-opts": {
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"
+        },
+        "path": "/"
+      }
     }
   ]
 }
