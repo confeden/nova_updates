@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 29,
+  "next_number": 31,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -166,6 +166,18 @@
     },
     "9d9c63a34f5b1ed4226ffa6b74ca09f6dcf7f0c40d42ebb4fad106a1acb68e88": {
       "number": 28,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "ee41f979e17182a485d389fe62494979ede068d9ed2b0ebd279ddafee46be4ed": {
+      "number": 29,
+      "added": "2026nov7",
+      "protocol": "TROJAN",
+      "active": true
+    },
+    "92ad59fcebd6d4e9647aa76dcb892af7c198cef683467be272ad57f5d6e1512f": {
+      "number": 30,
       "added": "2026nov7",
       "protocol": "TROJAN",
       "active": true
