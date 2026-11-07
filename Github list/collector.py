@@ -268,7 +268,8 @@ def main():
     try:
         run(args)
     except (OSError, ValueError, KeyError, RuntimeError, subprocess.SubprocessError) as error:
-        print(f'Nova list failed: {type(error).__name__}; previous publication retained', file=sys.stderr)
+        detail = str(error) if isinstance(error, RuntimeError) else type(error).__name__
+        print(f'Nova list failed: {detail}; previous publication retained', file=sys.stderr)
         return 1
     return 0
 
