@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at": "2026-11-08T18:11:09+03:00",
+  "checked_at": "2026-11-08T19:42:35+03:00",
   "complete": true,
   "sources": [
     {
@@ -149,7 +149,7 @@
     {
       "index": 25,
       "ok": true,
-      "parsed": 24,
+      "parsed": 16,
       "skipped": 0
     },
     {
@@ -196,14 +196,14 @@
     {
       "index": 33,
       "ok": true,
-      "parsed": 850,
+      "parsed": 771,
       "skipped": 1
     },
     {
       "index": 34,
       "ok": true,
-      "parsed": 9760,
-      "skipped": 48
+      "parsed": 9633,
+      "skipped": 39
     },
     {
       "index": 35,
@@ -214,13 +214,13 @@
     {
       "index": 36,
       "ok": true,
-      "parsed": 129,
+      "parsed": 127,
       "skipped": 0
     },
     {
       "index": 37,
       "ok": true,
-      "parsed": 499,
+      "parsed": 498,
       "skipped": 0
     },
     {
@@ -256,7 +256,7 @@
     {
       "index": 43,
       "ok": true,
-      "parsed": 942,
+      "parsed": 925,
       "skipped": 0
     },
     {
@@ -268,19 +268,19 @@
     {
       "index": 45,
       "ok": true,
-      "parsed": 226,
+      "parsed": 173,
       "skipped": 1
     },
     {
       "index": 46,
       "ok": true,
-      "parsed": 79,
+      "parsed": 82,
       "skipped": 0
     },
     {
       "index": 47,
       "ok": true,
-      "parsed": 11,
+      "parsed": 8,
       "skipped": 0
     },
     {
@@ -352,8 +352,8 @@
     {
       "index": 59,
       "ok": true,
-      "parsed": 417,
-      "skipped": 1
+      "parsed": 400,
+      "skipped": 0
     },
     {
       "index": 60,
@@ -376,19 +376,19 @@
     {
       "index": 63,
       "ok": true,
-      "parsed": 1343,
+      "parsed": 1369,
       "skipped": 13
     },
     {
       "index": 64,
       "ok": true,
-      "parsed": 620,
+      "parsed": 636,
       "skipped": 2
     }
   ],
-  "candidates": 38731,
-  "checked": 38731,
-  "working": 126,
-  "retired": 602,
+  "candidates": 38715,
+  "checked": 38715,
+  "working": 87,
+  "retired": 659,
   "interval_hours": 12
 }
