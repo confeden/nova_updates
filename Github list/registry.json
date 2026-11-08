@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "next_number": 681,
+  "next_number": 729,
   "entries": {
     "565b129da1c729b577d471af1d5df78d498e10e1ddf84b4b5eaea5aea47e44a3": {
       "number": 1,
@@ -61,8 +61,8 @@
       "number": 10,
       "added": "2026nov7",
       "protocol": "SS",
-      "active": false,
-      "ms": 287
+      "active": true,
+      "ms": 629
     },
     "fa7a31737feabc9c347b2d7ba703c83ddd1b787b794bac3e576537b965a3edd1": {
       "number": 11,
@@ -104,7 +104,7 @@
       "added": "2026nov7",
       "protocol": "HTTP",
       "active": true,
-      "ms": 457
+      "ms": 423
     },
     "97285fff2f2c17535c0201b9c2b93039f143fd9f69ed85059aafc8a525d06490": {
       "number": 17,
@@ -118,7 +118,7 @@
       "added": "2026nov7",
       "protocol": "HTTP",
       "active": true,
-      "ms": 746
+      "ms": 663
     },
     "409217f28ba82fd70c7b38305eb87e8f69992d968ebe2d071a962a7176fe8e8e": {
       "number": 19,
@@ -139,7 +139,7 @@
       "added": "2026nov7",
       "protocol": "HTTP",
       "active": true,
-      "ms": 751
+      "ms": 788
     },
     "84c18d5a65527e97638793f5917758cddfb201ad5d3dc3b8becce4837c53421f": {
       "number": 22,
@@ -165,7 +165,7 @@
       "number": 25,
       "added": "2026nov7",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 369
     },
     "128ccf5c1132cbee770bd778a8bf7274a7c262698230d3358d7e698bd7d4d29a": {
@@ -313,7 +313,8 @@
       "number": 48,
       "added": "2026nov7",
       "protocol": "TROJAN",
-      "active": false
+      "active": true,
+      "ms": 509
     },
     "79ee0cc71b7de9b7db3e169734caa0066a78fcc15969ecbc74fd7f0d182fa0f9": {
       "number": 49,
@@ -505,7 +506,7 @@
       "number": 80,
       "added": "2026nov7",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 437
     },
     "d9ce4bb888ffda9e25dce0b6324632ef7a28974cd0ddbd03ee299d734123ddcb": {
@@ -519,7 +520,7 @@
       "added": "2026nov7",
       "protocol": "VLESS",
       "active": true,
-      "ms": 2553
+      "ms": 1381
     },
     "bb5c15d9ba1c848d7ffa60ff1311182660403e1b6508cfaa0baeaeb7aa30de27": {
       "number": 83,
@@ -531,7 +532,7 @@
       "number": 84,
       "added": "2026nov7",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2806
     },
     "d9cb31cb63e7be13a1714174fc0c67527cc89a6ed27741ffb4afe08d9575056c": {
@@ -578,14 +579,14 @@
       "number": 91,
       "added": "2026nov7",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 950
     },
     "daa6c9b01021f2a6ee03aa90554283bbab63432f04c8fa7e6d0087b1aea46452": {
       "number": 92,
       "added": "2026nov7",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2099
     },
     "cf11dd07b2e8d19ae2191245769f49b2dcff35dc1f691e4e52616650ca5bf7df": {
@@ -796,7 +797,7 @@
       "added": "2026nov7",
       "protocol": "SS",
       "active": true,
-      "ms": 188
+      "ms": 254
     },
     "f042abf4992bc31b68b2a722cc739982a74cc686c828500c1d48a11bebd1d2d4": {
       "number": 126,
@@ -1541,7 +1542,7 @@
       "added": "2026nov8",
       "protocol": "SS",
       "active": true,
-      "ms": 279
+      "ms": 1214
     },
     "3f3321c5c073c1b1a5559760c1de25c8a12ddae6dedac7640d6921a5fe1e64cc": {
       "number": 247,
@@ -1569,7 +1570,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1187
+      "ms": 363
     },
     "658ea3392c78f0b5e301cb3c1bad97412c838117e665c0f6d041ce2302b1b35a": {
       "number": 251,
@@ -1611,7 +1612,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 381
+      "ms": 331
     },
     "834bfb2b750ea3ffe63fd1c4160d6e53b867b995dd343ccd23a2dd099a05671f": {
       "number": 257,
@@ -1646,21 +1647,21 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 317
+      "ms": 338
     },
     "5270431b4fd78cb27cd857ec7d6801765003c63c7c8b1125deafd379f5f5c791": {
       "number": 262,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 329
+      "ms": 318
     },
     "9f048197a409e846ac41f4f66cacb8467d0bb2af7e79c54221d757e4ea30165b": {
       "number": 263,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 327
+      "ms": 338
     },
     "fd8f482358e49af2f436a10400a5352959089a0a47358dad14b21efc9d4c1e05": {
       "number": 264,
@@ -1681,21 +1682,21 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 330
+      "ms": 381
     },
     "cbe3b0e5e3788868028b302a2766a92cfb6d4c8f9dee4adfb7f811dfc472ea25": {
       "number": 267,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 340
+      "ms": 309
     },
     "0229c0ec89c714bcf3257299999a8f978a3f0d86cb492757ac8576f7de81ca2f": {
       "number": 268,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1204
+      "ms": 410
     },
     "e24fc7c207519d618fac99973c4715ebcd66521cea4ce614c5eb74d350b1e8e1": {
       "number": 269,
@@ -1716,7 +1717,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 340
+      "ms": 354
     },
     "60d9ae9d0058b3cdfb41a7f073b4ac9310452391637ff0e66eb5da555da08b3c": {
       "number": 272,
@@ -1751,7 +1752,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 336
+      "ms": 374
     },
     "7d39829e95338311bcea6745f0eba4a9b78ec55dd34f81d0d31fd5214055798b": {
       "number": 277,
@@ -1786,7 +1787,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 385
+      "ms": 323
     },
     "06e43b341a68bb29838d6b0a9c46831ba9408522a57b635f13daef325ea66602": {
       "number": 282,
@@ -1814,7 +1815,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 299
+      "ms": 390
     },
     "7f80fc0f9abf15cebdd54e83bba4ed7b875f9e70a7d9bfe4ea111f6be3a4ecaa": {
       "number": 286,
@@ -1897,7 +1898,7 @@
       "number": 297,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
-      "active": true,
+      "active": false,
       "ms": 421
     },
     "6a125f6f5386e5c6dec0bc528dee228305c50bf4b75ffbb12c0deef35a59f54b": {
@@ -1905,7 +1906,7 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 348
+      "ms": 720
     },
     "f2aca2e3f2108012f871a17fff55d04c758dde52957b5ab18d0027ca0c1dbbba": {
       "number": 299,
@@ -1933,7 +1934,7 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 315
+      "ms": 730
     },
     "0a03ce8c91f884d90ea169274b75c5c12e8a58526a1843f05167d50a58d0d4f7": {
       "number": 303,
@@ -2003,7 +2004,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 657
+      "ms": 381
     },
     "36baa36bc51cfdd7b1c2429f7f7671ed2993ec9a328046cc97a84178350a6b0d": {
       "number": 313,
@@ -2030,7 +2031,7 @@
       "number": 316,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 427
     },
     "fab94441ffdc75cf7fb7796a2a320f8b29cc69aebeeef31d33034c85e8f09141": {
@@ -2045,7 +2046,7 @@
       "added": "2026nov8",
       "protocol": "HTTP",
       "active": true,
-      "ms": 397
+      "ms": 452
     },
     "2cf10857d3c04a1bb2bbc228e17bdbe30ed93b473fe38b2426cc1796c25e2c14": {
       "number": 319,
@@ -2093,7 +2094,7 @@
       "number": 325,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 471
     },
     "08f75a5d7a844b17e0d8a355197f6f1c1a5570af2df41828f5971fbaa74464e4": {
@@ -2150,7 +2151,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 700
+      "ms": 790
     },
     "f27201e31768546c0a2a3ab06f42d179c9db1c93b666ea24d3f6e9c9787e1f31": {
       "number": 334,
@@ -2163,7 +2164,7 @@
       "number": 335,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2150
     },
     "ce04daa095a940e50844e8dad9085033e9b313018f6359d055d22229db53f0c6": {
@@ -2199,7 +2200,7 @@
       "added": "2026nov8",
       "protocol": "SSR",
       "active": true,
-      "ms": 343
+      "ms": 610
     },
     "e1dc74e7f8c206e076214582c254cf199d2c9c1afb6207b3377d76869eeb17b0": {
       "number": 341,
@@ -2241,13 +2242,13 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1887
+      "ms": 3619
     },
     "6a3e90a8b809e7f12d234ac130c1e9de71886134babfc550062cdfcb87fb6d99": {
       "number": 347,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
-      "active": true,
+      "active": false,
       "ms": 550
     },
     "382afe3934f80a1eceed3f0bad6e3e94e4a36390148e7cb8bcd2e8c07161344e": {
@@ -2317,8 +2318,8 @@
       "number": 357,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": false,
-      "ms": 626
+      "active": true,
+      "ms": 669
     },
     "5e313c32b8fdf543901e043190cb347a64526bafbc85449fc58471e922cfacc1": {
       "number": 358,
@@ -2576,8 +2577,8 @@
       "number": 394,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": false,
-      "ms": 778
+      "active": true,
+      "ms": 875
     },
     "5fce089221e3e6ecc6ac9ee34c67b4b89c401df0470c895689dd3493febf097a": {
       "number": 395,
@@ -2633,7 +2634,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 2743
+      "ms": 1376
     },
     "dbd44d16e642304a9d201ceed197da1a80a7def23f90c98fe0ef0a192c485997": {
       "number": 403,
@@ -2647,7 +2648,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1836
+      "ms": 4640
     },
     "b3bd742200c53f1e8a31f1ef14a0f3b7a6bbd462d9ffb6894048f205f2aeab7d": {
       "number": 405,
@@ -2661,7 +2662,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 840
+      "ms": 847
     },
     "52f9043336cf29650684019aabc433db8e70a6bf4c1abe7f3b093983a8153009": {
       "number": 407,
@@ -2822,7 +2823,7 @@
       "added": "2026nov8",
       "protocol": "SOCKS5",
       "active": true,
-      "ms": 2048
+      "ms": 1163
     },
     "29d52a15542e99cdbcf8a25dee8dc6d17684e3e24c3f71d71a3c1f2c804c7e1b": {
       "number": 430,
@@ -2877,15 +2878,15 @@
       "number": 437,
       "added": "2026nov8",
       "protocol": "VMESS",
-      "active": false,
-      "ms": 2545
+      "active": true,
+      "ms": 2216
     },
     "dd70c3019db5b8a65e4676e5c0a663ba55350f06b5a9b169541ab395050b4c65": {
       "number": 438,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 810
+      "ms": 842
     },
     "dd1f8e24e783413e6afb490c1d534f217fac76cdb7fb8058cfe41621d9d7853d": {
       "number": 439,
@@ -2947,8 +2948,8 @@
       "number": 447,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": false,
-      "ms": 1124
+      "active": true,
+      "ms": 1117
     },
     "83df1b4eec435f0ae52b42a2ead64ef81547f945b679ebff9b40e9cf00a98e17": {
       "number": 448,
@@ -3060,7 +3061,7 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1118
+      "ms": 1119
     },
     "77d82e9889ced823057d167e55dc2c86836ef6d7df5f9457e98e85460505e788": {
       "number": 464,
@@ -3143,7 +3144,7 @@
       "number": 475,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": true,
+      "active": false,
       "ms": 1300
     },
     "9342c1070558e0b5de51da213249282a96a78e455d8b7e3fd3436d6ae26565c7": {
@@ -3214,7 +3215,7 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA",
       "active": true,
-      "ms": 1418
+      "ms": 1439
     },
     "78ea90e16c6cd2a8071e759c570f2bfe167aef1b4080ef3cec7eddd68097a333": {
       "number": 486,
@@ -3297,8 +3298,8 @@
       "number": 497,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": false,
-      "ms": 1336
+      "active": true,
+      "ms": 3284
     },
     "9661b2d86e208cb01508014e3b0437c366c11cb40c994fe8246458ab3cba480a": {
       "number": 498,
@@ -3374,8 +3375,8 @@
       "number": 508,
       "added": "2026nov8",
       "protocol": "VMESS",
-      "active": false,
-      "ms": 1190
+      "active": true,
+      "ms": 2268
     },
     "ca6b01700cc124deb7bfb6979005cbbf726d6f8ee9f5b3f03c726fa4f60bdd8a": {
       "number": 509,
@@ -3395,7 +3396,7 @@
       "number": 511,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": true,
+      "active": false,
       "ms": 613
     },
     "6d9fe952c1a6b89c556cced268e1ed0a7661db5736668ff161762160d44b592d": {
@@ -3507,7 +3508,7 @@
       "number": 527,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1611
     },
     "654f10cd864db35e9ed9a3879f9f478adb76a94cd72292133f2983afff82752b": {
@@ -3570,7 +3571,7 @@
       "number": 536,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2584
     },
     "47475905dc07eef0e9f8b33b5bfd3b2dad504fc3706d1ed38c2031262a4170c1": {
@@ -3683,7 +3684,7 @@
       "added": "2026nov8",
       "protocol": "SOCKS5",
       "active": true,
-      "ms": 1620
+      "ms": 1501
     },
     "a8cc4723e80461e794d7f5aa65d91901f333092a0c95abf92460091f0b64a4c4": {
       "number": 553,
@@ -3745,7 +3746,7 @@
       "number": 561,
       "added": "2026nov8",
       "protocol": "HTTP",
-      "active": true,
+      "active": false,
       "ms": 280
     },
     "f8eb87e72c7cc0532cafcc9de947ec7d585b833eeda61a6c6c0cc37126fb732b": {
@@ -3760,14 +3761,14 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 1903
+      "ms": 1203
     },
     "78d9f73619599552a517a0c24666f992c1d37a38d97c1492841aca6491f22769": {
       "number": 564,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 351
+      "ms": 362
     },
     "3cb86b308aaff7e9efedcf62db8273d12b64ce7ad4331eb4cc95eb8197a20a93": {
       "number": 565,
@@ -3781,7 +3782,7 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 329
+      "ms": 2573
     },
     "fea4c172ce73da8ba89f41fb9c8f2ce0ee0fac9c91f6f4c405c28baa6c7d6f17": {
       "number": 567,
@@ -3815,7 +3816,7 @@
       "number": 571,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1992
     },
     "c9e7f13859ef2a141f807c6362eeaba68aa5cdfd5e4281f7d2c95557a5124f70": {
@@ -3830,7 +3831,7 @@
       "added": "2026nov8",
       "protocol": "SS",
       "active": true,
-      "ms": 1091
+      "ms": 1509
     },
     "d6202fd875eb6f66cf979b5bedd822a518379141c60a06605231a64a5e0102ea": {
       "number": 574,
@@ -3907,13 +3908,13 @@
       "added": "2026nov8",
       "protocol": "SS",
       "active": true,
-      "ms": 2163
+      "ms": 1155
     },
     "89ceb9da0a4f366fd9130e41ae7bc6b436e61906c3b94e910e549c755d774aab": {
       "number": 585,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2230
     },
     "d04e1c6477aa1a8088fddd020b1dceedd18d156e263290dda2d50638140c54ea": {
@@ -3948,8 +3949,8 @@
       "number": 590,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": false,
-      "ms": 514
+      "active": true,
+      "ms": 4672
     },
     "9b755ceaf377bf2eff9afae6af0bc1fc7620243fe9c00cd6c23488f80593a169": {
       "number": 591,
@@ -3963,7 +3964,7 @@
       "added": "2026nov8",
       "protocol": "SS",
       "active": true,
-      "ms": 1998
+      "ms": 1881
     },
     "6a2779d74797db694cdcb779dcf451ce0c43c4643207d6e6af9c9921d3825154": {
       "number": 593,
@@ -3983,7 +3984,7 @@
       "number": 595,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1302
     },
     "694525b4739e3c18961e7823931dab26e71425394bc10c1c41564e4fd5b304eb": {
@@ -3991,13 +3992,13 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 2133
+      "ms": 1609
     },
     "94dd640331406da43eff31522ed468f0b371f916aa07abae596a34aa0039f452": {
       "number": 597,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1653
     },
     "6c66b1d109a194f8539ccce7d5ed8af0d350d100705f0a928be7a689a4f0c338": {
@@ -4018,14 +4019,14 @@
       "number": 600,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": false,
-      "ms": 657
+      "active": true,
+      "ms": 1713
     },
     "f329cb3831a84c748a9eca90d7a95a3a34ec036a2fc0eb8a40598a07ef604c79": {
       "number": 601,
       "added": "2026nov8",
       "protocol": "HTTP",
-      "active": true,
+      "active": false,
       "ms": 584
     },
     "150bd99fb84fbab430be7dbabcab2ad96558f573093076014534350fb26d03e0": {
@@ -4047,28 +4048,28 @@
       "added": "2026nov8",
       "protocol": "SS",
       "active": true,
-      "ms": 1100
+      "ms": 1579
     },
     "daed69bcfff543b6601a79570a3cb9713ec1a1e593d540fadf602721c7876f77": {
       "number": 605,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 1579
+      "ms": 1272
     },
     "b1c13a3f3fc01f9ef534de67824ab0b65908f18f4189af7bcaf8b1c5a542aa06": {
       "number": 606,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 766
+      "ms": 1380
     },
     "4781f4a618f84a2ba0f7d2969243e214f9483756076ef14be0bdb03466e5d2a7": {
       "number": 607,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 436
+      "ms": 1618
     },
     "03f5d696344960c22bc99bbcd7400ea13ee13ff084b14d1231dc120747376329": {
       "number": 608,
@@ -4082,7 +4083,7 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 822
+      "ms": 2084
     },
     "dba6e39039db6133c8e897cae1effb02ec6c8bf7450fb125c2c436281c67c2c6": {
       "number": 610,
@@ -4095,14 +4096,14 @@
       "number": 611,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
-      "active": false,
-      "ms": 825
+      "active": true,
+      "ms": 2329
     },
     "246efc9c48a9c27dd8b100e8fb9fda871fc590ea03e787c7d24ad6bc8213a955": {
       "number": 612,
       "added": "2026nov8",
       "protocol": "HTTP",
-      "active": true,
+      "active": false,
       "ms": 868
     },
     "60a757eb804b330f0d9a08d0981777608dc6cf35d4e9f71e5611c76e5c307304": {
@@ -4179,7 +4180,7 @@
       "number": 623,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
-      "active": true,
+      "active": false,
       "ms": 1144
     },
     "a2a696a399be9565e2b55789bfa8961a012c8392eba7ac5aa3d9235837929946": {
@@ -4214,8 +4215,8 @@
       "number": 628,
       "added": "2026nov8",
       "protocol": "VMESS",
-      "active": false,
-      "ms": 1656
+      "active": true,
+      "ms": 1355
     },
     "9240b100e64489f48e41566e8f05df8ee581ace1f73779c385a470efa56fb918": {
       "number": 629,
@@ -4229,7 +4230,7 @@
       "added": "2026nov8",
       "protocol": "HTTP",
       "active": true,
-      "ms": 2267
+      "ms": 2449
     },
     "e208e9e44631d002ab4e6d1ea890ecbd8a6e426eb8a8f72dce3096f9f25dc139": {
       "number": 631,
@@ -4243,7 +4244,7 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 1688
+      "ms": 3747
     },
     "7b2ecdf04b647eac28ea83c1bcc270366ff409081c7e479da805dd7526c4b76f": {
       "number": 633,
@@ -4278,27 +4279,27 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 359
+      "ms": 856
     },
     "f3af15e42631c1e17c5a7911dcd786e34f4cdece9db852e5d6e2abe94bf7b554": {
       "number": 638,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 361
+      "ms": 374
     },
     "7dd95e8618d186d4a951bec2ab3ab167b4d0b3581b7ca0d3a5a52f70f5784941": {
       "number": 639,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": true,
+      "active": false,
       "ms": 362
     },
     "1d1220949ae416a8fdcbe8d9cebd1bb32a57e8e4cd54a2b17f8f963010740c75": {
       "number": 640,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 387
     },
     "137f5fca4e4997f62317db4994d71f46318dcf33c9a830dbab5b5291b506ffd5": {
@@ -4306,41 +4307,41 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 393
+      "ms": 1307
     },
     "cdaad770793f30ee1d4cb7da49452be8176c5ceddeff5cdc9d8f72fc39cfcc00": {
       "number": 642,
       "added": "2026nov8",
       "protocol": "SOCKS5",
       "active": true,
-      "ms": 394
+      "ms": 1429
     },
     "ce42769990a4496097389c7bb3dd39a7a44af3dd3ea769de767162c806cbec63": {
       "number": 643,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 425
     },
     "b0a6b36b6024ac52f78cf70e04536e71bde31cc86415eb2df9987ecc2840c2e0": {
       "number": 644,
       "added": "2026nov8",
       "protocol": "SOCKS5",
-      "active": true,
+      "active": false,
       "ms": 448
     },
     "bc6f45f8266c8c19f321f4fb82b086a424e316e88fb962b92cea25a67840d35e": {
       "number": 645,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 457
     },
     "43c0d3227d27f098cadcc72a99fb164052d1772510fbab83a536d8b562382901": {
       "number": 646,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 502
     },
     "a0d0455629f02d8050636a415b0da2346509d2815e3deb2e1b90889575c4e3c2": {
@@ -4348,20 +4349,20 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 521
+      "ms": 2607
     },
     "1d32fa8a867969d8508713d411316c80e1df358428985a77b044b519360eb987": {
       "number": 648,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 524
+      "ms": 1168
     },
     "bcd1b849e25b253a6dc164f468e3bb193901f3ef28a313e71b910b9bc95e0799": {
       "number": 649,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 552
     },
     "b4be8a00b0d340a454cf87bd923e753452267ad1ce036cf7d28b1dfc4717f257": {
@@ -4369,13 +4370,13 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 590
+      "ms": 1859
     },
     "dba6bae74350580a1b37d910d68f42b43ca93512fdd715d8b6629f4572b94687": {
       "number": 651,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 599
     },
     "f0002e4428bc974f931446a03d60867735afe4352fb51b17a4da4fe16542e356": {
@@ -4383,27 +4384,27 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 636
+      "ms": 2086
     },
     "6af2d744581e7092e1b02899119c6893e584fd7cd091c933109bf08e440f1bb6": {
       "number": 653,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 731
+      "ms": 3575
     },
     "2b71983b9d4ad3c5be686bb876f1ff90cf83fe13e0eed23d1d63438dbeb2f940": {
       "number": 654,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 760
+      "ms": 921
     },
     "7303a7f4eb8ccda89006dcac8a6296a76e25fa81c8b1d855aa13cb7bd7bb010c": {
       "number": 655,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 829
     },
     "65cf60a77858640b9aaa96c1bbca5a925d211f0dc6196e53d50cd8fa63ab596b": {
@@ -4411,34 +4412,34 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 833
+      "ms": 592
     },
     "98ce7d64167f3c52ae738377de9e60c5cb2520f5526fb1fbb3662505e89178ef": {
       "number": 657,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 950
+      "ms": 2086
     },
     "4f34a1368e33523f8b13b5a3303a8f825e633fabc13fc37ffd30acd903cc89e6": {
       "number": 658,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1007
     },
     "af4d19482ea2fe2097e9226973c7e4d5b2042d9fe8bc1264feccd2a40cabda18": {
       "number": 659,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1034
     },
     "5ee1f31c1714d8fb41ef0dffc91e356ecf339ad4a562c5fee28891d37ab30564": {
       "number": 660,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1064
     },
     "74bd3975f561c7da3c6f91a4fa6fc65c083eb2a39663f6f8a5efc21b82ea980f": {
@@ -4446,20 +4447,20 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1118
+      "ms": 2596
     },
     "0682e51c889471b7848e9c4630996f77ab7a9dcbdd398d75143cfbce673091a7": {
       "number": 662,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 1133
+      "ms": 2524
     },
     "0bc77e5f24464e5558a5d166c9f2c97ca06f4eec4abd15e011eb9157a0909f4e": {
       "number": 663,
       "added": "2026nov8",
       "protocol": "TROJAN",
-      "active": true,
+      "active": false,
       "ms": 1157
     },
     "76e75b0f56812147fd29f83933ca6ad95d6d8f6f084c9ac36afb91619dd7d4c1": {
@@ -4467,20 +4468,20 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1178
+      "ms": 1391
     },
     "2467ea6671959a466b99ee3dd69fd6770fd18f9d6ba75db60c87304d06f157f3": {
       "number": 665,
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1185
+      "ms": 2800
     },
     "e70758d6deadba8dcd59e793cd58234cdafaf4c8693007f60a70b84d187c9d51": {
       "number": 666,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1220
     },
     "f2b910133e01304546b1b5d62c452a77c1edf1178bcaaefb7ffe341082b5678b": {
@@ -4488,20 +4489,20 @@
       "added": "2026nov8",
       "protocol": "VLESS",
       "active": true,
-      "ms": 1349
+      "ms": 2685
     },
     "8d4a69a42888c8555a13c8cf4dee2ea579b662f6c39efb92d00baffa6cf914d1": {
       "number": 668,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1382
     },
     "d01de63bf93b4f5261410870cf168f72681d650c97a0084c565b01f1ee7bfe2e": {
       "number": 669,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1392
     },
     "8a74b6013f5bf27f4601143047b853a6a518b4e970efeaaf0155b8a7623c1fc8": {
@@ -4509,34 +4510,34 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 1634
+      "ms": 2615
     },
     "be701bfb60a860d91f2f8112de5a8aac4c468ccfd4df1fbc52d0b51f8aea2159": {
       "number": 671,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1655
     },
     "76866a9cd6e5123ecd4741584fdf66e511087074c87ccd0d6033d047f199186a": {
       "number": 672,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1718
     },
     "7c2dea8bb6f7d908c9b3fe4b57ad53ad905948668114bf3b241743eb21b6c4a0": {
       "number": 673,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1776
     },
     "c373ec92cd5b21332c49d91c0c17df51c5cfdc0e7ad112a93c87f37079399d8a": {
       "number": 674,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1822
     },
     "0ebf6b28c5680d7c7292624283238eb0656be3a137c4133129db11dfc5074ca4": {
@@ -4544,42 +4545,378 @@
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
       "active": true,
-      "ms": 2147
+      "ms": 1824
     },
     "4eb1e550bac6bebd9c9c4491168c9bc4a039c1a884cb0ecb3390ae4b60884499": {
       "number": 676,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2288
     },
     "aefeb31c3d034518fe0ef5aa201a172cf18aa7acab7a232d918793bd5124436a": {
       "number": 677,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2318
     },
     "08f822101c4677d707a3b79f87b1f1ea3f5aefca16e14f3ba1c3b5df2faa5a1c": {
       "number": 678,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2481
     },
     "e1d5894c7a85d4515c75283c1defe8d49487217f46ad3808e842905236af1f5d": {
       "number": 679,
       "added": "2026nov8",
       "protocol": "ANYTLS",
-      "active": true,
+      "active": false,
       "ms": 2656
     },
     "eba6c00b38a14ccb1a94b0a90061b01d785f87581da35d28bbbb94e9c84bfd79": {
       "number": 680,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2734
+    },
+    "8882740d555e52bf30a5953bddd33cd88bdbe03e8a1d6989d666d6efbc1cc013": {
+      "number": 681,
+      "added": "2026nov8",
+      "protocol": "TROJAN",
+      "active": true,
+      "ms": 314
+    },
+    "d1703329d3fcbafc3a9ee136a07d20ad48449a66d44560bc5ed3fc2caa0ed64b": {
+      "number": 682,
+      "added": "2026nov8",
+      "protocol": "TROJAN",
+      "active": true,
+      "ms": 316
+    },
+    "9bdf167545e5b92ca5169be04b7eb0b02c5feaef58f76db23d55355c588b5804": {
+      "number": 683,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 394
+    },
+    "2795bad21d2f08d318acc49e9e438abd9e0dc571924a2a9846a1946a8ae6568f": {
+      "number": 684,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 412
+    },
+    "7e680b16d6707cc9739fa47194d7f15a7b14d570df955c96996880d617fd89b0": {
+      "number": 685,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 437
+    },
+    "2f48bd4787c3723dfd0a2de62cc3add05e52a3a49b403a91bcfc2bbdcd492c8a": {
+      "number": 686,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 451
+    },
+    "17098c3efc5d5ba4b37c79fdddcc46589c92ed132e48e5eae0458423705fd56a": {
+      "number": 687,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 525
+    },
+    "6ebc6387abb07ef88201004d11fa87f487939341f813b66e9fc2545a0ad1d892": {
+      "number": 688,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 534
+    },
+    "e6d02d60abf94a297983966d8127a9d0612fbead1655aa850a3ec940e0dd93a9": {
+      "number": 689,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 561
+    },
+    "b8eb85d5b08118f6252a60caac7daf8a4a66342b34b5dfaa3d90425328bc14c6": {
+      "number": 690,
+      "added": "2026nov8",
+      "protocol": "HYSTERIA2",
+      "active": true,
+      "ms": 602
+    },
+    "ca4713696977921fca3a96c5e7b41a75ddaec4ae3b1bb34039dd4d502a48a417": {
+      "number": 691,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 605
+    },
+    "6029c004db16acaf0d67f99fcff9b95cd89e52540b9d7b64bdc3ada7ecb01f22": {
+      "number": 692,
+      "added": "2026nov8",
+      "protocol": "TROJAN",
+      "active": true,
+      "ms": 642
+    },
+    "9e76ab10d638286d32fd245349212621cf681936a6b78884102dac1f57863353": {
+      "number": 693,
+      "added": "2026nov8",
+      "protocol": "HYSTERIA2",
+      "active": true,
+      "ms": 645
+    },
+    "d4508a73733830cfe500275e821091ce658a02e84c934fdf6643f8efa44c32c9": {
+      "number": 694,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 693
+    },
+    "ae4ba41fffa958ed9064ece3f73567a9dd35cdebbca82fe7c9bb2117104f0870": {
+      "number": 695,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 925
+    },
+    "4314bfe18dc315af9507057bb2b100d327695de67fbae07a2c7fb12983349631": {
+      "number": 696,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1002
+    },
+    "09a7856d09625d6d9f27d7c48af8d3dbf027a3f4a8c05bf7142aa4c77291dab1": {
+      "number": 697,
+      "added": "2026nov8",
+      "protocol": "SOCKS5",
+      "active": true,
+      "ms": 1035
+    },
+    "75ca52627f83aa6bc4ad44a749c87b9f37befbf1445cec2de2075b36d6447d27": {
+      "number": 698,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1067
+    },
+    "817b11e375914af726d0cfcb4fae6a088f2e480c86a0531165f2388c2c5b0f3c": {
+      "number": 699,
+      "added": "2026nov8",
+      "protocol": "HYSTERIA2",
+      "active": true,
+      "ms": 1072
+    },
+    "0bef07df35e2f8f7a9aef360db67851a5deefadcd5d225c506a43d492288f02f": {
+      "number": 700,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1215
+    },
+    "fcbdfe3c9a42bb928dc194b30bda0f00adfa27f77fe813a92611a7d4d53082cc": {
+      "number": 701,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1267
+    },
+    "6695f4643043daa67f435985e5cd03be8d9565b58004af3d59f1e7a4e08c269c": {
+      "number": 702,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1281
+    },
+    "35d241b73f3c1c62a0825f3ca4414edf6d2fddf27bacb2bdb764c3569c35ea4b": {
+      "number": 703,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1359
+    },
+    "4ae9ebc9b0e69522931614847ac9f891741c3340f6e1750a3971ff2409420bb5": {
+      "number": 704,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1359
+    },
+    "ea6f17b6e82fa484325c583e99164d845047037ce45295e0b2eda67c01d770c4": {
+      "number": 705,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1365
+    },
+    "26347489ae3254e5afa8bd301ae677488d29f114353045eb312ab7def45d6ce1": {
+      "number": 706,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1427
+    },
+    "ad97b94833c275fdfe667be565e7b8dc3328d891ee0ddbfb2c44396908181eef": {
+      "number": 707,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1491
+    },
+    "a2040e4cac54167c635a324aea21dbb75f4efd359ff568e0d6da1b75b5491926": {
+      "number": 708,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1618
+    },
+    "c8032cf25288396b35dd8b836c4d8a8e201cabeae0be35c7550f70ed1d22ea75": {
+      "number": 709,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1716
+    },
+    "127462391048a4eda3c375a63bd1e992e9814ee86f9d5e54ceb225d8ea333bcd": {
+      "number": 710,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1747
+    },
+    "322c788dd526f85d30d90e250780973abff926a603469e8e01afc05720850886": {
+      "number": 711,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1796
+    },
+    "2b52b9db09792a9e497c0b66ff4632736ddeeeaacc659115b9032f876e7b2e40": {
+      "number": 712,
+      "added": "2026nov8",
+      "protocol": "TROJAN",
+      "active": true,
+      "ms": 1838
+    },
+    "aa86178646e30a36edd28f0db1917f4a792e38413d5e49b2b22d277b99199d36": {
+      "number": 713,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1968
+    },
+    "3f021abdb40f476913d73c55f45c4a2704204948994d078ad6fb96c613f85849": {
+      "number": 714,
+      "added": "2026nov8",
+      "protocol": "TROJAN",
+      "active": true,
+      "ms": 1983
+    },
+    "8cd0b022c06eb24d7b43e1f735f1ef9e28ddafca938605a2ea8b90cab23a6a1e": {
+      "number": 715,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 1992
+    },
+    "423aa01751859f66826cf5abd0709ffaee7a903d18f78928935f0414b791c6fc": {
+      "number": 716,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 2155
+    },
+    "e534c3ab3c5a2978f1d4b8126652368f01bde4959bd66837947c6ae25fdaa8df": {
+      "number": 717,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 2218
+    },
+    "08dabb9d8f2530ccaf9f507a453f5b6014c48ad32fe5e6fcaa11dd43177a90d7": {
+      "number": 718,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 2521
+    },
+    "9daf764cd8c17f4accf5a98cf994a9d325a99d1942449a6808b1edb5df3ca8fa": {
+      "number": 719,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 2669
+    },
+    "4d2a920d4b556208825b40695918c7f447ff08401a249c5f98a1d391d961ea3e": {
+      "number": 720,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 2990
+    },
+    "aadd1c5008d48cd787a0ac84581b9f680bccdcb37440657a31ca4bfec64bb422": {
+      "number": 721,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 3276
+    },
+    "1abb9a8237ebd50246c1d7d5dae829a663dc46430230bf6edc9c606d4ae0c65d": {
+      "number": 722,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 3740
+    },
+    "068146cce6fcfdf405bfbbf38dc76b3c61dff9737fada2dc6b3b647273d7502e": {
+      "number": 723,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 3895
+    },
+    "a9ba2c7e04879f4780facbc960a00716b00df41c255bf38754245edde4d3083a": {
+      "number": 724,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 4038
+    },
+    "a862a3ee17590955ca2302f317eb8fface8a7d2e0fca997207c8ea8068dcafbb": {
+      "number": 725,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 5002
+    },
+    "1275b7a9afe6b9788ca4b9e141d9839d01f7dfb8a82a9b0405350a19b63bbda3": {
+      "number": 726,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 5084
+    },
+    "e8dce6a0eaad34cd8dc415f8643823fccdfdee5ec6450533feec19091ad49257": {
+      "number": 727,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 5438
+    },
+    "fb1ae58756877c13a48b4376cc6f73263c9b3decd590d2b1940857bc4eee9593": {
+      "number": 728,
+      "added": "2026nov8",
+      "protocol": "VLESS",
+      "active": true,
+      "ms": 5550
     }
   }
 }

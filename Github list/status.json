@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "checked_at": "2026-11-08T16:32:50+03:00",
+  "checked_at": "2026-11-08T18:11:09+03:00",
   "complete": true,
   "sources": [
     {
       "index": 0,
       "ok": true,
-      "parsed": 128,
+      "parsed": 147,
       "skipped": 0
     },
     {
       "index": 1,
       "ok": true,
-      "parsed": 613,
+      "parsed": 586,
       "skipped": 0
     },
     {
@@ -47,7 +47,7 @@
     {
       "index": 7,
       "ok": true,
-      "parsed": 18358,
+      "parsed": 18413,
       "skipped": 73
     },
     {
@@ -82,7 +82,7 @@
     {
       "index": 13,
       "ok": true,
-      "parsed": 14488,
+      "parsed": 14402,
       "skipped": 25
     },
     {
@@ -196,14 +196,14 @@
     {
       "index": 33,
       "ok": true,
-      "parsed": 763,
+      "parsed": 850,
       "skipped": 1
     },
     {
       "index": 34,
       "ok": true,
-      "parsed": 9956,
-      "skipped": 58
+      "parsed": 9760,
+      "skipped": 48
     },
     {
       "index": 35,
@@ -214,7 +214,7 @@
     {
       "index": 36,
       "ok": true,
-      "parsed": 130,
+      "parsed": 129,
       "skipped": 0
     },
     {
@@ -268,7 +268,7 @@
     {
       "index": 45,
       "ok": true,
-      "parsed": 160,
+      "parsed": 226,
       "skipped": 1
     },
     {
@@ -352,13 +352,13 @@
     {
       "index": 59,
       "ok": true,
-      "parsed": 361,
+      "parsed": 417,
       "skipped": 1
     },
     {
       "index": 60,
       "ok": true,
-      "parsed": 48,
+      "parsed": 37,
       "skipped": 0
     },
     {
@@ -376,19 +376,19 @@
     {
       "index": 63,
       "ok": true,
-      "parsed": 1328,
+      "parsed": 1343,
       "skipped": 13
     },
     {
       "index": 64,
       "ok": true,
-      "parsed": 614,
+      "parsed": 620,
       "skipped": 2
     }
   ],
-  "candidates": 38898,
-  "checked": 38898,
-  "working": 113,
-  "retired": 567,
+  "candidates": 38731,
+  "checked": 38731,
+  "working": 126,
+  "retired": 602,
   "interval_hours": 12
 }
