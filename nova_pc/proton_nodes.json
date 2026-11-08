@@ -1,5 +1,5 @@
 {
- "generated_at": 1794091561226,
+ "generated_at": 1794104989484,
  "source": "vpn-api.proton.me /vpn/logicals?Tier=0",
  "note": "Only public server facts. No keys, no account: each device registers its own.",
  "nodes": [
@@ -9,7 +9,7 @@
    "city": "Vancouver",
    "entry_ip": "79.127.254.92",
    "peer_public_key": "WajeJDezN7JFBe//v/VMsASFyBUk01Hlyvjb0T+dTjE=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CH-FREE#10",
@@ -17,7 +17,7 @@
    "city": "Zurich",
    "entry_ip": "135.136.39.2",
    "peer_public_key": "1WO+SU1kJCYR5ZWBVK/M7bNsvz1HWIFlq/xafhDqHnk=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "JP-FREE#16",
@@ -25,7 +25,7 @@
    "city": "Tokyo",
    "entry_ip": "45.87.213.226",
    "peer_public_key": "BbghXRtbSYBJ2Q/eMu4JV7u8LKiKDfgybk7IJAO7iAU=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "MX-FREE#11",
@@ -33,7 +33,7 @@
    "city": "Mexico City",
    "entry_ip": "84.20.27.48",
    "peer_public_key": "7VxfDXa073wXtKpGeczTuID/XmwSwmWSPTUBt20SwBo=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NL-FREE#102",
@@ -41,7 +41,7 @@
    "city": "Amsterdam",
    "entry_ip": "212.8.243.7",
    "peer_public_key": "n4RGP+MGDzRHZ1eoPLQZgpuWxtjnW7qL8qzOP1DRvHo=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NO-FREE#10",
@@ -49,7 +49,7 @@
    "city": "Oslo",
    "entry_ip": "95.173.205.161",
    "peer_public_key": "N9uq1Vwlu7tHTzG13/P/Plo8m4HJLeal8rdHeD96MxE=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "PL-FREE#13",
@@ -57,7 +57,7 @@
    "city": "Warsaw",
    "entry_ip": "149.102.244.112",
    "peer_public_key": "zear23pwkz4A+s8Q3KiCW8el4SrYYzv/lSgd4+xrVEU=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "RO-FREE#23",
@@ -65,7 +65,7 @@
    "city": "Bucharest",
    "entry_ip": "146.70.246.98",
    "peer_public_key": "ehwHh3WXBDwFxqTs4Oa8aZZYjOnd3NwjbMArKRwTqzs=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "SG-FREE#14",
@@ -73,15 +73,15 @@
    "city": "Singapore",
    "entry_ip": "103.216.221.68",
    "peer_public_key": "sze+UvjxRhaUuBHVPEf7XwPcgu6Y715XljvHmKGiZkw=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
-   "server_name": "US-FREE#112",
+   "server_name": "US-FREE#106",
    "country": "US",
-   "city": "Los Angeles",
-   "entry_ip": "149.34.251.138",
-   "peer_public_key": "3XROzgS72QDRKE3Z2XcnppVNFPaLFCeSRDmsCe6EGws=",
-   "last_seen": 1794091561226
+   "city": "Miami",
+   "entry_ip": "138.199.50.134",
+   "peer_public_key": "/iPQhCh0/kEzS60D5ysFOQHSyUAFV9sx77AckhzA9Xw=",
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CA-FREE#25",
@@ -89,7 +89,7 @@
    "city": "Montreal",
    "entry_ip": "195.242.214.66",
    "peer_public_key": "1fGFZtHU8r8qwdnron9E80NdvLw5WcUdhPgh7phzQnA=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CH-FREE#3",
@@ -97,7 +97,7 @@
    "city": "Zurich",
    "entry_ip": "138.199.6.178",
    "peer_public_key": "YpOUROUnumcF/snGX8zka0nThnvHesceJAYUSbZL1XQ=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "JP-FREE#17",
@@ -105,7 +105,7 @@
    "city": "Tokyo",
    "entry_ip": "193.148.16.2",
    "peer_public_key": "5fFhuzIQPu8C4tySJuCJYg/13g75APFtMnqn3oeCpxk=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "MX-FREE#17",
@@ -113,7 +113,7 @@
    "city": "Mexico City",
    "entry_ip": "84.20.27.58",
    "peer_public_key": "URaamKea0+XnjnyKk/cqH0pV4gPQR0miGloUa6LXoHk=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NL-FREE#103",
@@ -121,7 +121,7 @@
    "city": "Amsterdam",
    "entry_ip": "212.8.253.154",
    "peer_public_key": "avWNWfLsQAQhnRAioRnpZ2LI1nMqd73lWr5zt4aZ1Vo=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NO-FREE#5",
@@ -129,7 +129,7 @@
    "city": "Oslo",
    "entry_ip": "95.173.205.167",
    "peer_public_key": "2s+PN1/EcGL6LAK7YamHOYqL0waTlwc43+RR6+hxORQ=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "RO-FREE#24",
@@ -137,7 +137,7 @@
    "city": "Bucharest",
    "entry_ip": "146.70.246.114",
    "peer_public_key": "dgVvjsBPhkKantancTMGlcd10ikyQjCtSTG2muBjvHA=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "SG-FREE#18",
@@ -145,15 +145,15 @@
    "city": "Singapore",
    "entry_ip": "103.216.221.72",
    "peer_public_key": "whEECgH2k+DQjnLR/Vf/Chm7pLsxCnTd9fzCRcWFqzM=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
-   "server_name": "US-FREE#121",
+   "server_name": "US-FREE#112",
    "country": "US",
-   "city": "New York",
-   "entry_ip": "195.86.56.193",
-   "peer_public_key": "MSijg4vzeYXFltBAChuWBWlsCj/nHu0/UwiLPBeRn3I=",
-   "last_seen": 1794091561226
+   "city": "Los Angeles",
+   "entry_ip": "149.34.251.138",
+   "peer_public_key": "3XROzgS72QDRKE3Z2XcnppVNFPaLFCeSRDmsCe6EGws=",
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CA-FREE#26",
@@ -161,7 +161,7 @@
    "city": "Montreal",
    "entry_ip": "195.242.214.82",
    "peer_public_key": "UxO6dfnNdsbxrLDCoAZJSFd/D9eJ9FKbfF0FTZjwYE0=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CH-FREE#7",
@@ -169,7 +169,7 @@
    "city": "Zurich",
    "entry_ip": "149.88.27.234",
    "peer_public_key": "XPVCz7LndzqWe7y3+WSo51hvNOX8nX5CTwVTWhzg8g8=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "JP-FREE#20",
@@ -177,7 +177,7 @@
    "city": "Tokyo",
    "entry_ip": "212.102.51.1",
    "peer_public_key": "jXayHq4Z5KQC1woRwm6ymLFZot/+158IWDT++u5d2Qc=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "MX-FREE#3",
@@ -185,7 +185,7 @@
    "city": "Mexico City",
    "entry_ip": "149.102.224.33",
    "peer_public_key": "rNyiLhJsBGoHd0A6Yrzt6c5DHuD3urE5+ZN3DZITfD8=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NL-FREE#104",
@@ -193,7 +193,7 @@
    "city": "Amsterdam",
    "entry_ip": "212.8.253.137",
    "peer_public_key": "URpeZxtyUXAUUA0MWcFdCSa7F+MvchJ4eNSJUetKEGk=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NO-FREE#6",
@@ -201,7 +201,7 @@
    "city": "Oslo",
    "entry_ip": "95.173.205.165",
    "peer_public_key": "84dSFrHWsJr34E8GWyXZsxFourH7+vbjUoJWlZmS13I=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "RO-FREE#25",
@@ -209,7 +209,7 @@
    "city": "Bucharest",
    "entry_ip": "185.45.15.34",
    "peer_public_key": "AQMQis3/N2TP377PKH0D6DjEhu0pLanSK6dCbYE7q3U=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "SG-FREE#28",
@@ -217,15 +217,15 @@
    "city": "Singapore",
    "entry_ip": "134.82.69.8",
    "peer_public_key": "IguxCgINPgHZTq/szxWNYmbkDcBzGF2xi9QQaKhtLyA=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
-   "server_name": "US-FREE#126",
+   "server_name": "US-FREE#121",
    "country": "US",
-   "city": "Los Angeles",
-   "entry_ip": "194.180.33.4",
-   "peer_public_key": "SFgFz2TYLp3F1X+wuGgH2op1S4JQTNo0xLvwpWAbqSU=",
-   "last_seen": 1794091561226
+   "city": "New York",
+   "entry_ip": "195.86.56.193",
+   "peer_public_key": "MSijg4vzeYXFltBAChuWBWlsCj/nHu0/UwiLPBeRn3I=",
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CA-FREE#27",
@@ -233,7 +233,7 @@
    "city": "Montreal",
    "entry_ip": "195.242.214.98",
    "peer_public_key": "XbGwL81pGF/qkWhFZgQIn8w3mpboSiZZ2HHgsnT8ug8=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "JP-FREE#21",
@@ -241,7 +241,7 @@
    "city": "Tokyo",
    "entry_ip": "37.19.205.198",
    "peer_public_key": "xrZTJ9U7GHo834PN1sckR4RuLjP/Sy0jb2d0z1pLgzU=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "MX-FREE#7",
@@ -249,7 +249,7 @@
    "city": "Mexico City",
    "entry_ip": "149.88.17.182",
    "peer_public_key": "G1H7jHJjOxnNXy0GPQNRT5ikSESyagGePfG1COP+4Hs=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NL-FREE#105",
@@ -257,7 +257,7 @@
    "city": "Amsterdam",
    "entry_ip": "185.182.193.5",
    "peer_public_key": "OHfJZwL3BOXMyuhgvdY/8Q55VnM+Q/4qA3EkF7RG2l0=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "RO-FREE#26",
@@ -265,7 +265,7 @@
    "city": "Bucharest",
    "entry_ip": "185.252.220.146",
    "peer_public_key": "Io8cLLfUyY9INwZ26X+thOzpMGRim0ek1VzZ19RpM2o=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "SG-FREE#3",
@@ -273,15 +273,15 @@
    "city": "Singapore",
    "entry_ip": "149.50.211.139",
    "peer_public_key": "9lzYRM9SNjGGkYjc0FcYCWFO9ZWEFRwHboW6RLeUnBU=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
-   "server_name": "US-FREE#130",
+   "server_name": "US-FREE#126",
    "country": "US",
    "city": "Los Angeles",
-   "entry_ip": "194.180.33.20",
-   "peer_public_key": "jyiQbTTHvl6eLhIQWi1zL7xzPppbV7z+hFJ6e7CEmAg=",
-   "last_seen": 1794091561226
+   "entry_ip": "194.180.33.4",
+   "peer_public_key": "SFgFz2TYLp3F1X+wuGgH2op1S4JQTNo0xLvwpWAbqSU=",
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CA-FREE#28",
@@ -289,7 +289,7 @@
    "city": "Montreal",
    "entry_ip": "195.242.214.114",
    "peer_public_key": "cFWV9L1uNf/u4Hiojt0u4G4E4I12WB65JRq7nkHl0ns=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "JP-FREE#22",
@@ -297,7 +297,7 @@
    "city": "Tokyo",
    "entry_ip": "212.102.51.82",
    "peer_public_key": "MAcpo7g9lyHpGue89B7P8hLlEFGOFMcGteAMROiH/1g=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NL-FREE#106",
@@ -305,7 +305,7 @@
    "city": "Amsterdam",
    "entry_ip": "185.182.193.107",
    "peer_public_key": "ExWwfvm2QK3oJhrz4s0tsBLt1PVBiONhljwh5jt40Bk=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "SG-FREE#33",
@@ -313,15 +313,15 @@
    "city": "Singapore",
    "entry_ip": "134.82.69.13",
    "peer_public_key": "tl5gm9lq1sO+nXI5kXKcs9pIFWzjij1HkMnOEN9pCCQ=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
-   "server_name": "US-FREE#131",
+   "server_name": "US-FREE#130",
    "country": "US",
    "city": "Los Angeles",
-   "entry_ip": "194.180.33.6",
-   "peer_public_key": "FOJ0a5AFAg9qx7PyT5EPv2Puan799os+b9NT0gZEeFc=",
-   "last_seen": 1794091561226
+   "entry_ip": "194.180.33.20",
+   "peer_public_key": "jyiQbTTHvl6eLhIQWi1zL7xzPppbV7z+hFJ6e7CEmAg=",
+   "last_seen": 1794104989484
   },
   {
    "server_name": "CA-FREE#29",
@@ -329,7 +329,7 @@
    "city": "Montreal",
    "entry_ip": "195.242.214.130",
    "peer_public_key": "TEUAMY5iMm31LFvOgYjJKRsjZrF8ICRjSrqgwscrFx0=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "JP-FREE#23",
@@ -337,7 +337,7 @@
    "city": "Tokyo",
    "entry_ip": "212.102.51.55",
    "peer_public_key": "7dX09Wp//k+EEa/5gqFbLgXuF05HyZ8Ltr1nY3fO8Hg=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "NL-FREE#111",
@@ -345,7 +345,7 @@
    "city": "Amsterdam",
    "entry_ip": "138.199.7.181",
    "peer_public_key": "3zbpHOqpez35mYzzZz3VmEANpv5ZWRhFFXfapRELvms=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
   },
   {
    "server_name": "SG-FREE#6",
@@ -353,7 +353,55 @@
    "city": "Singapore",
    "entry_ip": "149.50.211.134",
    "peer_public_key": "AMrYsHq/kc8SLUxR5Z9OXuNCcF9YvsOl9Ch60hc+Q2U=",
-   "last_seen": 1794091561226
+   "last_seen": 1794104989484
+  },
+  {
+   "server_name": "US-FREE#131",
+   "country": "US",
+   "city": "Los Angeles",
+   "entry_ip": "194.180.33.6",
+   "peer_public_key": "FOJ0a5AFAg9qx7PyT5EPv2Puan799os+b9NT0gZEeFc=",
+   "last_seen": 1794104989484
+  },
+  {
+   "server_name": "CA-FREE#5",
+   "country": "CA",
+   "city": "Toronto",
+   "entry_ip": "149.88.97.122",
+   "peer_public_key": "mS8GfqvUvazXvSYg7VHV7s8eEyU0yyGjJwYgdjHq23A=",
+   "last_seen": 1794104989484
+  },
+  {
+   "server_name": "JP-FREE#25",
+   "country": "JP",
+   "city": "Tokyo",
+   "entry_ip": "91.207.174.2",
+   "peer_public_key": "FUnwfgDQWcuTC3BacXUv9hZhkNWywecdsJz2c4FZJCI=",
+   "last_seen": 1794104989484
+  },
+  {
+   "server_name": "NL-FREE#112",
+   "country": "NL",
+   "city": "Amsterdam",
+   "entry_ip": "149.34.244.129",
+   "peer_public_key": "U6Jj/WjvFjeGa4ub7Sbqv7082Ex6l4AoBtsGTnw4glY=",
+   "last_seen": 1794104989484
+  },
+  {
+   "server_name": "SG-FREE#8",
+   "country": "SG",
+   "city": "Singapore",
+   "entry_ip": "149.88.23.112",
+   "peer_public_key": "1Q+YAWvSjyl8ooypm+O1OFsCOjyI3ZAaesASMloFVW8=",
+   "last_seen": 1794104989484
+  },
+  {
+   "server_name": "US-FREE#138",
+   "country": "US",
+   "city": "New York",
+   "entry_ip": "194.180.34.9",
+   "peer_public_key": "6ZjXjsAFfUYg0j3YadtfiBr9EZtiuZeqhD5zTP/VsT4=",
+   "last_seen": 1794104989484
   },
   {
    "server_name": "US-FREE#134",
@@ -362,54 +410,6 @@
    "entry_ip": "194.180.34.4",
    "peer_public_key": "dmLneQlg7RcqifSS3aHA4VGMVbSf4eTdxi5QfIoF1z4=",
    "last_seen": 1794091561226
-  },
-  {
-   "server_name": "CA-FREE#5",
-   "country": "CA",
-   "city": "Toronto",
-   "entry_ip": "149.88.97.122",
-   "peer_public_key": "mS8GfqvUvazXvSYg7VHV7s8eEyU0yyGjJwYgdjHq23A=",
-   "last_seen": 1794091561226
-  },
-  {
-   "server_name": "JP-FREE#25",
-   "country": "JP",
-   "city": "Tokyo",
-   "entry_ip": "91.207.174.2",
-   "peer_public_key": "FUnwfgDQWcuTC3BacXUv9hZhkNWywecdsJz2c4FZJCI=",
-   "last_seen": 1794091561226
-  },
-  {
-   "server_name": "NL-FREE#112",
-   "country": "NL",
-   "city": "Amsterdam",
-   "entry_ip": "149.34.244.129",
-   "peer_public_key": "U6Jj/WjvFjeGa4ub7Sbqv7082Ex6l4AoBtsGTnw4glY=",
-   "last_seen": 1794091561226
-  },
-  {
-   "server_name": "SG-FREE#8",
-   "country": "SG",
-   "city": "Singapore",
-   "entry_ip": "149.88.23.112",
-   "peer_public_key": "1Q+YAWvSjyl8ooypm+O1OFsCOjyI3ZAaesASMloFVW8=",
-   "last_seen": 1794091561226
-  },
-  {
-   "server_name": "US-FREE#147",
-   "country": "US",
-   "city": "Washington",
-   "entry_ip": "170.23.224.1",
-   "peer_public_key": "XqibeQ+FeeN0aihPq4/WfOOobh9aNtUBfLU7sYs0JwU=",
-   "last_seen": 1794091561226
-  },
-  {
-   "server_name": "US-FREE#154",
-   "country": "US",
-   "city": "New York",
-   "entry_ip": "138.199.52.193",
-   "peer_public_key": "93rOlHiU4A7ACRTdqButvAjwrccdOgOIHwFMumODvgo=",
-   "last_seen": 1794077277010
   },
   {
    "server_name": "CA-FREE#6",
@@ -484,12 +484,12 @@
    "last_seen": 1794035479278
   },
   {
-   "server_name": "US-FREE#33",
+   "server_name": "US-FREE#147",
    "country": "US",
-   "city": "Seattle",
-   "entry_ip": "149.102.254.90",
-   "peer_public_key": "SOXFyakZ9HI9TeiMRyMoy3PXYEzJJ/IDJcMvxZ3uWSE=",
-   "last_seen": 1794077277010
+   "city": "Washington",
+   "entry_ip": "170.23.224.1",
+   "peer_public_key": "XqibeQ+FeeN0aihPq4/WfOOobh9aNtUBfLU7sYs0JwU=",
+   "last_seen": 1794091561226
   },
   {
    "server_name": "CA-FREE#11",
@@ -564,12 +564,12 @@
    "last_seen": 1794035479278
   },
   {
-   "server_name": "US-FREE#118",
+   "server_name": "US-FREE#154",
    "country": "US",
-   "city": "Dallas",
-   "entry_ip": "95.173.217.225",
-   "peer_public_key": "n6db5xfU5XJBqIny+Eq0bxUdB+ZPPsOdjq+EvkKhNEE=",
-   "last_seen": 1794035479278
+   "city": "New York",
+   "entry_ip": "138.199.52.193",
+   "peer_public_key": "93rOlHiU4A7ACRTdqButvAjwrccdOgOIHwFMumODvgo=",
+   "last_seen": 1794077277010
   },
   {
    "server_name": "CA-FREE#20",
@@ -644,12 +644,12 @@
    "last_seen": 1794035479278
   },
   {
-   "server_name": "US-FREE#12",
+   "server_name": "US-FREE#33",
    "country": "US",
    "city": "Seattle",
-   "entry_ip": "149.40.62.26",
-   "peer_public_key": "1Fe25chEMe3i5ODyDeHhC94UY63O4vAyMw1KDgxcAk8=",
-   "last_seen": 1794035479278
+   "entry_ip": "149.102.254.90",
+   "peer_public_key": "SOXFyakZ9HI9TeiMRyMoy3PXYEzJJ/IDJcMvxZ3uWSE=",
+   "last_seen": 1794077277010
   },
   {
    "server_name": "CA-FREE#21",
@@ -724,11 +724,11 @@
    "last_seen": 1794035479278
   },
   {
-   "server_name": "US-FREE#120",
+   "server_name": "US-FREE#118",
    "country": "US",
-   "city": "New York",
-   "entry_ip": "37.19.199.154",
-   "peer_public_key": "S5xB6uboVrSgshy6m3GooV0vamPAwNrMjqFxoei4IyI=",
+   "city": "Dallas",
+   "entry_ip": "95.173.217.225",
+   "peer_public_key": "n6db5xfU5XJBqIny+Eq0bxUdB+ZPPsOdjq+EvkKhNEE=",
    "last_seen": 1794035479278
   },
   {
