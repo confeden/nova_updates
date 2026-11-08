@@ -9,6 +9,9 @@ from unittest.mock import patch
 
 import collector
 
+# The tests were written around batches of fifty; production uses a larger batch.
+collector.PUBLISH_BATCH_SIZE = 50
+
 
 class CollectorTests(unittest.TestCase):
     def setUp(self):
@@ -32,11 +35,36 @@ class CollectorTests(unittest.TestCase):
     def test_unconfirmed_nodes_do_not_consume_numbers(self):
         collector.admit(self.registry, {self.key: self.proxy}, {self.key: dict(ok=False)}, self.now)
         self.assertEqual(self.registry['next_number'], 1)
-        changed = dict(self.proxy, uuid='new credential')
+        changed = dict(self.proxy, server='other.example.com', uuid='new credential')
         other = collector.identity(changed)
         result = collector.admit(self.registry, {self.key: self.proxy, other: changed},
                                  {self.key: dict(ok=True), other: dict(ok=True)}, self.now)
         self.assertEqual([p['name'] for p in result], ['VLESS_#1_2026nov7', 'VLESS_#2_2026nov7'])
+
+    def test_one_endpoint_is_published_once(self):
+        # Same server:port:SNI with another account or cosmetic options = a duplicate.
+        twin = dict(self.proxy, uuid='another account', udp=True)
+        cdn = dict(self.proxy, server='162.159.1.1', **{'ws-opts': {'headers': {'Host': 'a.example'}}})
+        cdn_other = dict(cdn, **{'ws-opts': {'headers': {'Host': 'b.example'}}})
+        candidates = {collector.identity(p): p for p in (self.proxy, twin, cdn, cdn_other)}
+        results = {key: dict(ok=True, ms=100 + i) for i, key in enumerate(candidates)}
+        result = collector.admit(self.registry, candidates, results, self.now)
+        self.assertEqual(len(result), 3)
+        endpoints = [collector.endpoint_key(p) for p in result]
+        self.assertEqual(len(endpoints), len(set(endpoints)))
+        # A node that already had a number keeps it over a faster newcomer on the same endpoint.
+        results[collector.identity(twin)] = dict(ok=True, ms=1)
+        again = collector.admit(self.registry, candidates, results, self.now)
+        self.assertEqual({p['name'] for p in again}, {p['name'] for p in result})
+
+    def test_list_carries_checker_latency(self):
+        result = collector.admit(self.registry, {self.key: self.proxy}, {self.key: dict(ok=True, ms=321)}, self.now)
+        self.assertEqual(collector.latencies(self.registry, result), [321])
+
+    def test_credential_key_ignores_remarks_and_cosmetics(self):
+        a = dict(self.proxy, name='x', udp=True)
+        b = dict(self.proxy, name='y')
+        self.assertEqual(collector.credential_key(a), collector.credential_key(b))
 
     def test_incomplete_sweep_cannot_be_published(self):
         with self.assertRaisesRegex(ValueError, 'incomplete'):
@@ -88,7 +116,9 @@ class CollectorTests(unittest.TestCase):
             collector.atomic_json(folder / 'nova-list.json', {'proxies': old})
             fresh = [dict(self.proxy, server=f'new-{i}.example.com') for i in range(103)]
             fresh_keys = [collector.identity(proxy) for proxy in fresh]
-            def verify(binary, candidates, workers, seconds, work, checkpoint):
+            def verify(binary, candidates, workers, seconds, work, checkpoint, bulk=0, google=False):
+                if checkpoint is None:  # confirmation pass
+                    return {key: dict(ok=True) for key in candidates}
                 results = {}
                 for i, key in enumerate(fresh_keys, 1):
                     results[key] = dict(ok=True)
@@ -98,7 +128,7 @@ class CollectorTests(unittest.TestCase):
                     if i >= 50:
                         self.assertFalse(json.loads((folder / 'status.json').read_text())['complete'])
                 return results
-            args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core',
+            args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core', bulk=0, any_target=False,
                                    workers=1, timeout=1, publish=False)
             with patch.object(collector, 'fetch', return_value=b'[date][1][source][https://raw.githubusercontent.com/a/b/main/sub]'), \
                     patch.object(collector, 'source_nodes', side_effect=lambda item, core: (item[0], fresh, dict(ok=True))), \
@@ -119,8 +149,10 @@ class CollectorTests(unittest.TestCase):
             nodes = [dict(self.proxy, server=f'retry-{i}.example.com') for i in range(50)]
             keys = [collector.identity(node) for node in nodes]
             passes = []
-            def verify(binary, candidates, workers, seconds, work, checkpoint):
+            def verify(binary, candidates, workers, seconds, work, checkpoint, bulk=0, google=False):
                 passes.append(len(candidates))
+                if checkpoint is None:  # confirmation pass drops one flapping node
+                    return {key: dict(ok=key != keys[0]) for key in candidates}
                 results = {}
                 for i, key in enumerate(candidates):
                     results[key] = dict(ok=len(passes) == 2 or i < 20)
@@ -132,13 +164,14 @@ class CollectorTests(unittest.TestCase):
                     self.assertEqual(len(json.loads((folder / 'nova-list.json').read_text())['proxies']), 50)
                     self.assertFalse(json.loads((folder / 'status.json').read_text())['complete'])
                 return results
-            args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core',
+            args = SimpleNamespace(repo=repo, work=repo / 'cache', core=repo / 'core', bulk=0, any_target=False,
                                    workers=2, timeout=1, publish=False)
             with patch.object(collector, 'fetch', return_value=b'[x][x][x][https://raw.githubusercontent.com/a/b/main/sub]'), \
                     patch.object(collector, 'source_nodes', side_effect=lambda item, core: (item[0], nodes, dict(ok=True))), \
                     patch.object(collector, 'verify', side_effect=verify):
                 collector.run(args)
-            self.assertEqual(passes, [50, 30])
+            self.assertEqual(passes, [50, 30, 50])
+            self.assertEqual(len(json.loads((folder / 'nova-list.json').read_text())['proxies']), 49)
 
 
 if __name__ == '__main__':

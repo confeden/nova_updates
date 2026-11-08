@@ -17,15 +17,75 @@ from urllib.parse import urlsplit
 AGGREGATOR = 'https://sub-aggregator.vercel.app/data.txt'
 IGARECK = 'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt'
 MAX_BYTES = 8 * 1024 * 1024
-PUBLISH_BATCH_SIZE = 50
+# Every checkpoint is a commit of the whole list to the public repo; with thousands of
+# working nodes a batch of 50 meant ~100 commits of a multi-megabyte file per sweep.
+PUBLISH_BATCH_SIZE = 500
+
+# Owner-supplied subscriptions (2026-11-08), fetched on every sweep in addition to the
+# discovered GitHub lists. A tuple is one source with mirrors: the first mirror that
+# answers wins, and the source is cached under its first URL. Dead at the time of adding
+# (404 / unparseable) were left out: kort0881 clean+ru-sni, gitverse gidro, vpnsvpns mifa,
+# OceaniaVPN okeania_auto, vpn.yzewe.ru, tunpass.online (personal key in the URL).
+EXTRA_SOURCES = (
+    'https://klwp-reproxy.vercel.app/vpn',
+    'https://klwp-reproxy.vercel.app/bypass',
+    'https://gitflic.ru/project/sigil/my-new-cool-project/blob/raw?file=whitelist',
+    'https://raw.githubusercontent.com/ImSketch1337/vless-/refs/heads/main/BLWLservers.txt',
+    'https://raw.githubusercontent.com/OVI-vpn/bs/main/premium.txt',
+    'https://raw.githubusercontent.com/OVI-vpn/bs/main/full.txt',
+    'https://bobrrvpn.neocities.org/blacklist.txt',
+    'https://notorvpn.notorgamess.workers.dev/sub/notorvpn_plain',
+    'https://raw.githubusercontent.com/gazeta404/rain_vpn_sub/main/subscribe.txt',
+    'https://raw.githubusercontent.com/LSO-LinSpisokObhod/LSO-LinSpisokObhod.github.io/refs/heads/main/sub/ALL.txt',
+    'https://raw.githubusercontent.com/solovyov-jenya2004/all_subs/refs/heads/main/final_sorted',
+    'https://raw.githubusercontent.com/aviamastersgh/vpn-free-russia/main/all_configs.txt',
+    'https://raw.githubusercontent.com/btsk161/Freeinternet_byMygalaru.github.io/refs/heads/main/premium.txt',
+    'https://github.com/theakres/VPN/raw/main/all',
+    'https://raw.githubusercontent.com/WSJuJuBA01/WS_Parser/refs/heads/main/subscription.txt',
+    'https://github.com/vessel-web/CoolSubs/raw/refs/heads/main/Cool-White.txt',
+    'https://raw.githubusercontent.com/vessel-web/CoolSubs/main/Cool-Black.txt',
+    'https://raw.githubusercontent.com/3inker/v2ray-subscription/main/subs/all_ru.txt',
+    'https://my-vpn.click/sub.txt',
+    'https://raw.githubusercontent.com/coloramamoe/vless-parser/main/githubmirror/full.txt',
+    'https://raw.githubusercontent.com/wlunlocker/vpn-configs/main/blacklist_all.txt',
+    'https://raw.githubusercontent.com/gooseteam-hackers/freevpn-cracks/refs/heads/main/subscription_default.txt',
+    'https://sub.vlessfo.ru/vlessforu/working_configs.txt',
+    'https://raw.githubusercontent.com/Buffetbarko/Universal-Proxy-Config-Parser-/main/blacklist_vpn.txt',
+    'https://raw.githubusercontent.com/Buffetbarko/Universal-Proxy-Config-Parser-/main/whitelist_vpn.txt',
+    'https://gist.github.com/PizdukMod/0270547cabecdd08527e2645f3b3672c/raw/8ad47b69ec9343eeb7190695cc05c86b3cca6198/sub',
+    'https://gist.github.com/PizdukMod/66d338db037b345022b7d827ca0112f1/raw/984e3731b25ba5bc3286c0bfe0e44c967c43d46a/wl',
+    'https://gist.github.com/PizdukMod/7456b4e460bb7a358b8916368ee92c50/raw/6b78913ef3d45efa3a7db43e6366a195054249a7/Mixer',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/1.txt',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/6.txt',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/22.txt',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/23.txt',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/24.txt',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/25.txt',
+    'https://github.com/aneek0/goida-vpn-configs/raw/refs/heads/main/githubmirror/26.txt',
+    'https://raw.githubusercontent.com/andmailg/singbox-sub/main/vless_tcp.txt',
+    'https://raw.githubusercontent.com/whoahaow/rjsxrd/refs/heads/main/githubmirror/bypass/bypass-all.txt',
+    'https://gidroksi.fun/black-list',
+    'https://raw.githubusercontent.com/flaafix/AetrisVPN-black-list/refs/heads/main/configs.txt',
+    'https://raw.githubusercontent.com/flaafix/AetrisVPN/refs/heads/main/AetrisVPN.txt',
+    ('https://etoneya.su/1', 'https://etoneya.best/1', 'https://alley.serv00.net/1',
+     'https://etoneya.baby', 'https://etoskam.ru/1', 'https://internet-tenshi.kangel.tech/1'),
+    ('https://etoneya.su/youtube', 'https://etoneya.best/youtube', 'https://alley.serv00.net/youtube',
+     'https://yt.etoneya.baby', 'https://etoskam.ru/youtube', 'https://internet-tenshi.kangel.tech/youtube'),
+)
+MIRRORS = {group[0]: group for group in EXTRA_SOURCES if isinstance(group, tuple)}
 MONTHS = ('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')
 
 
 def atomic_json(path, value):
     path = Path(path)
     temporary = path.with_name(path.name + '.tmp')
+    # The public list is downloaded by every client: no indentation there.
+    compact = path.name == 'nova-list.json'
     with temporary.open('w', encoding='utf-8', newline='\n') as stream:
-        json.dump(value, stream, ensure_ascii=False, indent=2)
+        if compact:
+            json.dump(value, stream, ensure_ascii=False, separators=(',', ':'))
+        else:
+            json.dump(value, stream, ensure_ascii=False, indent=2)
         stream.write('\n')
         stream.flush()
         os.fsync(stream.fileno())
@@ -51,6 +111,16 @@ def fetch(url):
     return body
 
 
+def fetch_any(urls):
+    error = None
+    for url in urls:
+        try:
+            return fetch(url)
+        except (OSError, ValueError) as caught:
+            error = caught
+    raise error
+
+
 def discover(body):
     urls = [IGARECK]
     for line in body.decode('utf-8-sig').splitlines():
@@ -70,6 +140,49 @@ def discover(body):
     return urls
 
 
+def with_extra_sources(urls):
+    out = list(urls)
+    for source in EXTRA_SOURCES:
+        key = source[0] if isinstance(source, tuple) else source
+        if key not in out:
+            out.append(key)
+    return out
+
+
+def _text(value):
+    return str(value or '').strip().lower().strip('[]')
+
+
+def _opts(proxy, *names):
+    for name in names:
+        value = proxy.get(name)
+        if isinstance(value, dict):
+            return value
+    return {}
+
+
+def endpoint_key(proxy):
+    """Where traffic really goes: address, port and the backend name a CDN routes by.
+
+    Two entries with the same key are the same server for a user, whatever their
+    credentials or cosmetic options; the published list carries each key once.
+    CDN fronts (Cloudflare IPs on 443) differ only by SNI/Host, so those belong in it.
+    """
+    headers = _opts(proxy, 'ws-opts', 'http-opts', 'h2-opts', 'xhttp-opts', 'httpupgrade-opts')
+    host = headers.get('host') or (headers.get('headers') or {}).get('Host') or ''
+    if isinstance(host, list):
+        host = host[0] if host else ''
+    name = proxy.get('servername') or proxy.get('sni') or host
+    return '|'.join((_text(proxy.get('server')), str(proxy.get('port', '')).strip(), _text(name)))
+
+
+def credential_key(proxy):
+    """Same endpoint and same secret: one inbound account, checked once."""
+    secret = (proxy.get('uuid') or proxy.get('password') or proxy.get('private-key')
+              or proxy.get('auth-str') or proxy.get('auth_str') or proxy.get('auth') or '')
+    return '|'.join((_text(proxy.get('type')), endpoint_key(proxy), str(secret).strip()))
+
+
 def identity(proxy):
     value = dict(proxy)
     value.pop('name', None)
@@ -83,13 +196,22 @@ def admit(registry, candidates, results, now):
     entries = registry['entries']
     for entry in entries.values():
         entry['active'] = False
-    active = []
+    winners = {}
     for key, proxy in candidates.items():
         result = results.get(key)
         if result is None:
             raise ValueError('incomplete verification; previous publication retained')
         if not result['ok']:
             continue
+        # Never two entries for one endpoint: a known number wins (stable names for
+        # clients), then the faster answer, then the first seen.
+        known = entries.get(key)
+        rank = (0 if known else 1, known['number'] if known else 0, result.get('ms') or 10 ** 9)
+        endpoint = endpoint_key(proxy)
+        if endpoint not in winners or rank < winners[endpoint][0]:
+            winners[endpoint] = (rank, key, proxy, result)
+    active = []
+    for _, key, proxy, result in sorted(winners.values(), key=lambda item: item[0]):
         protocol = re.sub('[^A-Z0-9]', '', str(proxy['type']).upper())
         entry = entries.get(key)
         if entry is None:
@@ -98,9 +220,24 @@ def admit(registry, candidates, results, now):
             entries[key] = entry
             registry['next_number'] += 1
         entry['active'] = True
+        if result.get('ms'):
+            entry['ms'] = int(result['ms'])
         name = f'{entry["protocol"]}_#{entry["number"]}_{entry["added"]}'
         active.append((entry['number'], dict(proxy, name=name)))
-    return [proxy for _, proxy in sorted(active)]
+    return [proxy for _, proxy in sorted(active, key=lambda item: item[0])]
+
+
+def latencies(registry, active):
+    """Checker-side HTTPS 204 time per published node (0 = unknown), aligned with proxies.
+
+    Clients order a fresh list by it instead of probing thousands of nodes themselves.
+    """
+    by_number = {entry['number']: entry.get('ms', 0) for entry in registry['entries'].values()}
+    out = []
+    for proxy in active:
+        match = re.search(r'_#(\d+)_', proxy['name'])
+        out.append(by_number.get(int(match.group(1)), 0) if match else 0)
+    return out
 
 
 def load_registry(path):
@@ -127,7 +264,7 @@ def source_nodes(item, binary):
     url, previous = item
     for attempt in range(2):
         try:
-            parsed = native_import(binary, fetch(url))
+            parsed = native_import(binary, fetch_any(MIRRORS.get(url, (url,))))
             nodes = parsed.get('proxies', [])
             # A nonempty body that cannot be parsed is a source failure, not an empty update.
             if not nodes:
@@ -139,7 +276,7 @@ def source_nodes(item, binary):
     return url, previous, dict(ok=False, retained=len(previous))
 
 
-def verify(binary, candidates, workers, seconds, work, checkpoint=None):
+def verify(binary, candidates, workers, seconds, work, checkpoint=None, bulk=0, google=False):
     results = {}
     pairs = list(candidates.items())
     for start in range(0, len(pairs), 1000):
@@ -152,7 +289,8 @@ def verify(binary, candidates, workers, seconds, work, checkpoint=None):
         request_path.write_bytes(request)
         seen = set()
         with request_path.open('rb') as input_stream:
-            with subprocess.Popen([str(binary), 'probe-list', '--workers', str(workers), '--timeout', str(seconds)],
+            with subprocess.Popen([str(binary), 'probe-list', '--workers', str(workers), '--timeout', str(seconds),
+                                   '--bulk', str(bulk)] + (['--google'] if google else []),
                                   stdin=input_stream, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
                                   text=True, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0)) as process:
                 for line in process.stdout:
@@ -234,13 +372,19 @@ def run(args):
             raise RuntimeError('source discovery failed; publication retained')
         urls = json.loads(fallback.read_text())
         print('source discovery unavailable; using last known GitHub sources', flush=True)
+    urls = with_extra_sources(urls)
     candidates, source_status, next_cache = {}, [], {}
+    seen_credentials = set()
     with ThreadPoolExecutor(max_workers=4) as pool:
         for index, (url, nodes, status) in enumerate(pool.map(
                 lambda item: source_nodes(item, args.core), [(url, cached.get(url, [])) for url in urls])):
             next_cache[url] = nodes
             source_status.append(dict(index=index, **status))
             for proxy in nodes:
+                credential = credential_key(proxy)
+                if credential in seen_credentials:
+                    continue
+                seen_credentials.add(credential)
                 candidates.setdefault(identity(proxy), proxy)
     if not candidates or not any(s['ok'] for s in source_status):
         raise RuntimeError('all sources unavailable; publication retained')
@@ -264,7 +408,8 @@ def run(args):
                       candidates=len(candidates), checked=len(results), working=len(active),
                       retired=len(registry['entries']) - len(active), interval_hours=12)
         values = {'registry.json': registry, 'nova-list.json': dict(nova_list=dict(version=1,
-                    checked_at=checked_at, count=len(active), complete=True), proxies=active), 'status.json': status}
+                    checked_at=checked_at, count=len(active), complete=True), proxies=active,
+                    ms=latencies(registry, active)), 'status.json': status}
         if args.publish:
             atomic_json(work / 'pending.json', values)
             finish_pending(args.repo.resolve(), work)
@@ -293,12 +438,19 @@ def run(args):
                 del ready[key]
             print(f'published batch added={len(additions)} checked={len(cumulative)} working={count}', flush=True)
 
-    results = verify(args.core, candidates, args.workers, args.timeout, work, checkpoint)
+    results = verify(args.core, candidates, args.workers, args.timeout, work, checkpoint, args.bulk, not args.any_target)
     cumulative.update(results)
     retry = {key: candidates[key] for key, result in results.items() if not result['ok']}
     if retry:
         print(f'retry={len(retry)}', flush=True)
-        results.update(verify(args.core, retry, max(1, args.workers // 2), args.timeout, work, checkpoint))
+        results.update(verify(args.core, retry, max(1, args.workers // 2), args.timeout, work, checkpoint, args.bulk, not args.any_target))
+    # Free nodes flap: one 204+bulk in a retry pass let in a third of a list that was
+    # dead from the same network minutes after publishing. Keep only nodes that pass again.
+    passed = {key: candidates[key] for key, result in results.items() if result['ok']}
+    if passed:
+        confirm = verify(args.core, passed, args.workers, args.timeout, work, None, args.bulk, not args.any_target)
+        results.update(confirm)
+        print(f'confirm={len(passed)} kept={sum(1 for r in confirm.values() if r["ok"])}', flush=True)
     count = snapshot(results, True)
     print(f'complete checked={len(results)} working={count}', flush=True)
 
@@ -310,8 +462,15 @@ def main():
     parser.add_argument('--work', type=Path, required=True)
     parser.add_argument('--workers', type=int, default=32, choices=range(1, 65))
     parser.add_argument('--timeout', type=int, default=9, choices=range(1, 61))
+    # A 204 passes where Russian TSPU freezes TCP to foreign hosting after 12-40 KB; such a node
+    # looks alive yet loads no page. Require this many bytes through the node (0 = 204 only).
+    parser.add_argument('--bulk', type=int, default=40 * 1024)
+    # Without it a node that reaches only Cloudflare/gstatic passes and loads no real site.
+    parser.add_argument('--any-target', action='store_true', help='accept any 204 target, not only www.google.com')
     parser.add_argument('--publish', action='store_true')
     args = parser.parse_args()
+    if not 0 <= args.bulk <= 4 << 20:
+        parser.error('--bulk must be 0..4 MiB')
     # Service also uses umask; direct/manual invocation must protect cached source credentials.
     os.umask(0o077)
     try:
