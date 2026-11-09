@@ -1,8 +1,8 @@
 {
   "files": {
     "list/ai.txt": {
-      "sha256": "235e55f09326f7130d9c14ba2a422c96cdd6bd30d732f1c27c3317131fbb8bc5",
-      "size": 1845
+      "sha256": "9a93ac1b3023764875c2f39b440525ddb5d0314d54a4dcf7dd04582c63ea5ea9",
+      "size": 1832
     },
     "list/cloudflare.txt": {
       "sha256": "337c6735311fa93b31c712223e61f1b10dfbb03dee6dafc3caf110d07305b709",
@@ -21,8 +21,8 @@
       "size": 432
     },
     "list/main.txt": {
-      "sha256": "cf44729f00c1c33f4d0e9c09e7c2c4bd7dddb00c1cb93e0b4289e5b4fd15c89a",
-      "size": 5674
+      "sha256": "1948dd9768cc6fe4d264d9e3d438bf878adef9bb6bc30636a2b4171a0ace26d0",
+      "size": 5687
     },
     "list/opera_bootstrap_domains.txt": {
       "sha256": "975fa20501d5472b848384b9ea7f4ea8565ce7a1e5791a36e76b9a4dbe0860d8",
@@ -49,7 +49,7 @@
       "size": 335
     }
   },
-  "generated": 1794172048,
+  "generated": 1794239239,
   "schema": 1,
   "version": "1.45.1"
 }
