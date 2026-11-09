@@ -1,8 +1,8 @@
 {
   "files": {
     "list/ai.txt": {
-      "sha256": "9a93ac1b3023764875c2f39b440525ddb5d0314d54a4dcf7dd04582c63ea5ea9",
-      "size": 1832
+      "sha256": "7b38884e586b6fa0173716360a463d28216b4533f9aaf942b1334fb71a530b6e",
+      "size": 1828
     },
     "list/cloudflare.txt": {
       "sha256": "337c6735311fa93b31c712223e61f1b10dfbb03dee6dafc3caf110d07305b709",
@@ -49,7 +49,7 @@
       "size": 335
     }
   },
-  "generated": 1794239239,
+  "generated": 1794258162,
   "schema": 1,
   "version": "1.45.1"
 }
