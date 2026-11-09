@@ -173,6 +173,7 @@ qt.io
 rust-lang.org
 rustup.rs
 crates.io
+ngrok.com
 pypi.org
 nova-app.eu
 pythonhosted.org
