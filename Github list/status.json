@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checked_at": "2026-11-11T16:30:47+03:00",
+  "checked_at": "2026-11-12T04:31:28+03:00",
   "complete": true,
   "sources": [
     {
       "index": 0,
       "ok": true,
-      "parsed": 252,
+      "parsed": 354,
       "skipped": 0
     },
     {
       "index": 1,
       "ok": true,
-      "parsed": 601,
-      "skipped": 0
+      "parsed": 608,
+      "skipped": 1
     },
     {
       "index": 2,
@@ -24,7 +24,7 @@
     {
       "index": 3,
       "ok": true,
-      "parsed": 477,
+      "parsed": 474,
       "skipped": 2
     },
     {
@@ -47,14 +47,14 @@
     {
       "index": 7,
       "ok": true,
-      "parsed": 18134,
+      "parsed": 18256,
       "skipped": 73
     },
     {
       "index": 8,
       "ok": true,
-      "parsed": 1036,
-      "skipped": 882
+      "parsed": 1017,
+      "skipped": 865
     },
     {
       "index": 9,
@@ -70,25 +70,25 @@
     {
       "index": 11,
       "ok": true,
-      "parsed": 199,
+      "parsed": 177,
       "skipped": 0
     },
     {
       "index": 12,
       "ok": true,
-      "parsed": 478,
-      "skipped": 1
+      "parsed": 441,
+      "skipped": 0
     },
     {
       "index": 13,
       "ok": true,
-      "parsed": 14285,
-      "skipped": 21
+      "parsed": 14188,
+      "skipped": 25
     },
     {
       "index": 14,
       "ok": true,
-      "parsed": 57,
+      "parsed": 59,
       "skipped": 0
     },
     {
@@ -139,19 +139,19 @@
     {
       "index": 23,
       "ok": true,
-      "parsed": 958,
-      "skipped": 1
+      "parsed": 1073,
+      "skipped": 0
     },
     {
       "index": 24,
       "ok": true,
-      "parsed": 300,
+      "parsed": 304,
       "skipped": 0
     },
     {
       "index": 25,
       "ok": true,
-      "parsed": 22,
+      "parsed": 18,
       "skipped": 0
     },
     {
@@ -192,20 +192,20 @@
     {
       "index": 32,
       "ok": true,
-      "parsed": 225,
+      "parsed": 397,
       "skipped": 0
     },
     {
       "index": 33,
       "ok": true,
-      "parsed": 1042,
+      "parsed": 1151,
       "skipped": 2
     },
     {
       "index": 34,
       "ok": true,
-      "parsed": 10090,
-      "skipped": 56
+      "parsed": 10524,
+      "skipped": 50
     },
     {
       "index": 35,
@@ -216,7 +216,7 @@
     {
       "index": 36,
       "ok": true,
-      "parsed": 106,
+      "parsed": 187,
       "skipped": 0
     },
     {
@@ -228,19 +228,19 @@
     {
       "index": 38,
       "ok": true,
-      "parsed": 38,
+      "parsed": 85,
       "skipped": 0
     },
     {
       "index": 39,
       "ok": true,
-      "parsed": 1555,
+      "parsed": 1872,
       "skipped": 0
     },
     {
       "index": 40,
       "ok": true,
-      "parsed": 76,
+      "parsed": 43,
       "skipped": 0
     },
     {
@@ -252,37 +252,37 @@
     {
       "index": 42,
       "ok": true,
-      "parsed": 1646,
+      "parsed": 1583,
       "skipped": 0
     },
     {
       "index": 43,
       "ok": true,
-      "parsed": 864,
+      "parsed": 870,
       "skipped": 0
     },
     {
       "index": 44,
       "ok": true,
-      "parsed": 96,
+      "parsed": 68,
       "skipped": 0
     },
     {
       "index": 45,
       "ok": true,
-      "parsed": 87,
+      "parsed": 150,
       "skipped": 1
     },
     {
       "index": 46,
       "ok": true,
-      "parsed": 64,
+      "parsed": 106,
       "skipped": 0
     },
     {
       "index": 47,
       "ok": true,
-      "parsed": 18,
+      "parsed": 17,
       "skipped": 0
     },
     {
@@ -306,31 +306,31 @@
     {
       "index": 51,
       "ok": true,
-      "parsed": 7281,
+      "parsed": 7196,
       "skipped": 5
     },
     {
       "index": 52,
       "ok": true,
-      "parsed": 148,
+      "parsed": 149,
       "skipped": 0
     },
     {
       "index": 53,
       "ok": true,
-      "parsed": 199,
+      "parsed": 177,
       "skipped": 0
     },
     {
       "index": 54,
       "ok": true,
-      "parsed": 479,
-      "skipped": 1
+      "parsed": 342,
+      "skipped": 0
     },
     {
       "index": 55,
       "ok": true,
-      "parsed": 773,
+      "parsed": 774,
       "skipped": 0
     },
     {
@@ -342,19 +342,19 @@
     {
       "index": 57,
       "ok": true,
-      "parsed": 4181,
+      "parsed": 4194,
       "skipped": 110
     },
     {
       "index": 58,
       "ok": true,
-      "parsed": 525,
+      "parsed": 462,
       "skipped": 0
     },
     {
       "index": 59,
       "ok": true,
-      "parsed": 421,
+      "parsed": 475,
       "skipped": 0
     },
     {
@@ -365,7 +365,7 @@
     {
       "index": 61,
       "ok": true,
-      "parsed": 447,
+      "parsed": 442,
       "skipped": 0
     },
     {
@@ -395,8 +395,8 @@
     {
       "index": 66,
       "ok": true,
-      "parsed": 917,
-      "skipped": 83
+      "parsed": 916,
+      "skipped": 84
     },
     {
       "index": 67,
@@ -407,19 +407,19 @@
     {
       "index": 68,
       "ok": true,
-      "parsed": 3299,
-      "skipped": 83
+      "parsed": 3761,
+      "skipped": 85
     },
     {
       "index": 69,
       "ok": true,
-      "parsed": 2269,
-      "skipped": 2
+      "parsed": 2547,
+      "skipped": 3
     }
   ],
-  "candidates": 40947,
-  "checked": 40947,
-  "working": 119,
-  "retired": 1294,
+  "candidates": 41041,
+  "checked": 41041,
+  "working": 165,
+  "retired": 1344,
   "interval_hours": 12
 }
