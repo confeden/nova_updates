@@ -63,9 +63,9 @@
       "number": 10,
       "added": "2026nov7",
       "protocol": "SS",
-      "active": true,
+      "active": false,
       "ms": 316,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461670
     },
     "fa7a31737feabc9c347b2d7ba703c83ddd1b787b794bac3e576537b965a3edd1": {
@@ -114,8 +114,8 @@
       "protocol": "HTTP",
       "active": true,
       "ms": 486,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "97285fff2f2c17535c0201b9c2b93039f143fd9f69ed85059aafc8a525d06490": {
       "number": 17,
@@ -153,9 +153,9 @@
       "number": 21,
       "added": "2026nov7",
       "protocol": "HTTP",
-      "active": true,
+      "active": false,
       "ms": 857,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461671
     },
     "84c18d5a65527e97638793f5917758cddfb201ad5d3dc3b8becce4837c53421f": {
@@ -2159,8 +2159,8 @@
       "protocol": "HTTP",
       "active": true,
       "ms": 451,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461670
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "2cf10857d3c04a1bb2bbc228e17bdbe30ed93b473fe38b2426cc1796c25e2c14": {
       "number": 319,
@@ -2373,9 +2373,9 @@
       "number": 347,
       "added": "2026nov8",
       "protocol": "HYSTERIA2",
-      "active": true,
+      "active": false,
       "ms": 1094,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461672
     },
     "382afe3934f80a1eceed3f0bad6e3e94e4a36390148e7cb8bcd2e8c07161344e": {
@@ -2971,8 +2971,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 701,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485014
     },
     "07dabc43b5c9c4604d10d4d39211c55dfecb0851cd1373db14e884d09d277451": {
       "number": 426,
@@ -3432,8 +3432,8 @@
       "protocol": "HYSTERIA",
       "active": true,
       "ms": 1397,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461673
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485011
     },
     "78ea90e16c6cd2a8071e759c570f2bfe167aef1b4080ef3cec7eddd68097a333": {
       "number": 486,
@@ -3519,8 +3519,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 644,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485016
     },
     "0e1b06761beb7841d5c976fbb4c7da50167db2f1e238c29553cb71d1ec714d52": {
       "number": 497,
@@ -4187,8 +4187,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1210,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461673
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485012
     },
     "bad70ed9a6ae7a18e547a0d0a9712bbbf40c48e753aad93a561f39549246aac4": {
       "number": 587,
@@ -4212,8 +4212,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1355,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461667
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485012
     },
     "9ec46887c66f0b6ca94ac5640f4159676fbf0820b7662bc9482d002b2a98b73a": {
       "number": 590,
@@ -4236,8 +4236,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 469,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485011
     },
     "6a2779d74797db694cdcb779dcf451ce0c43c4643207d6e6af9c9921d3825154": {
       "number": 593,
@@ -4324,8 +4324,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 805,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461673
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485017
     },
     "daed69bcfff543b6601a79570a3cb9713ec1a1e593d540fadf602721c7876f77": {
       "number": 605,
@@ -4517,8 +4517,8 @@
       "protocol": "HTTP",
       "active": true,
       "ms": 3494,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461678
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "e208e9e44631d002ab4e6d1ea890ecbd8a6e426eb8a8f72dce3096f9f25dc139": {
       "number": 631,
@@ -5196,9 +5196,9 @@
       "number": 721,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1633,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461669
     },
     "1abb9a8237ebd50246c1d7d5dae829a663dc46430230bf6edc9c606d4ae0c65d": {
@@ -5230,9 +5230,9 @@
       "number": 725,
       "added": "2026nov8",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1700,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461670
     },
     "1275b7a9afe6b9788ca4b9e141d9839d01f7dfb8a82a9b0405350a19b63bbda3": {
@@ -5292,8 +5292,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1822,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461668
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "222a0ef4a087b2ee3d84f36b88072141ae3ba6997557fbb655660b89998127d1": {
       "number": 734,
@@ -5337,8 +5337,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1785,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461669
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "dfa6816a71a60d3b425eb7a86eae9af4a181ee2ff04cdcf8499f1a55cfaef423": {
       "number": 740,
@@ -5599,8 +5599,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 925,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "7d80fb09bffb8519e1c93c30dbe55c042f74b9d1ce1254de68de3a2e66b1bd0e": {
       "number": 776,
@@ -6922,8 +6922,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 362,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461670
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "259510b06be9fcc10487170bb25964d17538ae9f23dbe7a01c545a6d568006ef": {
       "number": 959,
@@ -7098,8 +7098,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1824,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "10a2db2fe2acbd8336c76810403abfa22db755ad1602a21163ccd08c4bac6c34": {
       "number": 982,
@@ -7324,8 +7324,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 2314,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461673
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "1af7089c6a557b621dfa7cffaf5e9578a7e7adcb548cc1d3a64abf01675b58d4": {
       "number": 1011,
@@ -7364,8 +7364,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 657,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "66fa0953aa0d5d55a1c13dc5d2d4ad933f26bd53f5ff2b70e2f1cdd70c3f60c1": {
       "number": 1016,
@@ -7373,8 +7373,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 663,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485012
     },
     "27dd818850ccc1272256fbba527640aca8cb119bde5fa71d658edd7d379b7408": {
       "number": 1017,
@@ -7413,8 +7413,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 4856,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461675
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "bff71f7b561889a2225ce5c393500f1dccb3265ab21fffb97f3eea47707cba40": {
       "number": 1022,
@@ -7512,9 +7512,9 @@
       "number": 1034,
       "added": "2026nov9",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 374,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461670
     },
     "905d501b42403f0aeabc0ab45636b3b966980fa163c806b9ddddb55b81bba4f6": {
@@ -7588,16 +7588,16 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1952,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461668
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485016
     },
     "9bdef9ef35989d9769bd13b5feaddb15860f8e56300e35d345fd4555bdc3ac36": {
       "number": 1045,
       "added": "2026nov9",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 320,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461670
     },
     "b09943897f30044d17ae86751afa798358cb38fe45c4b9878c6e33263568f67a": {
@@ -7614,8 +7614,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1658,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461668
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "5bddf76807eca7731939d8c7a0e50116a37839f0393f3e781646b3c13a57dc98": {
       "number": 1048,
@@ -7653,8 +7653,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1657,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "e48816464de233f05b0023789f2675d73f2119393a0925c9cc46bdd9b937e458": {
       "number": 1053,
@@ -7662,8 +7662,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 365,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461670
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "368f11a97bf5283748b74779ce41d0e4b48a8d0a019d27a56e7d4c13e6acb66b": {
       "number": 1054,
@@ -7860,9 +7860,9 @@
       "number": 1079,
       "added": "2026nov10",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1884,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461671
     },
     "e4f58050e7708b13b5d99e1d1a86566db86b3c5b7e6f819437fc44476a10d1f5": {
@@ -7924,9 +7924,9 @@
       "number": 1087,
       "added": "2026nov10",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1530,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461671
     },
     "428361c9a3fc879df7d183c57cd6843d90fb04b665652724062bc39f246b0a58": {
@@ -7966,8 +7966,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1680,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485016
     },
     "b4f12b308b99f8d27e305fad0fddf04ab6c9b4c91a402c4e8c4b32e42bc96f77": {
       "number": 1093,
@@ -8510,8 +8510,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 909,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461673
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485012
     },
     "d642d3a46be9e60b25a5871fd26be2a89e8e47491cc3585297cf84d49b0b6019": {
       "number": 1165,
@@ -9158,9 +9158,9 @@
       "number": 1251,
       "added": "2026nov10",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2194,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461668
     },
     "9c266e8e91a29c961150affb3a38e890c5c3e67f5c989b68a8074705ce33d72e": {
@@ -9177,8 +9177,8 @@
       "protocol": "HYSTERIA",
       "active": true,
       "ms": 2485,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461675
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "f97523ca5e54c4e2af5195564a6d339b22a80600a35f0806d63a30e4fff92cce": {
       "number": 1254,
@@ -9186,8 +9186,8 @@
       "protocol": "HYSTERIA",
       "active": true,
       "ms": 2454,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461675
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485014
     },
     "6c0a1f999c56a755229dc3eb5bfc42a6c3562dcbf397ff42ed4b1080c1adf02c": {
       "number": 1255,
@@ -9246,9 +9246,9 @@
       "number": 1262,
       "added": "2026nov11",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1266,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461673
     },
     "a3f13d439124f4011bde65849a33572bb8c21bf30136d7597cdbbd25da2b0425": {
@@ -9348,8 +9348,8 @@
       "protocol": "HTTP",
       "active": true,
       "ms": 338,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461670
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "ead92f9f57e4603822649dd7e996d8d9f83466ba4e7d0c12d0bbdc58eb8bfecc": {
       "number": 1276,
@@ -9372,8 +9372,8 @@
       "protocol": "HYSTERIA2",
       "active": true,
       "ms": 572,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "8d9f995cb0a4df3da92c82babf44440b278b2ffebc9ba9aa78346be4ea65883b": {
       "number": 1279,
@@ -9381,8 +9381,8 @@
       "protocol": "HYSTERIA2",
       "active": true,
       "ms": 324,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485011
     },
     "4cfad72edf23b6c60b3127c02f0cacb5518c26bb1ad2bb791ac6f1e7a084b441": {
       "number": 1280,
@@ -9431,8 +9431,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1583,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "00d4c7646563fd62d48538c68ada7a90f0aee6c7cb013422b433e8872b3c2589": {
       "number": 1286,
@@ -9515,8 +9515,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1155,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461672
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485012
     },
     "dc454c566c1a86bb699e2bf0fc1a3f6a204ebc1d832025d155c49a8236ed40fc": {
       "number": 1297,
@@ -9554,8 +9554,8 @@
       "protocol": "HYSTERIA2",
       "active": true,
       "ms": 486,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461671
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485011
     },
     "bf3fcdd2dfa3392c8d690bbfa8c2019ce0a9ea971e68c33b80138a4125007c6a": {
       "number": 1302,
@@ -9904,9 +9904,9 @@
       "number": 1348,
       "added": "2026nov11",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 366,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461671
     },
     "317e357286a393e314e44078422753095ff81100256de55a566034f8693e03ac": {
@@ -10057,9 +10057,9 @@
       "number": 1368,
       "added": "2026nov11",
       "protocol": "VMESS",
-      "active": true,
+      "active": false,
       "ms": 2929,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461670
     },
     "56e7b062075aa98095f7d568257f61811cae7c08d9b44088ac001e4dc266e6c9": {
@@ -10316,8 +10316,8 @@
       "protocol": "HYSTERIA",
       "active": true,
       "ms": 2531,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461676
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485012
     },
     "f22dd298be0c4ed1712529a0c6954b657a1161dfece87ce7092c4c78ce27f9f7": {
       "number": 1402,
@@ -10412,8 +10412,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 820,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461666
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485009
     },
     "8dbfcf22585f1f5a9368169d99d77c7daedc61a926fa8b06da44e14d561002f3": {
       "number": 1415,
@@ -10421,8 +10421,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 914,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461667
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485014
     },
     "61ba9cbeafc8aa74d9583300c856883b4090b2c99062d632ef38942ebce1f5e2": {
       "number": 1416,
@@ -10439,16 +10439,16 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 334,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461665
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "4760365aaabed47f463453c3cce4dc6ba495de01ea79004232e6e60cc0430055": {
       "number": 1418,
       "added": "2026nov12",
       "protocol": "VMESS",
-      "active": true,
+      "active": false,
       "ms": 266,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461665
     },
     "b4e34e70ee87db4ae97b7d8988fb41787e3493783b9fc4fc9d50a20a15c37e8b": {
@@ -10491,8 +10491,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 1721,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461668
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "f284ec425e2a26f0ba4c274eaac7297e6801ba7bc52b6d5d041ce2778a008f3a": {
       "number": 1424,
@@ -10517,8 +10517,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 319,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461666
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485013
     },
     "f563b10251984a23dad668b123d50a2c586701b9c3ec473d601897a2093e5683": {
       "number": 1427,
@@ -10533,9 +10533,9 @@
       "number": 1428,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 362,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461665
     },
     "50811755049e8751d32374894384a37ebb707b1f1ab17e836730468964d511ad": {
@@ -10544,8 +10544,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 407,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461665
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485009
     },
     "68413a15c95c4262290363b994af02b45b790074ab93cb0fa829969f86a993b0": {
       "number": 1430,
@@ -10571,8 +10571,8 @@
       "protocol": "HYSTERIA2",
       "active": true,
       "ms": 492,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461665
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485018
     },
     "25d1f358797cd3fa3eb04f526f44ed00b128a37d87ec6b4ed9e33ba748bb9589": {
       "number": 1433,
@@ -10606,8 +10606,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 379,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461665
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "cb9dfd6f428982d82633978fe10bc7e2fa6a3978a9703756dc8161c1ea0e5b0d": {
       "number": 1437,
@@ -10658,8 +10658,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 405,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461665
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485016
     },
     "f95149aa138982dee2ed0bc581d5042517aa82a399b766263a3f70b09508a6d1": {
       "number": 1443,
@@ -10676,8 +10676,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 1637,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461668
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485015
     },
     "0fb6cf471e76c3fe598053ad4a60c60aa42fca4ba3a6d7cb2507f654cfa20e38": {
       "number": 1445,
@@ -10745,8 +10745,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 444,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461666
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485010
     },
     "f1a4f4365997504ed2603f4b4a3d0bbc50d1de67d3271c7febc95a11f55e2ba7": {
       "number": 1453,
@@ -10770,8 +10770,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 430,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461666
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485009
     },
     "89eb30f3a7f90aac370080bd81e71e64f4250ba37b43192ab2d742f4118cebc5": {
       "number": 1456,
@@ -10779,8 +10779,8 @@
       "protocol": "HYSTERIA2",
       "active": true,
       "ms": 1917,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461669
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485016
     },
     "e18defd9594f1bd2ba4d1dfa8e6b272ad6b69cfd32e8f787ff51dd2a20852810": {
       "number": 1457,
@@ -10811,9 +10811,9 @@
       "number": 1460,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 500,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461666
     },
     "004814c8dbbc1a69760e435f5d745b6dfacba5afe76bb4daa66ff755efc9a8c7": {
@@ -10849,8 +10849,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 393,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461665
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485014
     },
     "bffcbf01fb5455aa0db7a45d75d559a98346355d347dc254a3f9b837f266ac91": {
       "number": 1465,
@@ -10901,16 +10901,16 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 570,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461666
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485016
     },
     "c2039fff84d9e1316096883310cc3d04271a0ecbe82b18695db8c121ef9f344a": {
       "number": 1471,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 619,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461666
     },
     "fd8eb7802d3f74d2f37b1f47a089e10e247bc3f5377375ec35222d19d581f430": {
@@ -10944,8 +10944,8 @@
       "protocol": "SS",
       "active": true,
       "ms": 720,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461667
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485011
     },
     "d606f0deb29741fda6dc252210ce1e712afb046379b9bb81df23696db712eb18": {
       "number": 1476,
@@ -11047,9 +11047,9 @@
       "number": 1487,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 855,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461666
     },
     "c95cb694bd091b6877d8fae9054fa80d8b2553a2f13cff4c12fe2dcf6ca42d1d": {
@@ -11064,9 +11064,9 @@
       "number": 1489,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 2125,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461668
     },
     "136b69d400e25da552194b5e4112c5669307fdc5d500449d9ec257be794e9f20": {
@@ -11090,9 +11090,9 @@
       "number": 1492,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1597,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461668
     },
     "a04b2cd2b317e4ec6e234d6cedb4f7200af936b491510fd77111b3dcc9b91eb0": {
@@ -11109,8 +11109,8 @@
       "protocol": "VLESS",
       "active": true,
       "ms": 2065,
-      "checked_ts": 1794461680,
-      "verified_ts": 1794461668
+      "checked_ts": 1794485019,
+      "verified_ts": 1794485019
     },
     "3845ee9d7bd085d0fb916287436bea30278b387f44d79fd3b64c95ac2e1e3783": {
       "number": 1495,
@@ -11133,9 +11133,9 @@
       "number": 1497,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 1575,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461671
     },
     "0920037a32653fb6434cbbcca71a579aed070c8fbb62901ad5f62793c790f455": {
@@ -11168,9 +11168,9 @@
       "number": 1501,
       "added": "2026nov12",
       "protocol": "VMESS",
-      "active": true,
+      "active": false,
       "ms": 1426,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461668
     },
     "a64cfdbc3a7ff98072eb8b32ee97ac8537ece8d62c1faf4f5bef0ef55e7bede3": {
@@ -11186,9 +11186,9 @@
       "number": 1503,
       "added": "2026nov12",
       "protocol": "VMESS",
-      "active": true,
+      "active": false,
       "ms": 1394,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461668
     },
     "0141c112ca1d44909305dd50361d4e9577e33902f30a1fa69e67ab2418fe43db": {
@@ -11219,27 +11219,27 @@
       "number": 1507,
       "added": "2026nov12",
       "protocol": "SOCKS5",
-      "active": true,
+      "active": false,
       "ms": 1333,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461668
     },
     "0f033e5347de47ec6cb36406a8b067db5aa5bc00c82c9f2ea11c8e7460ba9606": {
       "number": 1508,
       "added": "2026nov12",
       "protocol": "SOCKS5",
-      "active": true,
+      "active": false,
       "ms": 2793,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461672
     },
     "30b119d810b4179dfd3b7906e081b07d60d79c8c728dbdf01c0c09b24ee67b0a": {
       "number": 1509,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "ms": 908,
-      "checked_ts": 1794461680,
+      "checked_ts": 1794485019,
       "verified_ts": 1794461667
     },
     "1c6eddcdc054472d8ffe98bf0bbe8e71c527fb634ed369ad3fbef71d52726f0a": {
@@ -11247,480 +11247,540 @@
       "added": "2026nov12",
       "protocol": "SS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 223
+      "verified_ts": 1794485009,
+      "ms": 223,
+      "checked_ts": 1794485019
     },
     "5b01dafa235d98ddfb6ed6c3fddabbcb7c694c7d579f213bfc85b402109bad20": {
       "number": 1511,
       "added": "2026nov12",
       "protocol": "SS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 234
+      "verified_ts": 1794485009,
+      "ms": 234,
+      "checked_ts": 1794485019
     },
     "75666afc0f929da99265c35fa7032fee3431101ab03ce0bd114aa7b68fca3d08": {
       "number": 1512,
       "added": "2026nov12",
       "protocol": "VMESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 252
+      "ms": 252,
+      "checked_ts": 1794485019
     },
     "ef4b5863a298d33010cebda4932f65d877b0dd9d9ec145284bc12957cd653d31": {
       "number": 1513,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461668,
-      "ms": 254
+      "verified_ts": 1794485010,
+      "ms": 254,
+      "checked_ts": 1794485019
     },
     "308341e56d0fdd178c55a00991571313d7fde7dfb6aa1c9a6fba6a9e70a110a9": {
       "number": 1514,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 269
+      "verified_ts": 1794485013,
+      "ms": 269,
+      "checked_ts": 1794485019
     },
     "7267b4707d0fa77b00f9c73fdd2286ccd87d5b155f5d2bdc23ce3c82e7a83f89": {
       "number": 1515,
       "added": "2026nov12",
       "protocol": "HYSTERIA2",
       "active": true,
-      "verified_ts": 1794461666,
-      "ms": 298
+      "verified_ts": 1794485013,
+      "ms": 298,
+      "checked_ts": 1794485019
     },
     "0585fda805b73810ee9a3543ebb147a6edbe8be3d05f7b4a05c6622199019d6f": {
       "number": 1516,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461668,
-      "ms": 300
+      "verified_ts": 1794485009,
+      "ms": 300,
+      "checked_ts": 1794485019
     },
     "416bc487bad76c19cd67b3a4a36ff06403d9a860ec738c6a10cb3a7186c06ab4": {
       "number": 1517,
       "added": "2026nov12",
       "protocol": "HYSTERIA2",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 307
+      "ms": 307,
+      "checked_ts": 1794485019
     },
     "0eb1ce1c6f8498805ea07c1fc1a9c8b42e37b4dcadb4b03a30def0eed902f271": {
       "number": 1518,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 323
+      "ms": 323,
+      "checked_ts": 1794485019
     },
     "8c07d39119463b4642a3ad93f333459f48f56e80bfe426e92929dbf7dd202744": {
       "number": 1519,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461667,
-      "ms": 326
+      "verified_ts": 1794485010,
+      "ms": 326,
+      "checked_ts": 1794485019
     },
     "41b7f3db47d42c8f432848b6fd4159ba1b7ffb3bf911f20ccf7e62285d37b107": {
       "number": 1520,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 335
+      "ms": 335,
+      "checked_ts": 1794485019
     },
     "5ec1bdfd3702868bd58672b069982f7248b7b24458d8f3589444edd01fce72b1": {
       "number": 1521,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461666,
-      "ms": 359
+      "verified_ts": 1794485015,
+      "ms": 359,
+      "checked_ts": 1794485019
     },
     "9f0af140939cda9ac15e46f9db440ed3e2d1c3c025b719c02b7b1a769865c539": {
       "number": 1522,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 360
+      "ms": 360,
+      "checked_ts": 1794485019
     },
     "1627867a3a0f7409c8cff063e0cc425c939bfc86714ed408a08f6f23162f5915": {
       "number": 1523,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461668,
-      "ms": 373
+      "verified_ts": 1794485009,
+      "ms": 373,
+      "checked_ts": 1794485019
     },
     "351831446a2868251da1702ca999a26d94688c7e07c463cf42b7241b11e67c84": {
       "number": 1524,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 377
+      "verified_ts": 1794485012,
+      "ms": 377,
+      "checked_ts": 1794485019
     },
     "5cbee382cecbafd44379681449ac9244ebe1e9d1d6dcdb94edb326206eb8f10c": {
       "number": 1525,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 407
+      "verified_ts": 1794485015,
+      "ms": 407,
+      "checked_ts": 1794485019
     },
     "4cb824afa8b4f548b7708b8ed22d20e514e497f23afd6ec5609b11ec2e119112": {
       "number": 1526,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 416
+      "ms": 416,
+      "checked_ts": 1794485019
     },
     "7d2461fa41b15ce92d340871ba1dec7b888ca558f19db2a6cf77e03bde316180": {
       "number": 1527,
       "added": "2026nov12",
       "protocol": "SS",
       "active": true,
-      "verified_ts": 1794461670,
-      "ms": 418
+      "verified_ts": 1794485011,
+      "ms": 418,
+      "checked_ts": 1794485019
     },
     "45de5a088a4fd9c6986948b813a2d368bc807e39d598337e8f3008c57121c610": {
       "number": 1528,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 439
+      "verified_ts": 1794485012,
+      "ms": 439,
+      "checked_ts": 1794485019
     },
     "af618493eae1f654ee59479cb38b59cc8c9cc16c845b0f3fdae71e950612e733": {
       "number": 1529,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461667,
-      "ms": 504
+      "verified_ts": 1794485012,
+      "ms": 504,
+      "checked_ts": 1794485019
     },
     "18e494a70c55b9afa12909e592b996271011d4d0c9f6e7d300d109b3764dfa14": {
       "number": 1530,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 527
+      "ms": 527,
+      "checked_ts": 1794485019
     },
     "dd45f789beb5f293b2683111e29a29943e1d3d6554ba99f49b2f09afa6df7452": {
       "number": 1531,
       "added": "2026nov12",
       "protocol": "SS",
       "active": true,
-      "verified_ts": 1794461670,
-      "ms": 598
+      "verified_ts": 1794485012,
+      "ms": 598,
+      "checked_ts": 1794485019
     },
     "4f1907858c52919fe1763aaa2f821b0c665a05db56a02236a3059299269cd8fc": {
       "number": 1532,
       "added": "2026nov12",
       "protocol": "SS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 644
+      "ms": 644,
+      "checked_ts": 1794485019
     },
     "f568d018b52700c3ed241cc2c4d3a7cc991e5b4ae89b75b02ec5a49983531d8e": {
       "number": 1533,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 655
+      "ms": 655,
+      "checked_ts": 1794485019
     },
     "b57490a9c335813fbce80e0c968028ab48e5ebda20ac58b5819993efe6a5110c": {
       "number": 1534,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461670,
-      "ms": 708
+      "verified_ts": 1794485011,
+      "ms": 708,
+      "checked_ts": 1794485019
     },
     "cd171ad5a39c18a8041aaa40db0453ce6c539083928c644c53263261bde5a698": {
       "number": 1535,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 742
+      "ms": 742,
+      "checked_ts": 1794485019
     },
     "3124b175c5edaecdb1395cbab60b8bc740c791935bbd2167b856b027c316d506": {
       "number": 1536,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 745
+      "ms": 745,
+      "checked_ts": 1794485019
     },
     "b98f1236c757f2684c555b9f1e5e2ebec95aa09e488763d951d78e1ccb51eb41": {
       "number": 1537,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461670,
-      "ms": 771
+      "ms": 771,
+      "checked_ts": 1794485019
     },
     "0fc04eb295654aba87dc676a0724cb5d78ac59d7967e09c81328611e52e0e17e": {
       "number": 1538,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 789
+      "ms": 789,
+      "checked_ts": 1794485019
     },
     "02c4cbae8df72df62d4311e106d0c603d92a6f11392d380d859d82706173a788": {
       "number": 1539,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461670,
-      "ms": 811
+      "ms": 811,
+      "checked_ts": 1794485019
     },
     "94f04c2056ddaad2879034f76d9a6207f22a07f932acfacbf44bd935e93bde72": {
       "number": 1540,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 837
+      "ms": 837,
+      "checked_ts": 1794485019
     },
     "6719e12bfea576c76300af8775f4612ac3c0d3d588ad0fcbaa75c2f70d14ab03": {
       "number": 1541,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461667,
-      "ms": 855
+      "ms": 855,
+      "checked_ts": 1794485019
     },
     "2b27ab2ad6e2d07e4e193d7057677afc329f708f5e35ac05c98d440197cf9e5a": {
       "number": 1542,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461670,
-      "ms": 886
+      "ms": 886,
+      "checked_ts": 1794485019
     },
     "eafc0f59454cb2c8da168e8facd2a76538ffee383c506e94f71d27c401a2a177": {
       "number": 1543,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 909
+      "ms": 909,
+      "checked_ts": 1794485019
     },
     "c67010b62dc13db7749698d32880883915d70b7cf630bb3b42c42767fed43773": {
       "number": 1544,
       "added": "2026nov12",
       "protocol": "HTTP",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461667,
-      "ms": 1044
+      "ms": 1044,
+      "checked_ts": 1794485019
     },
     "0a11638677cc035e698828601c63e386406edaf851b5afc26a1f2659eaafea04": {
       "number": 1545,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461670,
-      "ms": 1060
+      "ms": 1060,
+      "checked_ts": 1794485019
     },
     "99f5cf57c27db011122c99b880552ded8e423f17fbaf3dc683f3f9df2659bd1e": {
       "number": 1546,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 1090
+      "ms": 1090,
+      "checked_ts": 1794485019
     },
     "bf3f2be32d2b20df99f0c303be62681cba0b788d8b7c4297a01818ddda52a7f3": {
       "number": 1547,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 1094
+      "ms": 1094,
+      "checked_ts": 1794485019
     },
     "2591d16aba36674576990c19479c2bae6e33de85c50dddafd86b23b77b51fb5a": {
       "number": 1548,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 1180
+      "ms": 1180,
+      "checked_ts": 1794485019
     },
     "2c0d24e99dad2f920aec87792967f8dda584d125ee9c8cf90dad1c7fb3ff3886": {
       "number": 1549,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 1186
+      "ms": 1186,
+      "checked_ts": 1794485019
     },
     "365ae5e4f49e45019b4be812e1577856a08e530eb840e4cb519375eb34709ebc": {
       "number": 1550,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461667,
-      "ms": 1199
+      "verified_ts": 1794485015,
+      "ms": 1199,
+      "checked_ts": 1794485019
     },
     "74402de1dba52ac0d64924e1d1975dde89b1c9428ad375cf6cf4442c8cdd94f7": {
       "number": 1551,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 1415
+      "ms": 1415,
+      "checked_ts": 1794485019
     },
     "96664daf175b0d472123134c21b8eaccf1d8eca585cc333b179fa28f5a9ef5f1": {
       "number": 1552,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 1438
+      "ms": 1438,
+      "checked_ts": 1794485019
     },
     "c71598066326160f9ec3154519052a099e7a0d50140e9bf693b8c12ebc77c404": {
       "number": 1553,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461670,
-      "ms": 1631
+      "ms": 1631,
+      "checked_ts": 1794485019
     },
     "69720d17e687779cc61a4a15d1efd5712aca3fbdd50fbbedd74cbe17e509375a": {
       "number": 1554,
       "added": "2026nov12",
       "protocol": "HTTP",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 1633
+      "ms": 1633,
+      "checked_ts": 1794485019
     },
     "cc552b7effb12c97181036e32891a878f897b50e1bfd597c7ec81082fe6ded0b": {
       "number": 1555,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461669,
-      "ms": 1782
+      "ms": 1782,
+      "checked_ts": 1794485019
     },
     "370795ca9586a40d9df5284275c685b42219c2ec34786936e48246bd4863bf5c": {
       "number": 1556,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461669,
-      "ms": 2088
+      "verified_ts": 1794485016,
+      "ms": 2088,
+      "checked_ts": 1794485019
     },
     "24db9ab182802763dc4a09a4421268307b464b8592c21d953daa282950779814": {
       "number": 1557,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461670,
-      "ms": 2126
+      "ms": 2126,
+      "checked_ts": 1794485019
     },
     "f8a07b08deff7e162a03f7db181afac234bc8f2ea3a896a373002a37cf745e53": {
       "number": 1558,
       "added": "2026nov12",
       "protocol": "VLESS",
       "active": true,
-      "verified_ts": 1794461668,
-      "ms": 2164
+      "verified_ts": 1794485015,
+      "ms": 2164,
+      "checked_ts": 1794485019
     },
     "cadf7391c5485c1912e348866fcc4cd1e12bbd3a483a6308aa42329a1db0422f": {
       "number": 1559,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 2198
+      "ms": 2198,
+      "checked_ts": 1794485019
     },
     "63905f60b252f20f79ea0e807add0fe0df6b3643dcd2ab375be7b35e8c25c34d": {
       "number": 1560,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461668,
-      "ms": 2293
+      "ms": 2293,
+      "checked_ts": 1794485019
     },
     "55187a1ff1440e743e77a2aeff63cc2b423a8608f55e36c1d066a04420fa4901": {
       "number": 1561,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 3277
+      "ms": 3277,
+      "checked_ts": 1794485019
     },
     "8eb75a5acbd4ed1315697da77e41204a9a575e662933043e8b562d7bf0f33a15": {
       "number": 1562,
       "added": "2026nov12",
       "protocol": "HYSTERIA",
       "active": true,
-      "verified_ts": 1794461671,
-      "ms": 3333
+      "verified_ts": 1794485013,
+      "ms": 3333,
+      "checked_ts": 1794485019
     },
     "f2a11779590215f3c8d222b659c8e0b6fe6b01cf21dd5b2917bc336936181087": {
       "number": 1563,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461672,
-      "ms": 3340
+      "ms": 3340,
+      "checked_ts": 1794485019
     },
     "d22eae60076d69359338d83ad72cfddba3f38c55a6e3a03b802f8372371b89bc": {
       "number": 1564,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461674,
-      "ms": 4232
+      "ms": 4232,
+      "checked_ts": 1794485019
     },
     "42619f4da4efbe6a56c165dcb61e11ee2ac4d586c31ff3060a437aa31cced405": {
       "number": 1565,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461674,
-      "ms": 4832
+      "ms": 4832,
+      "checked_ts": 1794485019
     },
     "006ac77ba84f62917d5fdbaadef9d54a73292d552b51f93a9348f32fa0684945": {
       "number": 1566,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461674,
-      "ms": 4868
+      "ms": 4868,
+      "checked_ts": 1794485019
     },
     "c07c855a9e14c078ecbf41a875e594217e5f74dbe95fd287002470f06f505009": {
       "number": 1567,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461673,
-      "ms": 4884
+      "ms": 4884,
+      "checked_ts": 1794485019
     },
     "9e7763d1ddcd4a9dca29ef47be541869e7a84d120340277be99115767298adf4": {
       "number": 1568,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461675,
-      "ms": 5321
+      "ms": 5321,
+      "checked_ts": 1794485019
     },
     "5c680b279bfade66d803874f9029d29195ff369cb89ea455463c475cba8b2ac2": {
       "number": 1569,
       "added": "2026nov12",
       "protocol": "VLESS",
-      "active": true,
+      "active": false,
       "verified_ts": 1794461671,
-      "ms": 5413
+      "ms": 5413,
+      "checked_ts": 1794485019
     }
   }
 }

@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "checked_at": "2026-11-12T08:34:40+03:00",
-  "complete": true,
+  "checked_at": "2026-11-12T15:03:39+03:00",
+  "complete": false,
   "sources": [
     {
       "index": 0,
       "ok": true,
-      "parsed": 1078,
-      "skipped": 1
+      "parsed": 381,
+      "skipped": 0
     },
     {
       "index": 1,
@@ -47,14 +47,14 @@
     {
       "index": 7,
       "ok": true,
-      "parsed": 18256,
-      "skipped": 73
+      "parsed": 18126,
+      "skipped": 72
     },
     {
       "index": 8,
       "ok": true,
-      "parsed": 1049,
-      "skipped": 867
+      "parsed": 1056,
+      "skipped": 872
     },
     {
       "index": 9,
@@ -76,8 +76,8 @@
     {
       "index": 12,
       "ok": true,
-      "parsed": 459,
-      "skipped": 2
+      "parsed": 460,
+      "skipped": 0
     },
     {
       "index": 13,
@@ -88,7 +88,7 @@
     {
       "index": 14,
       "ok": true,
-      "parsed": 59,
+      "parsed": 57,
       "skipped": 0
     },
     {
@@ -105,7 +105,7 @@
     {
       "index": 17,
       "ok": true,
-      "parsed": 20,
+      "parsed": 9,
       "skipped": 0
     },
     {
@@ -138,18 +138,20 @@
     },
     {
       "index": 23,
-      "ok": false,
-      "retained": 1073
+      "ok": true,
+      "parsed": 877,
+      "skipped": 0
     },
     {
       "index": 24,
-      "ok": false,
-      "retained": 304
+      "ok": true,
+      "parsed": 301,
+      "skipped": 0
     },
     {
       "index": 25,
       "ok": true,
-      "parsed": 36,
+      "parsed": 22,
       "skipped": 0
     },
     {
@@ -190,20 +192,20 @@
     {
       "index": 32,
       "ok": true,
-      "parsed": 520,
+      "parsed": 450,
       "skipped": 0
     },
     {
       "index": 33,
       "ok": true,
-      "parsed": 1201,
+      "parsed": 999,
       "skipped": 2
     },
     {
       "index": 34,
       "ok": true,
-      "parsed": 11023,
-      "skipped": 51
+      "parsed": 10981,
+      "skipped": 54
     },
     {
       "index": 35,
@@ -214,7 +216,7 @@
     {
       "index": 36,
       "ok": true,
-      "parsed": 225,
+      "parsed": 139,
       "skipped": 0
     },
     {
@@ -226,19 +228,19 @@
     {
       "index": 38,
       "ok": true,
-      "parsed": 85,
+      "parsed": 29,
       "skipped": 0
     },
     {
       "index": 39,
       "ok": true,
-      "parsed": 1872,
+      "parsed": 1586,
       "skipped": 0
     },
     {
       "index": 40,
       "ok": true,
-      "parsed": 43,
+      "parsed": 47,
       "skipped": 0
     },
     {
@@ -250,25 +252,25 @@
     {
       "index": 42,
       "ok": true,
-      "parsed": 1590,
+      "parsed": 1562,
       "skipped": 0
     },
     {
       "index": 43,
       "ok": true,
-      "parsed": 850,
+      "parsed": 844,
       "skipped": 0
     },
     {
       "index": 44,
       "ok": true,
-      "parsed": 86,
+      "parsed": 80,
       "skipped": 0
     },
     {
       "index": 45,
       "ok": true,
-      "parsed": 161,
+      "parsed": 75,
       "skipped": 1
     },
     {
@@ -346,13 +348,13 @@
     {
       "index": 58,
       "ok": true,
-      "parsed": 462,
+      "parsed": 425,
       "skipped": 0
     },
     {
       "index": 59,
       "ok": true,
-      "parsed": 539,
+      "parsed": 397,
       "skipped": 0
     },
     {
@@ -363,7 +365,7 @@
     {
       "index": 61,
       "ok": true,
-      "parsed": 442,
+      "parsed": 447,
       "skipped": 0
     },
     {
@@ -393,8 +395,8 @@
     {
       "index": 66,
       "ok": true,
-      "parsed": 917,
-      "skipped": 83
+      "parsed": 918,
+      "skipped": 82
     },
     {
       "index": 67,
@@ -405,19 +407,19 @@
     {
       "index": 68,
       "ok": true,
-      "parsed": 3890,
-      "skipped": 85
+      "parsed": 3285,
+      "skipped": 38
     },
     {
       "index": 69,
       "ok": true,
-      "parsed": 2644,
+      "parsed": 2275,
       "skipped": 2
     }
   ],
-  "candidates": 41199,
-  "checked": 41199,
-  "working": 137,
-  "retired": 1432,
+  "candidates": 40890,
+  "checked": 137,
+  "working": 71,
+  "retired": 1498,
   "interval_hours": 12
 }
