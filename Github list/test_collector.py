@@ -39,7 +39,7 @@ class CollectorTests(unittest.TestCase):
         other = collector.identity(changed)
         result = collector.admit(self.registry, {self.key: self.proxy, other: changed},
                                  {self.key: dict(ok=True), other: dict(ok=True)}, self.now)
-        self.assertEqual([p['name'] for p in result], ['VLESS_#1_2026nov7', 'VLESS_#2_2026nov7'])
+        self.assertEqual([p['name'] for p in result], ['VLESS_#2_2026nov7', 'VLESS_#1_2026nov7'])
 
     def test_one_endpoint_is_published_once(self):
         # Same server:port:SNI with another account or cosmetic options = a duplicate.
@@ -60,6 +60,30 @@ class CollectorTests(unittest.TestCase):
     def test_list_carries_checker_latency(self):
         result = collector.admit(self.registry, {self.key: self.proxy}, {self.key: dict(ok=True, ms=321)}, self.now)
         self.assertEqual(collector.latencies(self.registry, result), [321])
+
+    def test_list_head_is_the_most_recently_verified(self):
+        nodes = [dict(self.proxy, server=f'n{i}.example.com') for i in range(3)]
+        keys = [collector.identity(n) for n in nodes]
+        results = {keys[0]: dict(ok=True, ms=10, at=300), keys[1]: dict(ok=True, ms=500, at=900),
+                   keys[2]: dict(ok=True, ms=20, at=300)}
+        listed = collector.admit(self.registry, dict(zip(keys, nodes)), results, self.now)
+        self.assertEqual([p['server'] for p in listed], ['n1.example.com', 'n0.example.com', 'n2.example.com'])
+        # A failing verdict never touches the stamp, a later pass moves the profile up.
+        results[keys[0]] = dict(ok=True, ms=10, at=1200)
+        results[keys[1]] = dict(ok=False)
+        again = collector.admit(self.registry, dict(zip(keys, nodes)), results, self.now)
+        self.assertEqual([p['server'] for p in again], ['n0.example.com', 'n2.example.com'])
+
+    def test_pages_hold_fifty_and_parse_like_the_whole_list(self):
+        proxies = [dict(self.proxy, name=f'p{i}') for i in range(120)]
+        files = collector.pages_of(proxies, list(range(120)), '2026-11-12T00:00:00+03:00')
+        index = files['pages/index.json']['nova_list_pages']
+        self.assertEqual((index['pages'], index['count'], index['page_size']), (3, 120, 50))
+        self.assertEqual(files['pages/index.json']['files'], ['page-001.json', 'page-002.json', 'page-003.json'])
+        last = files['pages/page-003.json']
+        self.assertEqual((last['nova_list']['count'], len(last['proxies']), len(last['ms'])), (20, 20, 20))
+        self.assertEqual(files['pages/page-001.json']['proxies'][0]['name'], 'p0')
+        self.assertEqual(collector.pages_of([], [], 'x')['pages/index.json']['nova_list_pages']['pages'], 0)
 
     def test_credential_key_ignores_remarks_and_cosmetics(self):
         a = dict(self.proxy, name='x', udp=True)
@@ -106,6 +130,22 @@ class CollectorTests(unittest.TestCase):
             self.assertFalse((root / 'pending.json').exists())
             self.assertEqual(json.loads((root / 'Github list/registry.json').read_text()), self.registry)
 
+    def test_known_due_profiles_are_checked_before_new_and_recent(self):
+        def proxy(n):
+            return dict(self.proxy, server=f'h{n}.example.com')
+        keys = {n: collector.identity(proxy(n)) for n in range(5)}
+        now = datetime(2026, 11, 9, tzinfo=timezone.utc)
+        hour = 3600
+        entries = {
+            keys[0]: dict(number=1, added='x', protocol='VLESS', active=True, checked_ts=int(now.timestamp()) - 2 * hour),   # recent
+            keys[1]: dict(number=2, added='x', protocol='VLESS', active=False, checked_ts=int(now.timestamp()) - 20 * hour),  # due, newer
+            keys[2]: dict(number=3, added='x', protocol='VLESS', active=False),                                              # due, never stamped
+        }
+        registry = dict(version=1, next_number=4, entries=entries)
+        candidates = {keys[n]: proxy(n) for n in (4, 0, 3, 1, 2)}  # 3 and 4 are new
+        order = list(collector.prioritize(candidates, registry, now))
+        self.assertEqual(order, [keys[2], keys[1], keys[4], keys[3], keys[0]])
+
     def test_progressive_publication_preserves_old_nodes_until_full_sweep(self):
         with tempfile.TemporaryDirectory() as directory:
             repo = Path(directory)
@@ -136,7 +176,7 @@ class CollectorTests(unittest.TestCase):
                 collector.run(args)
             final = json.loads((folder / 'nova-list.json').read_text())
             self.assertEqual(len(final['proxies']), 103)
-            self.assertIn('_#2_', final['proxies'][0]['name'])
+            self.assertIn('_#104_', final['proxies'][0]['name'])
             history = collector.load_registry(folder / 'registry.json')
             self.assertFalse(history['entries'][self.key]['active'])
             self.assertTrue(json.loads((folder / 'status.json').read_text())['complete'])

@@ -67,6 +67,12 @@ EXTRA_SOURCES = (
     'https://gidroksi.fun/black-list',
     'https://raw.githubusercontent.com/flaafix/AetrisVPN-black-list/refs/heads/main/configs.txt',
     'https://raw.githubusercontent.com/flaafix/AetrisVPN/refs/heads/main/AetrisVPN.txt',
+    # rtwo2/FastNodes per-protocol lists (owner-supplied 2026-11-09)
+    'https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/protocols/vless.txt',
+    'https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/protocols/vmess.txt',
+    'https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/protocols/trojan.txt',
+    'https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/protocols/ss.txt',
+    'https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/protocols/hysteria2.txt',
     ('https://etoneya.su/1', 'https://etoneya.best/1', 'https://alley.serv00.net/1',
      'https://etoneya.baby', 'https://etoskam.ru/1', 'https://internet-tenshi.kangel.tech/1'),
     ('https://etoneya.su/youtube', 'https://etoneya.best/youtube', 'https://alley.serv00.net/youtube',
@@ -78,9 +84,10 @@ MONTHS = ('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 
 
 def atomic_json(path, value):
     path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + '.tmp')
     # The public list is downloaded by every client: no indentation there.
-    compact = path.name == 'nova-list.json'
+    compact = path.name == 'nova-list.json' or path.parent.name == 'pages'
     with temporary.open('w', encoding='utf-8', newline='\n') as stream:
         if compact:
             json.dump(value, stream, ensure_ascii=False, separators=(',', ':'))
@@ -220,11 +227,68 @@ def admit(registry, candidates, results, now):
             entries[key] = entry
             registry['next_number'] += 1
         entry['active'] = True
+        # A passing verdict moves the profile to the head; retained ones keep their stamp.
+        if result.get('at'):
+            entry['verified_ts'] = max(int(entry.get('verified_ts', 0)), int(result['at']))
         if result.get('ms'):
             entry['ms'] = int(result['ms'])
         name = f'{entry["protocol"]}_#{entry["number"]}_{entry["added"]}'
-        active.append((entry['number'], dict(proxy, name=name)))
-    return [proxy for _, proxy in sorted(active, key=lambda item: item[0])]
+        active.append((entry, dict(proxy, name=name)))
+    return [proxy for _, proxy in sorted(active, key=lambda item: list_rank(item[0]))]
+
+
+def list_rank(entry):
+    """Published order: most recently verified first, then the faster node, then the newer number.
+
+    Clients probe the head of the list in batches of fifty and read further batches only
+    when the head is short of live nodes, so the head must hold what was confirmed last.
+    """
+    return (-int(entry.get('verified_ts', 0)), int(entry.get('ms') or 10 ** 9), -entry['number'])
+
+
+RECHECK_SECONDS = 12 * 3600
+PAGE_SIZE = 50
+
+
+def pages_of(proxies, ms, checked_at, size=PAGE_SIZE):
+    """The list cut into pages of `size`: `pages/index.json` plus `pages/page-NNN.json`.
+
+    A page is a complete snapshot of its own (same shape as `nova-list.json`), so a client
+    parses it with the code that reads the whole list. Page 1 is the newest verified.
+    """
+    count = len(proxies)
+    total = max(1, -(-count // size)) if count else 0
+    files = {}
+    names = []
+    for number in range(1, total + 1):
+        chunk = slice((number - 1) * size, number * size)
+        name = f'pages/page-{number:03d}.json'
+        names.append(name.split('/', 1)[1])
+        files[name] = dict(nova_list=dict(version=1, checked_at=checked_at, count=len(proxies[chunk]),
+                                          complete=True, page=number, pages=total),
+                           proxies=proxies[chunk], ms=ms[chunk])
+    files['pages/index.json'] = dict(nova_list_pages=dict(version=1, checked_at=checked_at, count=count,
+                                                          page_size=size, pages=total), files=names)
+    return files
+
+
+def prioritize(candidates, registry, now):
+    """Queue 1: known (registry) profiles due for a recheck, oldest check first (a profile
+    that reappears in a source is known, so it jumps ahead). Queue 2: new profiles.
+    Queue 3: known profiles checked less than 12 h ago. Every candidate is still checked."""
+    entries = registry['entries']
+    stamp = now.timestamp()
+    due, new, fresh = [], [], []
+    for key, proxy in candidates.items():
+        entry = entries.get(key)
+        if entry is None:
+            new.append((key, proxy))
+            continue
+        last = entry.get('checked_ts', 0)
+        (due if stamp - last >= RECHECK_SECONDS else fresh).append((last, key, proxy))
+    due.sort(key=lambda item: item[0])
+    fresh.sort(key=lambda item: item[0])
+    return dict([(k, p) for _, k, p in due] + new + [(k, p) for _, k, p in fresh])
 
 
 def latencies(registry, active):
@@ -299,6 +363,7 @@ def verify(binary, candidates, workers, seconds, work, checkpoint=None, bulk=0, 
                     if index in seen or not 0 <= index < len(batch):
                         raise ValueError('invalid probe result')
                     seen.add(index)
+                    result['at'] = int(time.time())
                     results[batch[index][0]] = result
                     if checkpoint and result['ok']:
                         checkpoint(results)
@@ -318,7 +383,8 @@ def git(repo, *args):
 
 
 def publish(repo):
-    paths = ['Github list/nova-list.json', 'Github list/registry.json', 'Github list/status.json']
+    paths = ['Github list/nova-list.json', 'Github list/registry.json', 'Github list/status.json',
+             'Github list/pages']
     git(repo, 'add', '--', *paths)
     if not git(repo, 'diff', '--cached', '--name-only', '--', *paths).strip():
         return
@@ -339,9 +405,16 @@ def finish_pending(repo, work):
     if not pending.exists():
         return
     values = json.loads(pending.read_text(encoding='utf-8'))
-    if set(values) != {'registry.json', 'nova-list.json', 'status.json'}:
+    base = {'registry.json', 'nova-list.json', 'status.json'}
+    if not base <= set(values) or any(name not in base and not name.startswith('pages/') for name in values):
         raise ValueError('invalid pending publication')
     folder = repo / 'Github list'
+    # Pages the list no longer fills are removed, so a shrunk list never keeps an old tail.
+    pages = folder / 'pages'
+    pages.mkdir(exist_ok=True)
+    for old in pages.glob('page-*.json'):
+        if f'pages/{old.name}' not in values:
+            old.unlink()
     for name, value in values.items():
         atomic_json(folder / name, value)
     publish(repo)
@@ -391,6 +464,7 @@ def run(args):
     atomic_json(cache_path, next_cache)
     print(f'sources={len(urls)} candidates={len(candidates)}', flush=True)
     registry = load_registry(folder / 'registry.json')
+    candidates = prioritize(candidates, registry, datetime.now(timezone.utc))
     previous = folder / 'nova-list.json'
     retained = {identity(p): p for p in json.loads(previous.read_text())['proxies']} if previous.exists() else {}
 
@@ -401,7 +475,11 @@ def run(args):
         if not complete:
             chosen = dict(retained)
             chosen.update(additions or {})
-            verdicts = {key: dict(ok=True) for key in chosen}
+            verdicts = {key: dict(ok=True, at=results[key]['at']) if key in results and results[key].get('at')
+                        and results[key].get('ok') else dict(ok=True) for key in chosen}
+        for key in results:
+            if key in registry['entries']:
+                registry['entries'][key]['checked_ts'] = int(now.timestamp())
         active = admit(registry, chosen, verdicts, now)
         checked_at = now.isoformat(timespec='seconds')
         status = dict(version=1, checked_at=checked_at, complete=complete, sources=source_status,
@@ -410,6 +488,7 @@ def run(args):
         values = {'registry.json': registry, 'nova-list.json': dict(nova_list=dict(version=1,
                     checked_at=checked_at, count=len(active), complete=True), proxies=active,
                     ms=latencies(registry, active)), 'status.json': status}
+        values.update(pages_of(active, values['nova-list.json']['ms'], checked_at))
         if args.publish:
             atomic_json(work / 'pending.json', values)
             finish_pending(args.repo.resolve(), work)
@@ -437,6 +516,39 @@ def run(args):
             for key in additions:
                 del ready[key]
             print(f'published batch added={len(additions)} checked={len(cumulative)} working={count}', flush=True)
+
+    def recheck_published():
+        """Published profiles first: dead ones leave the list now, confirmed ones move to its head.
+
+        The hunt for new nodes takes hours; without this a node that died stays published for
+        the whole sweep. All-failed is read as a checker outage, not as a dead list.
+        """
+        known = dict(retained)
+        if not known:
+            return
+        goal = not args.any_target
+        outcome = verify(args.core, known, args.workers, args.timeout, work, None, args.bulk, goal)
+        again = {key: known[key] for key, r in outcome.items() if not r['ok']}
+        if again:
+            outcome.update(verify(args.core, again, max(1, args.workers // 2), args.timeout, work, None,
+                                  args.bulk, goal))
+        passed = {key: known[key] for key, r in outcome.items() if r['ok']}
+        if passed:
+            confirm = verify(args.core, passed, args.workers, args.timeout, work, None, args.bulk, goal)
+            outcome.update(confirm)
+            passed = {key: known[key] for key, r in confirm.items() if r['ok']}
+        if not passed:
+            print('published profiles all failed; checker outage assumed, list kept', flush=True)
+            return
+        retained.clear()
+        retained.update(passed)
+        count = snapshot(outcome, False)
+        print(f'recheck published={len(known)} kept={count}', flush=True)
+
+    try:
+        recheck_published()
+    except (RuntimeError, ValueError, OSError) as error:
+        print(f'recheck of published profiles skipped: {error}', flush=True)
 
     results = verify(args.core, candidates, args.workers, args.timeout, work, checkpoint, args.bulk, not args.any_target)
     cumulative.update(results)
