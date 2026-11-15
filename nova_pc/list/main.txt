@@ -211,6 +211,7 @@ muapi.ai
 myanimelist.net
 mynoise.world
 myqcloud.com
+webshare.io
 namecheap.com
 geohide.ru
 namecheapapi.com
