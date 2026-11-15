@@ -214,7 +214,6 @@ myqcloud.com
 namecheap.com
 geohide.ru
 namecheapapi.com
-web.poecdn.com
 nc-img.com
 gname.net
 gname.com
