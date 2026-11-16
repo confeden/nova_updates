@@ -9,7 +9,6 @@ darkstore.bz
 activatica.org
 phncdn.com
 payproglobal.com
-adguard-mail.com
 adobe.com
 team.ga
 ctfassets.net
@@ -19,7 +18,6 @@ medal.tv
 alternativeto.net
 launchdarkly.com
 amazonaws.com
-amnezia.org
 announcekit.app
 anydesk.com
 archive.org
@@ -36,9 +34,7 @@ bbc-reporting-api.app
 bbc.com
 benchgecko.ai
 bestrandoms.com
-booktracker.org
 bootstrapcdn.com
-br.de
 breakingcopyright.com
 brevo.com
 bspuhose.com
@@ -56,14 +52,10 @@ cloudflare-ech.com
 cloudflare.com
 cloudflare.dev
 zerofs.link
-crowdsec.net
 www.deviantart.com
 wixmp.com
 deviantart.net
 wix.com
-mycountrymobile.com
-ipway.com
-tailscale.com
 auth0.com
 cloudflare.net
 usercentrics.eu
@@ -81,7 +73,6 @@ cloudfront.net
 coinbase.com
 comicbook.com
 cryptocloud.plus
-cryptomus.com
 cursor.directory
 cursor.sh
 deltarockme.com
@@ -96,8 +87,6 @@ dnsleaktest.org
 dropboxstatic.com
 dw.com
 ecosyste.ms
-edgee.ai
-element.io
 engagement.ai
 etoneya.su
 evolution-x.org
@@ -109,7 +98,6 @@ fb.com
 fb.me
 fbcdn.net
 fbsbx.com
-filterblade.xyz
 fineshare.com
 flagcdn.com
 flixster.com
@@ -120,7 +108,6 @@ freebuff.com
 fsdn.com
 fubgun.com
 funcpa.ru
-funpay.com
 g2g.com
 ggpht.com
 github.com
@@ -134,7 +121,6 @@ google.dev
 google.ru
 googleads.g.doubleclick.net
 googlevideo.com
-greasyfork.org
 grokusercontent.com
 hailuoai.video
 happyscribe.com
@@ -153,7 +139,6 @@ issuehunt.io
 jabber.fr
 jnn-pa.googleapis.com
 jsdelivr.net
-killedbygoogle.com
 kinobox.tv
 kinohub.vip
 timestamp.digicert.com
