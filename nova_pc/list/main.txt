@@ -335,3 +335,5 @@ zendesk.com
 zetflix-online.skin
 zizaran.com
 zo.computer
+wix.com
+qwen.ai
