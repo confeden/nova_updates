@@ -52,7 +52,6 @@ cloudflare-ech.com
 cloudflare.com
 cloudflare.dev
 zerofs.link
-www.deviantart.com
 wixmp.com
 deviantart.net
 wix.com
@@ -146,15 +145,11 @@ timestamp.sectigo.com
 time.certum.pl
 cts.h1s1.edge.certum.pl
 kinozal.tv
-laozhang.ai
 toil-dump.workers.dev
 media-proxy.toil.cc
-litellm.ai
 nuget.org
 chromium.googlesource.com
-videolan.org
 gnu.org
-qt.io
 rust-lang.org
 rustup.rs
 crates.io
@@ -176,11 +171,9 @@ lostfilm.tv
 lumalabs.ai
 mangamirai.com
 mate.tools
-matrix.org
 mcpmarket.com
 media-amazon.com
 ssl-images-amazon.com
-meduza.io
 meet.google.com
 meshworld.in
 microsoft.com
@@ -189,7 +182,6 @@ mintcdn.com
 mktoweb.com
 mmcdn.com
 mobi-films.com
-modrinth.com
 bestchange.ru
 monetamarkets.com
 moonshot.cn
@@ -244,7 +236,6 @@ alibaba.com
 onorca.dev
 qwen.com
 oauth.tg.dev
-ookla.com
 bbc.co.uk
 optimizely.com
 pacloudflare.com
@@ -256,7 +247,6 @@ pixelbuilds.org
 playlist.ttvnw.net
 pocketnet.app
 poe2wiki.net
-poedb.tw
 proton.me
 proxyliberty.com
 proxynova.com
@@ -269,10 +259,8 @@ redditspace.com
 redgifs.com
 rezka.ag
 romexsoftware.com
-rottentomatoes.com
 roundproxies.com
 rtrvr.ai
-rustdesk.com
 rutor.is
 rutracker.cc
 safegram.com
@@ -303,7 +291,6 @@ surfshark.com
 symantecliveupdate.com
 systeminformer.com
 t.co
-tadst.com
 tampermonkey.net
 tapeop.dev
 telegram.org
@@ -311,7 +298,6 @@ telesco.pe
 tftrove.com
 thepiratebay.org
 tiktokcdn-us.com
-timeanddate.com
 topdns.com
 torrindex.net
 trustpilot.net
@@ -337,12 +323,10 @@ verisoul.ai
 vultrusercontent.com
 warp.dev
 warp.plus
-weblate.org
 website-files.com
 websiteplanet.com
 whatsapp.com
 whatsapp.net
-whois.com
 wide-youtube.l.google.com
 windscribe.com
 windscribe.net
