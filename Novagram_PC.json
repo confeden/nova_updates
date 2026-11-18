@@ -1,7 +1,7 @@
 {
-  "version": "7.3.3.1",
-  "url": "https://github.com/confeden/Novagram/releases/download/v7.3.3.1/13.1.1.1/NovaGramSetup-7.3.3.1-x64.exe",
-  "sha256": "494cc9ec2ef68f579a71fe72c5b054447b11218527aa32fd91d4311653aa39f1",
-  "release_url": "https://github.com/confeden/Novagram/releases/tag/v7.3.3.1/13.1.1.1",
-  "size": 61807992
+  "version": "7.3.5",
+  "url": "https://github.com/confeden/Novagram/releases/download/v7.3.5/13.1.1.1/NovaGramSetup-7.3.5-x64.exe",
+  "sha256": "35b1e9a4bb3c3e1ba8be2f7e0d0f5fc6cebefa5fc37231d2de4d2bad679f345a",
+  "release_url": "https://github.com/confeden/Novagram/releases/tag/v7.3.5/13.1.1.1",
+  "size": 61911968
 }
