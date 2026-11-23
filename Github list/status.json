@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "checked_at": "2026-11-23T15:05:43+03:00",
-  "complete": false,
+  "checked_at": "2026-11-23T16:41:43+03:00",
+  "complete": true,
   "sources": [
     {
       "index": 0,
@@ -415,8 +415,8 @@
     }
   ],
   "candidates": 41101,
-  "checked": 41,
-  "working": 23,
-  "retired": 3234,
+  "checked": 41101,
+  "working": 72,
+  "retired": 3231,
   "interval_hours": 12
 }
