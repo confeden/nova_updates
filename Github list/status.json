@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checked_at": "2026-11-27T02:55:38+03:00",
+  "checked_at": "2026-11-27T03:46:21+03:00",
   "complete": false,
   "sources": [
     {
@@ -12,13 +12,13 @@
     {
       "index": 1,
       "ok": true,
-      "parsed": 395,
+      "parsed": 426,
       "skipped": 0
     },
     {
       "index": 2,
       "ok": true,
-      "parsed": 97,
+      "parsed": 100,
       "skipped": 0
     },
     {
@@ -138,13 +138,15 @@
     },
     {
       "index": 23,
-      "ok": false,
-      "retained": 911
+      "ok": true,
+      "parsed": 885,
+      "skipped": 0
     },
     {
       "index": 24,
-      "ok": false,
-      "retained": 311
+      "ok": true,
+      "parsed": 310,
+      "skipped": 0
     },
     {
       "index": 25,
@@ -190,7 +192,7 @@
     {
       "index": 32,
       "ok": true,
-      "parsed": 557,
+      "parsed": 726,
       "skipped": 0
     },
     {
@@ -225,13 +227,13 @@
     {
       "index": 38,
       "ok": true,
-      "parsed": 35,
+      "parsed": 30,
       "skipped": 0
     },
     {
       "index": 39,
       "ok": true,
-      "parsed": 1685,
+      "parsed": 1803,
       "skipped": 0
     },
     {
@@ -267,19 +269,19 @@
     {
       "index": 45,
       "ok": true,
-      "parsed": 273,
+      "parsed": 196,
       "skipped": 1
     },
     {
       "index": 46,
       "ok": true,
-      "parsed": 189,
+      "parsed": 715,
       "skipped": 0
     },
     {
       "index": 47,
       "ok": true,
-      "parsed": 79,
+      "parsed": 88,
       "skipped": 0
     },
     {
@@ -351,25 +353,26 @@
     {
       "index": 59,
       "ok": true,
-      "parsed": 509,
+      "parsed": 793,
       "skipped": 0
     },
     {
       "index": 60,
-      "ok": false,
-      "retained": 29
+      "ok": true,
+      "parsed": 34,
+      "skipped": 0
     },
     {
       "index": 61,
       "ok": true,
-      "parsed": 385,
+      "parsed": 403,
       "skipped": 0
     },
     {
       "index": 62,
       "ok": true,
-      "parsed": 400,
-      "skipped": 0
+      "parsed": 399,
+      "skipped": 1
     },
     {
       "index": 63,
@@ -399,19 +402,19 @@
     {
       "index": 68,
       "ok": true,
-      "parsed": 2900,
+      "parsed": 2959,
       "skipped": 55
     },
     {
       "index": 69,
       "ok": true,
-      "parsed": 1906,
+      "parsed": 1950,
       "skipped": 3
     }
   ],
   "candidates": 39978,
-  "checked": 77,
-  "working": 42,
-  "retired": 3503,
+  "checked": 42,
+  "working": 39,
+  "retired": 3506,
   "interval_hours": 12
 }
